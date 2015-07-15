@@ -1,0 +1,24 @@
+### base.html
+<html>
+  <head>
+    <title>{% block title %}Default title{% end %}</title>
+  </head>
+  <body>
+    <ul>
+      {% for student in students %}
+        {% block student %}
+          <li>{{ escape(student.name) }}</li>
+        {% end %}
+      {% end %}
+    </ul>
+  </body>
+</html>
+
+### bold.html
+{% extends "base.html" %}
+
+{% block title %}A bolder title{% end %}
+
+{% block student %}
+  <li><span style="bold">{{ escape(student.name) }}</span></li>
+{% end %}

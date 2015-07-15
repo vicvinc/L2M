@@ -2,6 +2,8 @@
 # import tornado.web
 from tornado.web import Application,RequestHandler
 from tornado.ioloop import IOLoop
+from tornado.httpserver import HTTPServer
+import tornado.template
 
 class MainHandler(RequestHandler):
 	# def __init__(self):
@@ -17,6 +19,9 @@ class HomeHandler(RequestHandler):
 
 	def get(self):
 		self.write('this is homepage')
+		loader = template.Loader("/home/btaylor")
+		print loader.load("test.html").generate(myvalue="XXX")
+
 class UserHandler(RequestHandler):
 	"""docstring for HomeHandler"""
 
@@ -29,5 +34,8 @@ if __name__ == '__main__':
 		(r'/index',HomeHandler),
 		(r'/user',UserHandler)
 	])
-	app.listen(8888)
+	sockets = tornado.netutil.bind_sockets(8888)
+	#tornado.process.fork_processes(0)
+	server = HTTPServer(app)
+	server.add_sockets(sockets)
 	IOLoop.current().start()
