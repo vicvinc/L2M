@@ -1,41 +1,42 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Author: Administrator
+# @Date:   2015-08-11 11:07:03
+# @Last Modified by:   Administrator
+# @Last Modified time: 2015-08-11 21:08:30
+
+#tornado import
 # import tornado.ioloop
 # import tornado.web
+import torndb
+import tornado.template
 from tornado.web import Application,RequestHandler
 from tornado.ioloop import IOLoop
 from tornado.httpserver import HTTPServer
-import tornado.template
 
-class MainHandler(RequestHandler):
-	# def __init__(self):
-	# 	this = self
-	def get(self):
-		this = self
-		this.write('this is this')
-		this.write('   ->')
-		this.write(repr(this))
-		self.write('Hello, world')
-class HomeHandler(RequestHandler):
-	"""docstring for HomeHandler"""
+#libs import
+from pprint import pprint
 
-	def get(self):
-		self.write('this is homepage')
-		loader = template.Loader("/home/btaylor")
-		print loader.load("test.html").generate(myvalue="XXX")
+#package import
 
-class UserHandler(RequestHandler):
-	"""docstring for HomeHandler"""
+#local import
+from conf import app as appConf
+from handler import app as appservice
 
-	def get(self):
-		self.write('here is user profile')
-if __name__ == '__main__':
-	app = Application([
-		(r'/', MainHandler),
-		(r'/home', HomeHandler),
-		(r'/index',HomeHandler),
-		(r'/user',UserHandler)
-	])
-	sockets = tornado.netutil.bind_sockets(8888)
+def server(appConf):
+	port = appConf.appConf['port']
+
+	app = appservice.App(appConf)
+
+	sockets = tornado.netutil.bind_sockets(port)
 	#tornado.process.fork_processes(0)
 	server = HTTPServer(app)
 	server.add_sockets(sockets)
+
+	print 'start service on:', port	
 	IOLoop.current().start()
+
+if __name__ == '__main__':
+	pprint(dir(appConf))
+	server(appConf)
+

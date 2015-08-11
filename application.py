@@ -34,6 +34,7 @@ from tornado.options import define, options
 from lib.loader import Loader
 from lib.session import Session, SessionManager
 from jinja2 import Environment, FileSystemLoader
+from conf import routes
 
 define("port", default = 80, help = "run on the given port", type = int)
 define("mysql_host", default = "mysql_host", help = "community database host")
@@ -42,98 +43,57 @@ define("mysql_user", default = "mysql_db_user", help = "community database user"
 define("mysql_password", default = "mysql_db_password", help = "community database password")
 
 class Application(tornado.web.Application):
-    def __init__(self):
-        settings = dict(
-            blog_title = u"Dota2Ark Community",
-            template_path = os.path.join(os.path.dirname(__file__), "templates"),
-            static_path = os.path.join(os.path.dirname(__file__), "static"),
-            avatar_path = os.path.join(os.path.dirname(__file__), 'static/avatar'),
-            xsrf_cookies = True,
-            cookie_secret = "cookie_secret_code",
-            login_url = "/login",
-            autoescape = None,
-            jinja2 = Environment(loader = FileSystemLoader(os.path.join(os.path.dirname(__file__), "templates")), trim_blocks = True),
-            reserved = ["user", "topic", "home", "setting", "forgot", "login", "logout", "register", "admin"],
-            # debug = True,
-        )
+	def __init__(self):
+		settings = dict(
+			blog_title = u"Dota2Ark Community",
+			template_path = os.path.join(os.path.dirname(__file__), "templates"),
+			static_path = os.path.join(os.path.dirname(__file__), "static"),
+			avatar_path = os.path.join(os.path.dirname(__file__), 'static/avatar'),
+			xsrf_cookies = True,
+			cookie_secret = "cookie_secret_code",
+			login_url = "/login",
+			autoescape = None,
+			jinja2 = Environment(loader = FileSystemLoader(os.path.join(os.path.dirname(__file__), "templates")), trim_blocks = True),
+			reserved = ["user", "topic", "home", "setting", "forgot", "login", "logout", "register", "admin"],
+			# debug = True,
+		)
 
-        handlers = [
-            (r"/", handler.index.HomeHandler),
-            (r"/t/(\d+)", handler.topic.ViewHandler),
-            (r"/t/create/(.*)", handler.topic.CreateHandler),
-            (r"/t/edit/(.*)", handler.topic.EditHandler),
-            (r"/reply/edit/(.*)", handler.topic.ReplyEditHandler),
-            # change 'node' route handler form topic to node handler
-            # (r"/node/(.*)", handler.topic.NodeTopicsHandler),
-            (r'/node', handler.node.HomeHandler),
-            (r"/node/(.*)", handler.node.NodeTopicsHandler),
-            #add panel route
-            (r'/panel', handler.panel.PanelHandler),
-            #(r'/p/(.*)/topics', handler.panel.PanelTopicsHandler),
-            #end panel route
-            (r"/u/(.*)/topics", handler.topic.UserTopicsHandler),
-            (r"/u/(.*)/replies", handler.topic.UserRepliesHandler),
-            (r"/u/(.*)/favorites", handler.topic.UserFavoritesHandler),
-            (r"/u/(.*)", handler.topic.ProfileHandler),
+		tornado.web.Application.__init__(self, routes, **settings)
 
-            (r"/vote", handler.topic.VoteHandler),
-            (r"/favorite", handler.topic.FavoriteHandler),
-            (r"/unfavorite", handler.topic.CancelFavoriteHandler),
-            (r"/notifications", handler.notification.ListHandler),
-            (r"/members", handler.topic.MembersHandler),
-            (r"/setting", handler.user.SettingHandler),
-            (r"/setting/avatar", handler.user.SettingAvatarHandler),
-            (r"/setting/password", handler.user.SettingPasswordHandler),
-            (r"/forgot", handler.user.ForgotPasswordHandler),
-            (r"/login", handler.user.LoginHandler),
-            (r"/logout", handler.user.LogoutHandler),
-            (r"/register", handler.user.RegisterHandler),
-            #add user item shop route
-            (r"/itemshop", handler.user.ItemShopHandler),
-            #end add 
-            (r"/(favicon\.ico)", tornado.web.StaticFileHandler, dict(path = settings["static_path"])),
-            (r"/static/avatar/(.*)", tornado.web.StaticFileHandler, dict(path = settings["avatar_path"])),
-            (r"/(sitemap.*$)", tornado.web.StaticFileHandler, dict(path = settings["static_path"])),
-            (r"/(bdsitemap\.txt)", tornado.web.StaticFileHandler, dict(path = settings["static_path"])),
-            (r"/(.*)", handler.topic.ProfileHandler),
-        ]
+		# Have one global connection to the blog DB across all handlers
+		self.db = torndb.Connection(
+			host = options.mysql_host, database = options.mysql_database,
+			user = options.mysql_user, password = options.mysql_password
+		)
 
-        tornado.web.Application.__init__(self, handlers, **settings)
+		# Have one global loader for loading models and handles
+		self.loader = Loader(self.db)
 
-        # Have one global connection to the blog DB across all handlers
-        self.db = torndb.Connection(
-            host = options.mysql_host, database = options.mysql_database,
-            user = options.mysql_user, password = options.mysql_password
-        )
+		# Have one global model for db query
+		self.user_model = self.loader.use("user.model")
+		self.topic_model = self.loader.use("topic.model")
+		self.reply_model = self.loader.use("reply.model")
+		self.plane_model = self.loader.use("plane.model")
+		self.node_model = self.loader.use("node.model")
+		self.notification_model = self.loader.use("notification.model")
+		self.vote_model = self.loader.use("vote.model")
+		self.favorite_model = self.loader.use("favorite.model")
 
-        # Have one global loader for loading models and handles
-        self.loader = Loader(self.db)
+		self.panel_model = self.loader.use('panel.model')
+		self.item_model = self.loader.use('item.model')
+		self.inventory_model = self.loader.use('inventory.model')
+		# Have one global session controller
+		self.session_manager = SessionManager(settings["cookie_secret"], ["127.0.0.1:11211"], 0)
 
-        # Have one global model for db query
-        self.user_model = self.loader.use("user.model")
-        self.topic_model = self.loader.use("topic.model")
-        self.reply_model = self.loader.use("reply.model")
-        self.plane_model = self.loader.use("plane.model")
-        self.node_model = self.loader.use("node.model")
-        self.notification_model = self.loader.use("notification.model")
-        self.vote_model = self.loader.use("vote.model")
-        self.favorite_model = self.loader.use("favorite.model")
-
-        self.panel_model = self.loader.use('panel.model')
-        self.item_model = self.loader.use('item.model')
-        self.inventory_model = self.loader.use('inventory.model')
-        # Have one global session controller
-        self.session_manager = SessionManager(settings["cookie_secret"], ["127.0.0.1:11211"], 0)
-
-        # Have one global memcache controller
-        self.mc = memcache.Client(["127.0.0.1:11211"])
+		# Have one global memcache controller
+		self.mc = memcache.Client(["127.0.0.1:11211"])
 
 def main():
-    tornado.options.parse_command_line()
-    http_server = tornado.httpserver.HTTPServer(Application())
-    http_server.listen(options.port)
-    tornado.ioloop.IOLoop.instance().start()
+	tornado.options.parse_command_line()
+	http_server = tornado.httpserver.HTTPServer(Application())
+	http_server.listen(options.port)
+	tornado.ioloop.IOLoop.instance().start()
 
 if __name__ == "__main__":
-    main()
+	main()
 
