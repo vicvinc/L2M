@@ -1,4 +1,6 @@
 # L2M
- l 2 m web
 
-this is a small and serious web application about MISS.
+tornado applications with news information for dota2 esports.
+
+including a news craper from dota2.com[offical] and some entertainment news from other places.
+
