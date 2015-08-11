@@ -1,4 +1,4 @@
-# L2M
+# dota2ark[d2ark]
 
 tornado applications with news information for dota2 esports.
 
