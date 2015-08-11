@@ -1,0 +1,150 @@
+{% extends 'snippet/layout.html' %}
+{% block main %}
+    <div class="container-box">
+        <div class="form-horizontal">
+                <div id="legend">
+                    <p class="">头像设置</p>
+                </div>
+                {{ errors|dump_errors }}
+                <div class="control-group">
+                    <!-- Avatar -->
+                    <div class="controls">
+                        <label for="avatar_hero">选择一个英雄头像</label>
+                        <select id="avatar_hero" class="form-control">
+                            <option value="antimage">敌法师</option>
+                            <option value="axe">斧王</option>
+                            <option value="bane">祸乱之源</option>
+                            <option value="bloodseeker">嗜血狂魔</option>
+                            <option value="crystal_maiden">水晶室女</option>
+                            <option value="drow_ranger">卓尔游侠</option>
+                            <option value="earthshaker">撼地者</option>
+                            <option value="juggernaut">主宰</option>
+                            <option value="mirana">米拉娜</option>
+                            <option value="nevermore">影魔</option>
+                            <option value="morphling">变体精灵</option>
+                            <option value="phantom_lancer">幻影长矛手</option>
+                            <option value="puck">帕克</option>
+                            <option value="pudge">帕吉</option>
+                            <option value="razor">剃刀</option>
+                            <option value="sand_king">沙王</option>
+                            <option value="storm_spirit">风暴之灵</option>
+                            <option value="sven">斯温</option>
+                            <option value="tiny">小小</option>
+                            <option value="vengefulspirit">复仇之魂</option>
+                            <option value="windrunner">风行者</option>
+                            <option value="zuus">宙斯</option>
+                            <option value="kunkka">昆卡</option>
+                            <option value="lina">莉娜</option>
+                            <option value="lich">巫妖</option>
+                            <option value="lion">莱恩</option>
+                            <option value="shadow_shaman">暗影萨满</option>
+                            <option value="slardar">斯拉达</option>
+                            <option value="tidehunter">潮汐猎人</option>
+                            <option value="witch_doctor">巫医</option>
+                            <option value="riki">力丸</option>
+                            <option value="enigma">谜团</option>
+                            <option value="tinker">修补匠</option>
+                            <option value="sniper">狙击手</option>
+                            <option value="necrolyte">瘟疫法师</option>
+                            <option value="warlock">术士</option>
+                            <option value="beastmaster">兽王</option>
+                            <option value="queenofpain">痛苦女王</option>
+                            <option value="venomancer">剧毒术士</option>
+                            <option value="faceless_void">虚空假面</option>
+                            <option value="skeleton_king">冥魂大帝</option>
+                            <option value="death_prophet">死亡先知</option>
+                            <option value="phantom_assassin">幻影刺客</option>
+                            <option value="pugna">帕格纳</option>
+                            <option value="templar_assassin">圣堂刺客</option>
+                            <option value="viper">冥界亚龙</option>
+                            <option value="luna">露娜</option>
+                            <option value="dragon_knight">龙骑士</option>
+                            <option value="dazzle">戴泽</option>
+                            <option value="rattletrap">发条技师</option>
+                            <option value="leshrac">拉席克</option>
+                            <option value="furion">先知</option>
+                            <option value="life_stealer">噬魂鬼</option>
+                            <option value="dark_seer">黑暗贤者</option>
+                            <option value="clinkz">克林克兹</option>
+                            <option value="omniknight">全能骑士</option>
+                            <option value="enchantress">魅惑魔女</option>
+                            <option value="huskar">哈斯卡</option>
+                            <option value="night_stalker">暗夜魔王</option>
+                            <option value="broodmother">育母蜘蛛</option>
+                            <option value="bounty_hunter">赏金猎人</option>
+                            <option value="weaver">编织者</option>
+                            <option value="jakiro">杰奇洛</option>
+                            <option value="batrider">蝙蝠骑士</option>
+                            <option value="chen">陈</option>
+                            <option value="spectre">幽鬼</option>
+                            <option value="doom_bringer">末日使者</option>
+                            <option value="ancient_apparition">远古冰魄</option>
+                            <option value="ursa">熊战士</option>
+                            <option value="spirit_breaker">裂魂人</option>
+                            <option value="gyrocopter">矮人直升机</option>
+                            <option value="alchemist">炼金术士</option>
+                            <option value="invoker">祈求者</option>
+                            <option value="silencer">沉默术士</option>
+                            <option value="obsidian_destroyer">殁境神蚀者</option>
+                            <option value="lycan">狼人</option>
+                            <option value="brewmaster">酒仙</option>
+                            <option value="shadow_demon">暗影恶魔</option>
+                            <option value="lone_druid">德鲁伊</option>
+                            <option value="chaos_knight">混沌骑士</option>
+                            <option value="meepo">米波</option>
+                            <option value="treant">树精卫士</option>
+                            <option value="ogre_magi">食人魔魔法师</option>
+                            <option value="undying">不朽尸王</option>
+                            <option value="rubick">拉比克</option>
+                            <option value="disruptor">干扰者</option>
+                            <option value="nyx_assassin">司夜刺客</option>
+                            <option value="naga_siren">娜迦海妖</option>
+                            <option value="keeper_of_the_light">光之守卫</option>
+                            <option value="wisp">艾欧</option>
+                            <option value="visage">维萨吉</option>
+                            <option value="slark">斯拉克</option>
+                            <option value="medusa">美杜莎</option>
+                            <option value="troll_warlord">巨魔战将</option>
+                            <option value="centaur">半人马战行者</option>
+                            <option value="magnataur">马格纳斯</option>
+                            <option value="shredder">伐木机</option>
+                            <option value="bristleback">钢背兽</option>
+                            <option value="tusk">巨牙海民</option>
+                            <option value="skywrath_mage">天怒法师</option>
+                            <option value="abaddon">亚巴顿</option>
+                            <option value="elder_titan">上古巨神</option>
+                            <option value="legion_commander">军团指挥官</option>
+                            <option value="ember_spirit">灰烬之灵</option>
+                            <option value="earth_spirit">大地之灵</option>
+                            <option value="terrorblade">恐怖利刃</option>
+                            <option value="phoenix">凤凰</option>
+                            <option value="oracle">神谕者</option>
+                            <option value="techies">工程师</option>
+                            <option value="winter_wyvern">寒冬飞龙</option>
+                        </select>
+                    </div>
+                    <div id="avatar_img" class="controls">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <a id="save_setting" class="btn btn-sm btn-success" href="javascript:void(0);">保存改动</a>
+                        <a href="/setting" class="ml10 btn">返回设置页</a>
+                    </div>
+                </div>
+            {{ xsrf_form_html() }}
+        </div>
+    </div>
+    <script type="text/javascript" src="/static/js/d2ark/setavatar.js"></script>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="sidenav container-box">
+        <ul>
+            <li><a href="/setting">用户中心</a></li>
+            <li class="current"><a href="/setting/avatar">设置头像</a></li>
+            <li><a href="/setting/password">设置密码</a></li>
+            <li><a href="/">返回首页</a></li>
+        </ul>
+    </div>
+{% endblock %}

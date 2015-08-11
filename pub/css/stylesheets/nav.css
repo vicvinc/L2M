@@ -1,0 +1,87 @@
+/* 
+* @Author: d2ark
+* @Date:   2015-07-17 20:54:21
+* @Last Modified by:   d2ark
+* @Last Modified time: 2015-07-17 20:54:21
+*/
+/* line 10, ../nav.scss */
+body {
+  color: #979797;
+  font-family: "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #080D11;
+}
+
+/* line 17, ../nav.scss */
+#navigation {
+  position: fixed;
+  margin-bottom: 0px;
+  background-color: #222;
+  height: 24px;
+}
+/* line 22, ../nav.scss */
+#navigation #navContainer {
+  width: 938px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* line 27, ../nav.scss */
+#navigation #navContainer #navHeader .brand {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+  color: #908d8b;
+}
+/* line 32, ../nav.scss */
+#navigation #navContainer #navHeader .brand img {
+  margin-top: 8px;
+  top: 0;
+  opacity: .8;
+}
+/* line 39, ../nav.scss */
+#navigation #navContainer #navMenu {
+  margin-left: 5px;
+}
+/* line 43, ../nav.scss */
+#navigation #navContainer #navAccount .btn-small {
+  margin: 2px 0 0 10px;
+  padding: 2px 8px;
+}
+/* line 47, ../nav.scss */
+#navigation #navContainer #navAccount li {
+  margin-left: 2px;
+}
+/* line 49, ../nav.scss */
+#navigation #navContainer #navAccount li .avatar {
+  padding-top: 10px;
+}
+/* line 52, ../nav.scss */
+#navigation #navContainer #navAccount li a {
+  font-size: 14px;
+  padding-bottom: 0px !important;
+}
+
+/* line 63, ../nav.scss */
+#bodyContainer {
+  width: 1200px;
+  position: relative;
+  margin: 0px auto;
+}
+
+/* line 68, ../nav.scss */
+#calloutHeader {
+  width: 100%;
+  height: 384px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  background-image: url("/static/images/layout/bg_thebetaisover.jpg");
+}
+/* line 75, ../nav.scss */
+#calloutHeader #calloutHeaderLink {
+  background-image: url("/static/images/layout/trans.gif");
+  height: 377px;
+  border: 0;
+  margin: 0 auto;
+}

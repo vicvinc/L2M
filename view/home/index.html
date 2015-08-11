@@ -1,0 +1,151 @@
+{% extends 'snippet/home_layout.html' %}
+{% block main %}
+	<div class="container-box">
+		<div class="ui-header">
+			<div id="node_nav" class="tabs">
+				{% for node in allnodes %}
+					<a class="btn btn-info" node-data='{{ node.slug }}' href="javascript:void(0);">
+					<!-- /node/{{ node.slug }} -->
+						{{ node.name }}
+					</a>
+				{% endfor %}
+			</div>
+			<script type="text/javascript" src="/static/js/d2ark/getnodetopic.js"></script>
+		</div>
+		<div class="ui-content">
+		{% for topic in topics.list %}
+			<div class="news-item">
+				<div  class="shortcut">
+					<a href="/u/{{ topic.author_username }}">
+						<img src="/static/images/avatar/{{ topic.author_avatar }}_sb.png" 
+							alt="{{ topic.author_username }}"/>
+					</a>
+				</div>
+				<div class="news-main">
+					<div class="title">
+						<h4>
+							<a href="/t/{{ topic.id }}#reply{{ topic.reply_count or 0 }}">
+								{{ topic.title }}
+							</a>
+						</h4>
+					</div>
+					<div class="content">
+						<a href="/t/{{ topic.id }}#reply{{ topic.reply_count or 0 }}">{{ topic.title }}</a>
+					</div>
+					<div class="status">
+						<span class="node">
+							<a href="/node/{{ topic.node_slug }}">{{ topic.node_name }}</a>
+						</span> • 
+						<span class="username">
+							<a href="/u/{{ topic.author_username or topic.author_uid }}">{{ topic.author_username }}</a>
+						</span> • 
+						{% if topic.last_replied_time %}
+							<span class="last-touched">{{ topic.last_touched|pretty_date }}</span>
+						{% else %}
+							<span class="last-touched">{{ topic.last_touched|pretty_date }}</span>
+						{% endif %}
+					</div>
+				</div>
+				{% if topic.reply_count %}
+					<div class="count">
+						<a href="/t/{{ topic.id }}#reply{{ topic.reply_count or 0 }}">{{ topic.reply_count or 0 }}</a>
+					</div>
+				{% endif %}
+			</div>
+		{% endfor %}
+		</div>
+		{% if topics.page.pages > 1 %}
+		<div class="ui-footer">
+			{{ topics.page|pagination(request.uri) }}
+		</div>
+		{% endif %}
+	</div>
+{% endblock %}
+{% block sidebar %}
+	{% if current_user %}
+		<div class="usercard container-box">
+			<div class="ui-header">
+				<a href="/u/{{ uinfo.username }}">
+					<img src="/static/images/avatar/{{ current_user.avatar}}_sb.png?t={{ gen_random() }}" alt="{{ uinfo.username }}" class="avatar" />
+				</a>
+				<div class="username">{{ uinfo.username }}</div>
+				<div class="website">
+					<a href="http://dotamax.com/player/detail/{{ uinfo.steamid or '' }}">{{ uinfo.steamid or '' }}
+					</a>
+				</div>
+			</div>
+			<div class="ui-content">
+				<div class="status status-topic">
+					<strong><a href="/u/{{ uinfo.username }}/topics">{{ uinfo.counter.topics }}</a></strong> 主题
+				</div>
+				<div class="status status-reply">
+					<strong><a href="/u/{{ uinfo.username }}/replies">{{ uinfo.counter.replies }}</a></strong> 回复
+				</div>
+				<div class="status status-favorite">
+					<strong><a href="/u/{{ uinfo.username }}/favorites">{{ uinfo.counter.favorites }}</a></strong> 收藏
+				</div>
+				<div class="status status-reputation">
+					<strong>{{ uinfo.reputation or 0 }}</strong> 威望
+				</div>
+			</div>
+		</div>
+	{% else %}
+		<div class="login-box container-box">
+			<div class="ui-content tc">
+				<a class="btn btn-small" type="button" href="/login">登录</a>
+				<a class="btn btn-small" type="button" href="/register">注册</a>
+			</div>
+		</div>
+	{% endif %}
+	<div class="sidebox container-box create-new">
+		<div id="create-new" class="dropdown btn-group btn-block">
+			<a class="btn btn-inverse btn-block" type="button" href="###" data-toggle="dropdown">创建新主题</a>
+			<ul class="dropdown-menu pull-right" role="menu">
+				{% for node in allnodes %}
+				<li role="presentation">
+					<a role="menuitem" href="/t/create/{{ node.slug }}">{{node.name}}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	{#
+	<div class="sidebox container-box us-sign">
+		<div class="ui-header">
+			<span class="title">我们的标志</span>
+		</div>
+		<div class="ui-content">
+			<a href="http://D2Ark.com">
+				<img src="/static/images/layout/sign.jpg" alt="D2Ark.com"/>
+			</a>
+		</div>
+	</div>
+	#}
+	<div class="sidebox container-box hot-nodes">
+		<div class="ui-header">
+			<span class="title">热点</span>
+		</div>
+		<div class="ui-content">
+			{% for node in hot_nodes %}
+				<a class="btn btn-xs" href="/node/{{ node.slug }}">{{ node.name }}</a>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="sidebox container-box community-status">
+		<div class="ui-header">
+			<span class="title">状态</span>
+		</div>
+		<div class="ui-content">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<span class="badge">{{ status_counter.users }}</span>
+					成员
+				</li>
+				<li class="list-group-item">
+					<span class="badge">{{ status_counter.nodes }}</span>
+					节点
+				</li>
+			</ul>
+		</div>
+	</div>
+{% endblock %}

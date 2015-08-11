@@ -1,0 +1,81 @@
+{% extends 'snippet/layout.html' %}
+
+{% block main %}
+	<link rel="stylesheet" type="text/css" href="/static/css/stylesheets/itmshop.css">
+	<script type="text/javascript" src="/static/js/d2ark/itemshop.js"></script>
+	<style type="text/css">
+		.ui-draggable-dragging { z-index: 1000; }
+		.unbuyable .sf-cost { opacity: 0.35; }
+	</style>
+	<div class="container-box">
+		<div id="content-store">
+			<div id="my_inventory">
+				<div class="ui-header">
+					<div class="tittle">
+						物品栏
+						<span title="当前金钱">
+							<span class="goldico-bg"></span>
+							<span id="goldnumber">{{ user_info.gold }}</span>
+						</span>
+					</div>
+					<div id="inv_item" class="inv-item">
+					{% for inv in user_inv_list %}
+						{% if inv %}
+						<div class="sf-block">
+							<div>
+								<div class="sf-item active">
+									<img src="/static/images/itemshop/{{ inv.itemid }}.png" 
+										alt="{{ inv.name }}">
+								</div>
+								<div class="sf-cost">
+									<div>{{ inv.name }}</div>
+									<div>
+										<span class="goldico-sm"></span>
+										{{ inv.cost }}
+									</div>
+									<div>
+										<button type="button" class="sell_item" 
+											data-item-slot="{{ inv.slot }}" 
+											data-item-id="{{ inv.itemid }}">
+											出售
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						{% else %}
+						<div class="sf-block">
+							<div>
+								<div class="sf-item"></div>
+								<div class="sf-cost"><div></div><div></div></div>
+							</div>
+						</div>
+						{% endif %}
+					{% endfor %}
+					</div>
+				</div>
+			</div>
+			<div id="storefront">
+				<h1>商店</h1>
+				<div class="sf-tabs">
+					<div data-category="1" class="itemcategory active">标准物品</div> 
+				</div>
+				<div id="shop_items">
+				</div>
+			</div>
+		</div>
+		<audio src="/static/audio/dota-item-buy.ogg" style="display:none" preload="auto" id="dota-item-buy"></audio>
+		<audio src="/static/audio/dota-item-sell.ogg" style="display:none" preload="auto" id="dota-item-sell"></audio>
+	</div>
+{% endblock %}
+{% block sidebar %}
+	<div class="sidenav container-box">
+		<ul>
+			<li><a href="/setting">用户中心</a></li>
+			<li class="active"><a href="/itemshop">我的物品</a></li>
+			<li><a href="/setting/avatar">设置头像</a></li>
+			<li><a href="/setting/password">设置密码</a></li>
+			<li><a href="/">返回首页</a></li>
+		</ul>
+	</div>
+{% endblock %}

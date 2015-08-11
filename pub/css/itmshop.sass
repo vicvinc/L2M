@@ -1,0 +1,319 @@
+.classicon
+  outline: 0
+  &:hover
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.35)
+  .tooltipx
+    position: relative
+    font-size: 8pt
+    font-weight: 400
+    white-space: nowrap
+    z-index: 1000
+    opacity: 0
+  &:hover .tooltipx
+    animation: .4s inventory
+    -webkit-animation: .4s inventory
+    animation-fill-mode: forwards
+    -webkit-animation-fill-mode: forwards
+    opacity: 1
+
+@keyframes inventory
+  0%
+    opacity: 0
+
+  60%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+
+@-webkit-keyframes inventory
+  0%
+    opacity: 0
+
+  60%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+.inventory
+  width: 120px
+  white-space: normal
+  background: #232728
+  padding: 3px
+  .useritem
+    margin: 1px
+    display: inline-block
+    vertical-align: top
+    width: 32px
+    height: 24px
+    background: #101011
+
+.buymenu
+  padding-left: 8px
+  width: 82px
+  margin-right: 5px
+  > div
+    line-height: 36px
+    vertical-align: middle
+    > span
+      color: #eceaeb
+
+.goldico-bg
+  display: inline-block
+  vertical-align: middle
+  background: url(/static/images/layout/gold_bg.png) no-repeat
+
+.goldico-sm
+  display: inline-block
+  vertical-align: middle
+  background: url(/static/images/layout/gold_sm.png) no-repeat
+
+.tooltipx .goldico-bg
+  width: 25px
+  height: 16px
+  margin-right: 4px
+
+.buyitem
+  display: block
+  color: #eceaeb !important
+  border: 0
+  padding: 5px 4px
+  font-size: 8pt
+  cursor: pointer
+  line-height: 17px
+  margin-top: 4px
+  text-align: right
+  &:hover
+    text-decoration: none !important
+
+#smallgold
+  background-position: -35px -501px
+  width: 13px
+  height: 8px
+
+#content-store
+  margin: 0 auto
+  background: #232728
+  color: #eceaeb
+  margin-bottom: 8px
+  
+#my_inventory
+  .ui-header
+    margin: 0 auto
+    border-radius: 0px
+    background: #1b1d1d
+    .tittle
+      font-family: 'open sans', sans-serif
+      font-size: 14px
+      line-height: 30px
+      text-align: right
+      background: #232728
+      border-bottom: 1px solid #414449
+      padding: 8px 15px
+    .sf-item
+      margin-right: 6px
+    .goldico-bg
+      width: 32px
+      height: 24px
+      margin-right: 4px
+
+.inv-item
+  padding: 12px 23px
+
+#content-store a
+  color: #eceaeb
+  text-decoration: none
+
+.sf-tabs
+  margin-bottom: 16px
+
+.itemcategory
+  display: inline-block
+  position: relative
+  top: -1px
+  width: auto
+  height: 33px
+  line-height: 33px
+  padding: 0 32px
+  text-align: center
+  border-bottom: 1px solid #101010
+  -webkit-transition: border 200ms ease-out
+  -moz-transition: border 200ms ease-out
+  -o-transition: border 200ms ease-out
+  transition: border 200ms ease-out
+  cursor: pointer
+  &.active, &:hover
+    border-bottom: 1px solid #467a95
+
+.sf-filter
+  text-align: right
+  line-height: 25px
+  margin-bottom: 8px
+  > div
+    text-align: right
+  span
+    color: #606061
+  > div > div
+    display: inline-block
+    vertical-align: middle
+    position: relative
+    overflow: hidden
+    margin-left: 1%
+  input
+    width: 77%
+    height: 18px
+    margin: 1px 1% 0 0
+    background: #1b1e1f
+    color: white
+    border: 0
+    padding: 4px 0 4px 8px
+    vertical-align: middle
+  select
+    background: #1b1e1f
+    color: white
+    border: 0
+    padding: 4px 0 4px 8px
+    vertical-align: middle
+    width: 160px
+    margin-right: -18px
+    outline: 0
+  .selectarrow
+    position: absolute
+    top: 5px
+    right: 4px
+    background: url(/images/layout/topbannersprite.png) no-repeat
+    background-position: -3px -63px
+    width: 16px
+    height: 16px
+    z-index: 1
+
+#storefront
+  margin: 0 auto
+  border-radius: 1px
+  padding: 8px 15px
+  padding-bottom: 36px
+
+.sf-block
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  width: 30%
+  height: 30px
+  color: #d1871a
+  text-align: left
+  margin: 3px
+  outline: 0
+  &:hover
+    vertical-align: top
+    background: #3a3a3a
+
+#sfi1, #sfi2, #sfi3, #sfi4, #sfi5, #sf6
+  position: absolute
+  left: -12000px
+
+.sf-block input[type="checkbox"]
+  + label
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+  &:checked + label
+    background: rgba(70, 122, 149, 0.3)
+
+.sf-item
+  display: inline-block
+  vertical-align: top
+  width: 40px
+  height: 30px
+  background: #101011
+  margin-bottom: 0
+
+.sf-cost
+  display: inline-block
+  vertical-align: top
+  height: 30px
+  margin-left: 5%
+  font-size: 8pt
+  > div:first-child
+    font-size: 9pt
+    color: #eceaeb
+  .goldico-sm
+    width: 16px
+    height: 12px
+    margin-right: 4px
+  button
+    position: absolute
+    right: 938px
+    width: 80px
+    height: 29px
+    font-weight: 300
+    color: #eceaeb
+    border: 0
+    cursor: pointer
+    &:hover
+      background: #467a95
+    &:active
+      background: #d1871a
+
+.sf-block:hover .sf-cost button
+  bottom: 1px
+  right: 1px
+
+#is-checkout
+  text-align: left
+  margin: 0 1%
+  padding: 16px 0
+  > div > h1
+    text-align: right
+    margin: 8px 0 16px 0
+
+.sf-controls
+  text-align: right
+  padding: 24px 0
+
+#is-checkout .sf-controls
+  padding: 0 0 24px 0
+
+.sf-controls button
+  &:first-child
+    width: 100px
+    margin-right: 8px
+    background: #303031
+    &:hover
+      background: #404041
+  height: 36px
+  width: 160px
+  border: 0
+  color: #eceaeb
+
+.buyitem, .sf-cost button, .sf-controls button
+  background: #d46795
+  background: -moz-linear-gradient(top, #467a95 0, #284855 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #467a95), color-stop(100%, #284855))
+  background: -webkit-linear-gradient(top, #467a95 0, #284855 100%)
+  background: -o-linear-gradient(top, #467a95 0, #284855 100%)
+  background: -ms-linear-gradient(top, #467a95 0, #284855 100%)
+  background: linear-gradient(to bottom, #467a95 0, #284855 100%)
+
+.buyitem:hover, .sf-cost button:hover, .sf-controls button:hover
+  background: #467a95
+
+.buyitem:active, .sf-cost button:active, .sf-controls button:active
+  background: #284855
+  background: -moz-linear-gradient(top, #284855 0, #467a95 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #284855), color-stop(100%, #467a95))
+  background: -webkit-linear-gradient(top, #284855 0, #467a95 100%)
+  background: -o-linear-gradient(top, #284855 0, #467a95 100%)
+  background: -ms-linear-gradient(top, #284855 0, #467a95 100%)
+  background: linear-gradient(to bottom, #284855 0, #467a95 100%)
+  /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#284855', endColorstr='#467A95', GradientType=0)
+
+.tooltipx
+  cursor: default
+  > .tt-userinfo:first-child
+    padding-left: 4px

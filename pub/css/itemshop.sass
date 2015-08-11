@@ -1,0 +1,5379 @@
+html
+  overflow-y: scroll
+
+body
+  background-color: #fafafa
+  margin: 0
+  font-family: arial, helvetica
+  font-size: 10pt
+  color: #404041
+
+img
+  border-width: 0
+
+#main-left-sidebar
+  float: left
+  width: 219px
+  text-align: center
+
+#main-content
+  float: left
+  min-height: 600px
+  padding: 0 5px
+  padding-bottom: 5px
+  width: 752px
+  background: #dbdad8
+  border: 1px solid #cbc9c7
+
+#main-content-wide
+  padding: 0 5px
+  min-height: 600px
+  padding-bottom: 5px
+  background: #dbdad8
+  border: 1px solid #dedad9
+
+#main-right-sidebar
+  width: 219px
+  text-align: center
+  float: left
+
+#lsb-toggle, #rsb-toggle
+  display: none
+  height: 36px
+  line-height: 36px
+  margin: 4px 0 8px 0
+  background-color: #284855
+  color: #fff
+  z-index: 2
+  font-family: 'Open Sans', 'Arial'
+  font-size: 15px
+  font-weight: 700
+  text-align: center
+  cursor: pointer
+
+#lsb-toggle:hover, #rsb-toggle:hover
+  background-color: #467a95
+
+.no-padding
+  margin: 0 -6px
+  margin-bottom: -5px
+
+h1
+  &.title
+    font-size: 15px
+    font-weight: normal
+    font-family: 'Open Sans', 'Arial'
+    font-weight: 600
+    color: #fff
+    text-align: center
+    padding-top: 2px
+    height: 23px
+    background-color: #284855
+    margin: 0 -6px
+    margin-top: -1px
+  &.padding
+    margin-bottom: 5px
+
+#crossdomainsubmit img
+  vertical-align: middle
+  position: relative
+  bottom: 2px
+
+.forum
+  width: 100%
+
+article.highlighted
+  background-color: #c1d3e0
+
+.forumPost
+  font: 10pt Arial
+  color: #404041
+  width: 100%
+  > section
+    padding: 10px 8px 20px 8px
+    word-wrap: break-word
+    *
+      max-width: 100%
+
+#forummsg *
+  max-width: 100%
+
+.forumPost
+  a
+    color: #467a95
+    outline: 0
+    word-wrap: break-word
+    -ms-word-break: break-all
+    &:link
+      color: #467a95
+      outline: 0
+    &:hover
+      text-decoration: underline
+  img
+    max-width: 100%
+    height: auto !important
+    width: auto
+
+button
+  color: #404041
+
+.forumPostHighlight
+  font: 10pt Arial
+  color: #404041
+  width: 100%
+
+.forumPostOld
+  background: url(/images/forum/oldpost.gif) no-repeat bottom right
+
+.greybox
+  margin-bottom: 8px
+  padding: 4px
+  border: 1px solid #cbc9c7
+  background-color: #eceaeb
+  &:hover
+    background: #f6f7f7
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: none
+
+td
+  &.nopad
+    padding: 0 1px
+  &.l
+    text-align: left
+  &.greybox.active
+    background-color: #fff
+
+table.sidemenu
+  width: 100%
+  padding: 0
+  background-color: #dbdad8
+  border-collapse: collapse
+  margin-left: 0
+
+td.sidemenu
+  width: 100%
+  border-left: 1px solid #cbc9c7
+  border-right: 1px solid #cbc9c7
+  text-align: left
+  vertical-align: middle
+
+#wikiform
+  padding-left: 10px
+
+.calendar_content
+  padding-top: 6px
+  td.sidemenu
+    padding: 2px 0 0 0
+
+#main-content > blockquote a
+  text-decoration: underline
+
+.mir
+  color: #6c0000
+
+.mib
+  color: #104e92
+
+.evc-tabs, .evc-radio
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.ev-feed
+  margin: 0 auto
+  width: 100%
+  color: #404041
+
+td.sidemenu .ev-feed
+  margin: 8px 0 16px 0
+
+#evcal .ev-feed
+  min-height: 40px
+
+.ev-block
+  position: relative
+  margin: 0 auto
+  font-size: 8pt
+  line-height: 12px
+  margin-bottom: 8px
+  &.ev-live
+    width: 88%
+  width: 90%
+
+td.sidemenu .ev-live
+  background: #eceaeb
+  border: 1px solid #cbc9c7
+  padding: 3% 4% 3% 3%
+
+.lev-none
+  margin: 0 auto
+  text-align: center
+  font-family: open sans
+  font-size: 18px
+  color: #939597
+
+.ev-head
+  line-height: 16px
+  white-space: nowrap
+  overflow: hidden
+
+.icon-container
+  display: inline-block
+  width: 26px
+  vertical-align: top
+  text-align: center
+
+.ev-head > div
+  display: inline-block
+  vertical-align: top
+  font-weight: 700
+
+.ev-timer
+  display: inline-block
+  vertical-align: top
+  color: #939597
+  text-align: right
+
+.ev-head > div
+  width: 97%
+
+#evcal .ev-head
+  width: 103%
+
+.ev-live .ev-head >
+  div
+    display: block
+    width: 100%
+  span
+    display: none
+
+.ev-timer
+  width: 30%
+
+.ev-head .ev-timer
+  margin-top: 2px
+
+td.sidemenu .ev-timer
+  width: 30%
+
+.ev-head
+  > div > span
+    display: inline-block
+  .ev
+    display: inline-block
+    position: relative
+    top: 1px
+    vertical-align: top
+
+.ev-stage
+  color: #939597
+
+td.sidemenu .ev-stage
+  margin: 0 0 8px 0
+
+#evcal .ev-stage
+  margin: -2px 0 4px 0
+
+.ev-match
+  margin-bottom: 8px
+  > div > span:first-child
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+td.sidemenu .ev-match > div > span:first-child
+  width: 65%
+  margin-left: 5%
+
+.ev-match > div > span
+  display: inline-block
+  width: 25%
+
+td.sidemenu .ev-match .ev
+  display: none
+
+.ev-stream
+  margin: 0 0 8px 5%
+  > div > span
+    &:first-child
+      width: 70%
+      overflow: hidden
+      text-overflow: ellipsis
+      text-align: left
+      color: #404041
+    display: inline-block
+    width: 30%
+    text-align: right
+    color: #939597
+    vertical-align: top
+  a
+    color: #008f59 !important
+
+.ev-foot
+  text-align: center
+  a
+    text-decoration: none
+
+.ev-lp, .ev-lr
+  display: inline-block
+  position: relative
+  top: -1px
+  margin-right: 8px
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  vertical-align: middle
+
+.ev-lp
+  width: 17px
+  height: 12px
+  background-position: -47px -381px
+
+.ev-lr
+  width: 15px
+  height: 12px
+  background-position: -20px -381px
+
+.ev-btn
+  display: inline-block
+  border: 1px solid transparent
+  padding: 2px 4px
+  font-size: 8pt
+  line-height: 18px
+  cursor: pointer
+  &:hover
+    background: #f6f7f7
+    border: 1px solid #cbc9c7
+    text-decoration: none
+
+.ev-ctrl
+  display: inline-block
+  width: auto
+  outline: 0
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+  margin-top: 2px
+  > span
+    cursor: pointer
+    &:hover
+      text-decoration: underline
+  aside
+    position: absolute
+    position: absolute
+    width: 600px
+    height: auto
+    background: #f6f7f7
+    border: 1px solid #cbc9c7
+    text-align: left
+    padding: 12px
+    z-index: 1
+    font-size: 9pt
+    font-weight: 400
+    box-shadow: 0 4px 3px -1px rgba(0, 0, 0, 0.25)
+    white-space: normal
+    overflow: visible
+    cursor: default
+
+td.sidemenu .ev-ctrl aside
+  right: 12000px
+
+#evcal tfoot tr > td .ev-ctrl aside, .evc-l .ev-ctrl aside
+  left: -12000px
+
+.evc-c .ev-ctrl aside, .evc-r .ev-ctrl aside
+  right: 12000px
+
+#evcal td.today
+  background-color: white
+
+td.sidemenu .ev-ctrl:focus aside
+  top: 5px
+  right: 5px
+
+#evcal tfoot tr > td .ev-ctrl:focus aside, .evc-l .ev-ctrl:focus aside
+  top: -1px
+  left: 0
+
+.evc-c .ev-ctrl:focus aside
+  top: -1px
+  right: -180px
+
+.evc-r .ev-ctrl:focus aside
+  top: -1px
+  right: 0
+
+#eventeditform
+  overflow: hidden
+
+.evc-hist, .evc-edit
+  width: 102%
+  max-height: 410px
+  overflow-y: scroll
+
+.evc-head
+  margin: 4px 0
+  > div
+    &:first-child
+      margin-right: 8px
+    display: inline-block
+    vertical-align: top
+
+.ev-ctrl
+  h1, h2
+    font-family: "open sans", sans-serif
+  h1
+    font-size: 22px
+    line-height: 22px
+    margin: 0
+  h2
+    font-size: 16px
+    line-height: 16px
+    margin: 6px 0 5px 0
+    a
+      text-decoration: none
+      color: #467a95 !important
+
+.evc-link a
+  text-decoration: none
+  color: #467a95 !important
+
+.ev-ctrl h2 a:hover
+  text-decoration: underline
+
+.evc-tabs
+  margin: 8px 0 12px 0
+  div
+    display: inline-block
+    width: auto
+    height: 33px
+    line-height: 33px
+    padding: 0 32px
+    text-align: center
+    border-bottom: 1px solid #cbc9c7
+    -webkit-transition: border 200ms ease-out
+    -moz-transition: border 200ms ease-out
+    -o-transition: border 200ms ease-out
+    transition: border 200ms ease-out
+    &:hover
+      border-bottom: 1px solid #404041
+
+#evc-t1.tabin, #evc-t2.tabin, #evc-t3.tabin, #evc-t4.tabin
+  border-bottom: 1px solid #404041
+
+.evc-body
+  > div
+    margin-bottom: 16px
+  a
+    color: #467a95
+    &:hover
+      color: #467a95
+  img
+    vertical-align: middle
+    margin-bottom: 1px
+
+.evc-hist, .evch-more, .evc-edit, .evc-admin
+  margin-bottom: 16px
+
+.evc-block > div
+  &:first-child
+    width: 71%
+    text-align: left
+  display: inline-block
+  vertical-align: top
+  width: 29%
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+  line-height: 24px
+  text-align: right
+  > span
+    &:nth-child(2)
+      margin: 0 8px
+    &:first-child
+      text-align: right
+      width: 41%
+    &:last-child
+      width: 41%
+    display: inline-block
+
+.evc-undo
+  text-align: right
+  margin-right: 10%
+
+.evc-link > div > div
+  &:first-child
+    width: 84px
+    margin-right: 16px
+    text-align: right
+    line-height: 24px
+    margin-top: 0
+  display: inline-block
+  vertical-align: top
+  margin-top: 4px
+
+.evch-plist
+  line-height: 19px
+
+.evc-radio
+  input[type="radio"]
+    position: absolute
+    left: -12000px
+  label
+    display: inline-block
+    height: 18px
+    line-height: 18px
+    padding: 0 8px
+    background: #eceaeb
+    border: 1px solid #cbc9c7
+    color: #939597
+    margin-left: 4px
+    &:hover
+      background: #fff
+  input[type="radio"]:checked + label
+    color: white
+    background: #467a95
+    border: 1px solid #467a95
+
+.evc-hist > div > div > span:first-child, .evch-more > div > div > span:first-child
+  color: #404041
+  font-size: 9pt
+
+.evc-hist > div > div > span
+  color: #939597
+  font-size: 8pt
+  line-height: 10pt
+  margin-right: 8px
+
+.evch-more > div
+  > div > span
+    color: #939597
+    font-size: 8pt
+    line-height: 10pt
+    margin-right: 8px
+  margin-bottom: 8px
+
+.evc-hist .flag
+  display: inline-block
+  vertical-align: middle
+  width: 18px
+  height: 18px
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  background-position: 6px -191px
+  margin-left: 4px
+  cursor: pointer
+  &:hover
+    background-position: -9px -191px
+
+.undo
+  display: inline-block
+  vertical-align: middle
+  width: 18px
+  height: 18px
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  background-position: -28px -192px
+  margin-left: 4px
+  cursor: pointer
+  &:hover
+    background-position: -45px -192px
+
+.evch-block > div
+  display: inline-block
+  vertical-align: middle
+  margin: 2px 0
+
+.evch-un
+  color: #124d93
+  font-weight: 700
+
+.evch-more
+  > div:first-child
+    width: 52px
+    font-size: 8pt
+    height: 20px
+    line-height: 20px
+    margin-top: 0
+    cursor: pointer
+  height: 20px
+  overflow: hidden
+  outline: 0
+  &:focus
+    height: 100%
+    > div:first-child
+      display: none
+
+.evc-edit > div
+  margin-bottom: 16px
+
+.evce-req > div > span:first-child, .evce-rec > div > span:first-child
+  display: inline-block
+  vertical-align: top
+  width: 30%
+  line-height: 30px
+  margin-right: 3%
+  text-align: right
+
+.evce-req > div > span > span, .evce-rec > div > span > span
+  display: block
+  color: #939597
+  font-size: 8pt
+  line-height: 12px
+  margin-top: -6px
+
+.evc-edit
+  input[type="text"]
+    width: 65%
+  textarea
+    width: 65%
+    max-width: 65%
+    min-width: 65%
+    min-height: 65px
+    margin: 4px 0
+  input[type="text"], select
+    color: #404041
+    margin-top: 4px
+
+.matchstatus
+  text-align: left
+  text-indent: 28%
+  padding-bottom: 8px
+  input
+    vertical-align: middle
+    margin: 0 6px
+  label
+    vertical-align: middle
+
+#playersbox > div >
+  div > span:first-child
+    display: inline-block
+    vertical-align: top
+    width: 25%
+    line-height: 30px
+    margin-right: 3%
+    text-align: right
+  b
+    display: block
+    padding-bottom: 8px
+
+.pbmu
+  margin-right: 2%
+  select
+    width: 22.5%
+
+.evce-add
+  line-height: 12px
+  padding: 0 1% 16px 0
+  text-align: right
+  a
+    margin-left: 16px
+    line-height: 21px
+
+.evc-admin
+  input, label, select
+    vertical-align: middle
+    margin-top: 4px
+  > div > a
+    margin-left: 33%
+
+.evca-timezone
+  display: inline-block
+  vertical-align: middle
+  margin-top: 4px
+
+.evc-commit
+  > div
+    &:first-child
+      text-align: left
+    display: inline-block
+    width: 50%
+    text-align: right
+    vertical-align: middle
+    > span
+      color: #939597
+      font-size: 8pt
+      line-height: 12pt
+      margin-right: 8px
+  button
+    &:first-child
+      height: 32px
+      width: 80px
+      background: #eceaeb
+      border: 1px solid #cbc9c7
+      color: #404041
+      margin-left: 0
+      &:hover
+        background: #fff
+    height: 32px
+    width: 120px
+    background: #467a95
+    color: #fff
+    border: 1px solid #467a95
+    margin-left: 8px
+    &:hover
+      background: #4f89a3
+
+#evcal
+  table-layout: fixed
+  width: 100%
+  margin: 0 auto
+  clear: both
+  border-collapse: collapse
+  margin-bottom: 12px
+  thead
+    line-height: 18px
+  th
+    text-align: center
+    font-weight: 400
+  td
+    width: 14.285%
+    background: #eceaeb
+    color: #939597
+    vertical-align: top
+    border: 1px solid #cbc9c7
+    outline: 0
+    &.mo_out
+      background: #e0e0df
+  tbody td > div
+    height: 100%
+    width: 100%
+    > div:first-child
+      margin: 0 auto
+      width: 95%
+      font-size: 8pt
+      padding-top: 3%
+      > span
+        display: none
+
+.calhead
+  width: 100%
+  margin: 0 auto
+  margin-bottom: 6px
+  > div
+    &:first-child
+      text-align: left
+      > div:first-child button
+        &:first-child
+          margin-right: 0
+        margin-right: 16px
+    width: 50%
+    text-align: right
+    margin-top: 6px
+    display: inline-block
+    vertical-align: top
+    > div
+      display: inline-block
+      vertical-align: top
+      margin-bottom: 8px
+    > span
+      margin-left: 16px
+  button, select
+    color: #404041
+
+.calfilter
+  margin-bottom: 8px
+  form
+    display: inline-block
+    vertical-align: middle
+    margin: 1px 0 0 4px
+    font-size: 9pt
+  select
+    &:first-child
+      margin-left: 0
+    margin-top: 1px
+    margin-left: 8px
+  span
+    vertical-align: middle
+
+.calsubmit
+  display: inline-block
+  vertical-align: middle
+  padding-right: 0 !important
+  margin-left: 16px
+  > button
+    float: right
+    clear: both
+    margin-right: 0 !important
+
+.calkey
+  display: none
+  margin: 0 0 4px
+  padding-bottom: 24px
+  > div
+    &:first-child
+      display: block
+      width: 100%
+      font-size: 10pt
+      font-weight: 700
+      margin: 0 0 8px 0
+    width: 100%
+    margin: 0 0 0 12px
+    text-align: left
+    > span
+      display: inline-block
+      width: 105px
+      font-size: 8pt
+      vertical-align: top
+      > span
+        display: inline-block
+        width: 8px
+        height: 8px
+        border-radius: 4px
+        margin: 0 4px 0 0
+
+.calflip
+  button
+    vertical-align: middle
+    > span
+      display: block
+      width: 12px
+      height: 16px
+      margin-left: 0
+      background: url(/images/layout/topbannersprite.png) no-repeat
+    &:first-child > span
+      background-position: -2px -606px
+    > span
+      background-position: -21px -606px
+  > span
+    margin: 0 16px
+    vertical-align: middle
+
+#evcal tfoot
+  display: none
+
+.sb-blck
+  margin: 0
+  overflow: hidden
+  text-overflow: ellipsis
+  > a:first-child
+    margin-top: 12px
+
+.block-blogs .sb-blck
+  margin-top: 12px
+  > a:first-child
+    margin-top: 0
+
+.block-staff .sb-blck > a:first-child, .block-community .sb-blck > a:first-child, .subheading148 .sb-blck > a:first-child, .subheading134 .sb-blck > a:first-child, .subheading95 .sb-blck > a:first-child
+  margin-top: 0
+
+.sb-blck > a
+  display: block !important
+  line-height: 17px
+
+.sidebar_block .sbcontents
+  text-align: left
+  border-left: 1px solid #cbc9c7
+  border-right: 1px solid #cbc9c7
+  background-color: #dbdad8
+  padding-left: 10px
+  padding-right: 10px
+  padding-bottom: 12px
+  overflow: hidden
+  text-overflow: ellipsis
+
+.subheading94
+  margin-left: 8px
+
+.sidebar_block .sbcontents
+  .sbtitle
+    padding: 12px 0 0 0 !important
+    clear: both
+  a
+    &:link
+      text-decoration: none
+      color: #404041
+      font-family: arial
+      font-size: 8pt
+    &:hover
+      text-decoration: none
+      color: #404041
+      font-family: arial
+      font-size: 8pt
+      text-decoration: underline
+  .sbtitle a
+    &:link, &:hover
+      color: #404041
+      font: bold 12px Arial
+
+#wikiform input[type="text"]
+  width: 75%
+
+.sidebar_end
+  width: 100%
+  border-top: 1px solid #cbc9c7
+  height: 2px
+
+.rsb-block
+  border: 1px solid #cbc9c7
+  background-color: #dbdad8
+  padding-bottom: 16px
+  cursor: default
+  a:first-child
+    margin: -1px -1px 16px -1px
+
+.lp-lgblock
+  margin: 0 auto
+  padding-bottom: 16px
+  width: 90%
+  font-size: 8pt
+  overflow: hidden
+  text-overflow: ellipsis
+  h2
+    margin: 0 0 4px 0
+    font-size: 8pt
+    text-align: left
+  > div
+    text-align: left
+    margin: 4px 0
+    white-space: nowrap
+    text-overflow: ellipsis
+  div.icon-container
+    margin-right: 4px
+  .ev
+    margin-right: 8px
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+#tlpronews a
+  width: 190px
+
+td.c
+  text-align: center
+  vertical-align: middle
+
+p
+  font: 10pt arial
+  color: #404041
+
+b.quote
+  font: 8pt arial
+  font-weight: bolder
+
+span.error
+  font: 10pt arial
+  color: red
+
+th
+  font-family: arial
+  font-size: 9pt
+  font-weight: bold
+  text-align: left
+
+td.hoofdmenu
+  width: 914px
+  vertical-align: bottom
+  padding-bottom: 4pt
+
+h3
+  font-family: arial
+  font-size: 10pt
+  font-style: normal
+  font-weight: lighter
+
+h4
+  font-family: arial
+  font-size: 10pt
+
+h5
+  font-family: arial
+  font-size: 11pt
+
+td
+  &.grijs
+    background-color: #d9dde0
+    padding: 5px
+    border-left: 1px solid #404041
+    border-right: 1px solid #404041
+    height: 600px
+  &.lichtb
+    background-color: #eceaeb
+  &.donkerb
+    background-color: #e0e0df
+  &.kopfb
+    background-color: #467a95
+    color: #fff
+    a
+      color: #fff
+    .createicon
+      position: relative
+      top: -2px
+      color: #404041
+
+.titelhigh
+  background-color: #467a95
+  color: #fff
+  cursor: default
+
+.titelbalk
+  color: #404041
+
+.titelhigh
+  .fpost-username > span
+    color: #fff !important
+  a, .submessage, .fpost-username
+    color: #fff
+  .userarrow
+    background-position: -27px -7px
+
+.newspost h1
+  font-family: 'open sans', sans-serif
+  font-weight: 600
+
+.titelhigh > div, .titelbalk > div
+  vertical-align: top
+
+.newspost > div
+  &:first-child
+    width: 80% !important
+  width: 20% !important
+  line-height: 29px
+
+.titelhigh > div:first-child, .titelbalk > div:first-child
+  width: 70%
+
+.titelhigh > div, .titelbalk > div
+  width: 30%
+  line-height: 29px
+
+footer .lighback
+  display: inline-block
+
+.solid footer
+  border-top: 1px solid #dedad9
+
+.titelhigh
+  h1
+    padding: 4px 0 0 8px
+    margin: 0
+  .subtitle
+    font-size: 8pt
+    line-height: 16px
+    padding: 0 0 8px 8px
+
+.author
+  &:first-child
+    padding-top: 13px
+  line-height: 16px
+  text-align: right
+  font-size: 8pt
+  > span
+    &:first-child
+      font-weight: 400
+      padding-right: 4px
+    font-weight: 700
+    padding-right: 8px
+
+.titelbalk a
+  color: #404041
+
+.titelhigh .submessage
+  color: #a1c2d3
+
+.lightback
+  margin: 8px 2px 4px 2px
+
+td
+  &.titelbalk
+    &.plus1
+      background-color: #f5e1ae
+    &.plus2
+      background-color: #f6dda1
+    &.plus3
+      background-color: #f9d78f
+    &.plus4
+      background-color: #fccd71
+    &.plus5
+      background-color: #ffc65c
+    &.plus10
+      background-color: #ffa500
+  &.replaylight
+    background-color: #c7d0dc
+    height: 25px
+    font-family: arial
+    font-size: 8pt
+  color: #404041
+  font-family: arial
+  font-size: 10pt
+  &.replaydark
+    background-color: #b3bfd1
+    height: 25px
+    font-family: arial
+    font-size: 8pt
+  &.caldate
+    font-weight: bold
+    padding-right: 4px
+    width: 37px
+
+hr
+  &.lichtb
+    background-color: #eceaeb
+    height: 1px
+  &.donkerb
+    background-color: #e0e0e0
+    height: 1px
+
+table
+  margin-left: 0
+  margin-top: 0
+  padding: 0
+  &.centered
+    margin-left: auto
+    margin-right: auto
+
+img
+  &.css-image
+    font-size: 8pt
+    color: #d00
+  &.sbimg
+    width: 180px
+    height: 25px
+
+#bold
+  font: 12pt arial
+  font-weight: bold
+
+#small
+  font: 6pt arial, courier
+  color: silver
+
+#forumtable
+  table-layout: fixed
+  width: 99%
+  margin: 0 auto
+  text-decoration: none
+  padding-top: 8px
+
+.fpost a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+#solid, .solid
+  position: relative
+  background-color: #eceaeb
+  border: 1px solid #cbc9c7
+  width: 100%
+  border-top: 0
+
+table#solid
+  table-layout: fixed
+  width: 99%
+  margin: 0 auto
+  border-top: 1px solid #cbc9c7
+  margin-bottom: 16px
+  > tbody > tr:first-child
+    line-height: 22px
+  img
+    max-width: 100%
+    height: auto
+
+.solid header > div
+  display: inline-block
+
+.thread_dock
+  cursor: default
+  td
+    font-size: 9pt
+  > td > div
+    padding: 8px 0
+
+.subs_link, .pagination, .thread_cta
+  display: inline-block
+  vertical-align: top
+
+.thread_dock
+  &.top .pagination
+    text-align: right
+  &.bot
+    td > div
+      margin-top: -8px
+    .pagination
+      text-align: right
+
+.thread_cta a:first-child
+  margin-right: 4px
+
+.modalwindow
+  background: #eceaeb
+  color: #404041
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
+  font-family: 'arial'
+  text-align: left
+  margin: 0
+  padding: 0
+  opacity: 1
+  z-index: 2
+  border-radius: 1px
+  -webkit-background-clip: padding-box
+  -moz-background-clip: padding
+  background-clip: padding-box
+  cursor: default
+
+.pagination a
+  display: inline-block
+  vertical-align: 1px
+  font-size: 8pt
+  text-decoration: none !important
+  height: 19px
+  line-height: 19px
+  padding: 0 7px
+  border: 1px solid #cbc9c7
+  background: #eceaeb
+  border-radius: 1px
+
+.pg_local a
+  margin-left: -1px
+
+.pagination
+  a
+    &:hover
+      background: #f6f7f7
+    &.active
+      background: #f6f7f7
+      font-weight: 700
+  >
+    div
+      display: inline-block
+      position: relative
+      > span
+        cursor: pointer
+    b
+      padding: 0 2px
+    div
+      display: inline-block
+      vertical-align: middle
+      position: relative
+      top: -1px
+      height: 19px
+      line-height: 19px
+      padding: 0 6px
+      background: #eceaeb
+      border: 1px solid #cbc9c7
+      text-decoration: none !important
+      &:hover
+        background: #f6f7f7
+        border: 1px solid #cbc9c7
+        text-decoration: none
+
+.pg_local
+  margin-left: 1px
+
+.pagination
+  > div
+    .modalwindow
+      position: absolute
+      bottom: -37px
+      right: 70000px
+    &:focus .modalwindow
+      position: absolute
+      bottom: -37px
+      right: -70px
+      width: 184px
+      text-align: center
+  .modalwindow
+    input
+      border: 1px solid #ccc
+      height: 18px
+      width: 36px
+      margin: 0 8px
+      text-align: center
+    .mw-main
+      div
+        display: inline-block
+        margin: 6px 0
+        line-height: 1em
+        vertical-align: middle
+      button
+        line-height: 20px
+        padding: 1px 8px
+        text-align: center
+        background: #467a95
+        border: 0
+        color: #fff
+        cursor: pointer
+        &:hover
+          background: #4f89a3
+
+.bkmrk
+  display: inline-block
+  vertical-align: middle
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  background-position: 6px -101px
+  width: 22px
+  height: 18px
+
+.bkmrk-cont:hover .bkmrk, .bkmrk.subbed
+  background-position: -12px -101px
+
+.commbubble, .replyarrow
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  top: -2px
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  width: 17px
+  height: 14px
+  margin-right: 4px
+
+.commbubble
+  background-position: 3px -547px
+
+.replyarrow
+  background-position: 2px -526px
+
+.pg_bk, .pg_fw
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  top: -1px
+  background: url(/images/layout/topbannersprite.png) no-repeat #eceaeb
+  width: 19px
+  height: 19px
+  border: 1px solid #cbc9c7
+  cursor: pointer
+  border-radius: 1px
+
+.pg_bk
+  background-position: 2px -605px
+
+.pg_fw
+  background-position: -18px -605px
+  margin-left: -1px
+
+.pg_bk:hover
+  background: url(/images/layout/topbannersprite.png) no-repeat #f6f7f7
+  background-position: 2px -605px
+  border: 1px solid #cbc9c7
+
+.pg_fw:hover
+  background: url(/images/layout/topbannersprite.png) no-repeat #f6f7f7
+  background-position: -18px -605px
+  border: 1px solid #cbc9c7
+
+.lightborder
+  border: 1px solid #cbc9c7
+
+.gold
+  border: 1px solid #daa590
+
+#solid2
+  border: 1px solid #404041
+
+#forum
+  font-family: arial
+  font-size: 10pt
+  color: #b3bfd1
+
+#forumindex, .forumindex
+  font-family: arial
+  font-size: 10pt
+  color: #404041
+
+#forummsginfo, .forummsginfo
+  font-family: arial
+  font-size: 9pt
+  color: #21353d
+  text-decoration: none
+  padding-left: 5px
+
+#reply
+  .forummsginfo
+    color: #404041
+    padding-left: 10px
+    cursor: default
+  border-top: 1px solid #cbc9c7
+
+#main-content
+  h2 > a.forummsginfo
+    color: #467a95
+  > hr
+    border-top: 1px solid #cdc9be
+    color: #c6c4c5
+
+.fpost
+  position: relative
+  padding-bottom: 16px
+
+.fpost-username:hover
+  border: 0
+  outline: 0
+
+.titelhigh .fpost-username .tooltip
+  position: absolute
+  top: 0
+  left: -12000px
+  background: #467a95
+  min-width: 178px
+  height: 26px
+  padding-left: 4px
+  font-size: 8pt
+  font-weight: 400
+  white-space: nowrap
+  z-index: 10
+
+.titelbalk .fpost-username .tooltip
+  position: absolute
+  top: 0
+  left: -12000px
+  background: #eceaeb
+  min-width: 178px
+  height: 26px
+  padding-left: 4px
+  font-size: 8pt
+  font-weight: 400
+  white-space: nowrap
+  z-index: 10
+
+.classicon
+  outline: 0
+  &:hover
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.35)
+  .tooltip
+    position: absolute
+    top: 10px
+    left: -12000px
+    background: #232728
+    padding-left: 4px
+    font-size: 8pt
+    font-weight: 400
+    white-space: nowrap
+    z-index: 1000
+    opacity: 0
+  &:hover .tooltip
+    animation: .4s inventory
+    -webkit-animation: .4s inventory
+    animation-fill-mode: forwards
+    -webkit-animation-fill-mode: forwards
+    top: 30px
+    left: 0
+    opacity: 1
+
+@keyframes inventory
+  0%
+    top: -500px
+    opacity: 0
+
+  60%
+    top: 10px
+    opacity: 0
+
+  100%
+    top: 30px
+    opacity: 1
+
+
+@-webkit-keyframes inventory
+  0%
+    top: -500px
+    opacity: 0
+
+  60%
+    top: 10px
+    opacity: 0
+
+  100%
+    top: 30px
+    opacity: 1
+
+
+.tooltip .tt-tail
+  left: 8px
+
+.tt-tail
+  background: url(/images/layout/topbannersprite.png)
+  background-position: -4px -269px
+  position: absolute
+  top: -8px
+  left: 16px
+  width: 20px
+  height: 8px
+
+.tooltip .hitbox
+  position: absolute
+  left: 0
+  top: -29px
+  width: 30%
+  height: 30px
+  z-index: -1
+
+.inventory, .buymenu
+  display: inline-block
+  vertical-align: top
+  margin: 4px 1px
+
+.inventory
+  width: 132px
+  white-space: normal
+  > div
+    display: inline-block
+    vertical-align: top
+    width: 40px
+    height: 30px
+    background: #101011
+    margin: 2px 4px 2px 0
+
+.buymenu
+  padding-left: 8px
+  width: 82px
+  margin-right: 5px
+  > div
+    line-height: 36px
+    vertical-align: middle
+    > span
+      color: #eceaeb
+
+.goldico
+  display: inline-block
+  vertical-align: middle
+  background: url(/static/images/layout/topbannersprite.png) no-repeat
+
+.tooltip .goldico
+  background-position: 0 -497px
+  width: 25px
+  height: 16px
+  margin-right: 4px
+
+.buyitem
+  display: block
+  color: #eceaeb !important
+  border: 0
+  padding: 5px 4px
+  font-size: 8pt
+  cursor: pointer
+  line-height: 17px
+  margin-top: 4px
+  text-align: center
+  &:hover
+    text-decoration: none !important
+
+#smallgold
+  background-position: -35px -501px
+  width: 13px
+  height: 8px
+
+#userpanel .goldcount a
+  color: gold !important
+  &:hover
+    color: gold !important
+
+#it-store
+  margin: 0 auto
+  width: 99%
+  background: #232728
+  color: #eceaeb
+  margin-bottom: 8px
+  .introdiv
+    font-size: 8pt
+    line-height: 16px
+    color: #949597
+    margin-left: 2%
+    padding: 8px 0
+    margin-right: 2%
+  h1
+    margin: 0 0 8px 0
+    font-family: 'open sans', sans-serif
+    font-size: 21px
+    line-height: 30px
+    > span
+      &:first-child
+        width: 70%
+        text-align: left
+      display: inline-block
+      vertical-align: top
+      width: 30%
+      text-align: right
+      > span
+        margin-left: 0
+
+.is-head
+  margin: 0 auto
+  width: 96%
+  border-radius: 1px
+  padding-bottom: 16px
+  > div
+    &:first-child
+      margin: 0 auto
+      width: 100%
+      text-align: center
+    margin: 0 auto
+    display: inline-block
+    vertical-align: top
+    width: 30%
+    text-align: right
+  .sf-item
+    margin-right: 6px
+  .goldico
+    background-position: 0 -495px
+    width: 32px
+    height: 24px
+    margin-right: 4px
+
+#it-store a
+  color: #eceaeb
+  text-decoration: none
+
+.sf-tabs
+  margin-bottom: 16px
+
+.itemcategory
+  display: inline-block
+  position: relative
+  top: -1px
+  width: auto
+  height: 33px
+  line-height: 33px
+  padding: 0 32px
+  text-align: center
+  border-bottom: 1px solid #101010
+  -webkit-transition: border 200ms ease-out
+  -moz-transition: border 200ms ease-out
+  -o-transition: border 200ms ease-out
+  transition: border 200ms ease-out
+  cursor: pointer
+  &.active, &:hover
+    border-bottom: 1px solid #467a95
+
+.sf-filter
+  text-align: right
+  line-height: 25px
+  margin-bottom: 8px
+  > div
+    text-align: right
+  span
+    color: #606061
+  > div > div
+    display: inline-block
+    vertical-align: middle
+    position: relative
+    overflow: hidden
+    margin-left: 1%
+  input
+    width: 77%
+    height: 18px
+    margin: 1px 1% 0 0
+    background: #1b1e1f
+    color: white
+    border: 0
+    padding: 4px 0 4px 8px
+    vertical-align: middle
+  select
+    background: #1b1e1f
+    color: white
+    border: 0
+    padding: 4px 0 4px 8px
+    vertical-align: middle
+    width: 160px
+    margin-right: -18px
+    outline: 0
+  .selectarrow
+    position: absolute
+    top: 5px
+    right: 4px
+    background: url(/images/layout/topbannersprite.png) no-repeat
+    background-position: -3px -63px
+    width: 16px
+    height: 16px
+    z-index: 1
+
+#storefront
+  margin: 0 auto
+  width: 96%
+  border-radius: 1px
+  padding-bottom: 36px
+
+.sf-block
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  width: 31.3%
+  height: 32px
+  color: #d1871a
+  padding: 6px
+  text-align: left
+  outline: 0
+  &:hover
+    vertical-align: top
+    background: #3a3a3a
+
+#sfi1, #sfi2, #sfi3, #sfi4, #sfi5, #sf6
+  position: absolute
+  left: -12000px
+
+.sf-block input[type="checkbox"]
+  + label
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+  &:checked + label
+    background: rgba(70, 122, 149, 0.3)
+
+.sf-item
+  display: inline-block
+  vertical-align: top
+  width: 40px
+  height: 30px
+  background: #101011
+  margin-bottom: 0
+
+.sf-cost
+  display: inline-block
+  position: relative
+  vertical-align: top
+  height: 32px
+  margin-left: 5.2%
+  font-size: 8pt
+  > div:first-child
+    font-size: 9pt
+    color: #eceaeb
+  .goldico
+    background-position: -34px -500px
+    width: 16px
+    height: 12px
+    margin-right: 4px
+  button
+    position: absolute
+    right: 12000px
+    width: 96%
+    height: 29px
+    font-weight: 300
+    color: #eceaeb
+    border: 0
+    cursor: pointer
+    &:hover
+      background: #467a95
+    &:active
+      background: #d1871a
+
+.sf-block:hover .sf-cost button
+  bottom: 2px
+  right: 8px
+
+#is-checkout
+  text-align: left
+  margin: 0 1%
+  padding: 16px 0
+  > div > h1
+    text-align: right
+    margin: 8px 0 16px 0
+
+.sf-controls
+  text-align: right
+  padding: 24px 0
+
+#is-checkout .sf-controls
+  padding: 0 0 24px 0
+
+.sf-controls button
+  &:first-child
+    width: 100px
+    margin-right: 8px
+    background: #303031
+    &:hover
+      background: #404041
+  height: 36px
+  width: 160px
+  border: 0
+  color: #eceaeb
+
+.buyitem, .sf-cost button, .sf-controls button
+  background: #d46795
+  background: -moz-linear-gradient(top, #467a95 0, #284855 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #467a95), color-stop(100%, #284855))
+  background: -webkit-linear-gradient(top, #467a95 0, #284855 100%)
+  background: -o-linear-gradient(top, #467a95 0, #284855 100%)
+  background: -ms-linear-gradient(top, #467a95 0, #284855 100%)
+  background: linear-gradient(to bottom, #467a95 0, #284855 100%)
+  /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#467A95', endColorstr='#284855', GradientType=0)
+
+.buyitem:hover, .sf-cost button:hover, .sf-controls button:hover
+  background: #467a95
+
+.buyitem:active, .sf-cost button:active, .sf-controls button:active
+  background: #284855
+  background: -moz-linear-gradient(top, #284855 0, #467a95 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #284855), color-stop(100%, #467a95))
+  background: -webkit-linear-gradient(top, #284855 0, #467a95 100%)
+  background: -o-linear-gradient(top, #284855 0, #467a95 100%)
+  background: -ms-linear-gradient(top, #284855 0, #467a95 100%)
+  background: linear-gradient(to bottom, #284855 0, #467a95 100%)
+  /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#284855', endColorstr='#467A95', GradientType=0)
+
+.tooltip
+  cursor: default
+  > .tt-userinfo:first-child
+    padding-left: 4px
+
+.profile, .invntry
+  display: inline-block
+  vertical-align: top
+
+.fpost-lastedit
+  &:hover .tooltip
+    top: -4px
+    right: 16px
+  .tooltip
+    position: absolute
+    top: -4px
+    right: 9000px
+    font-size: 8pt
+    font-weight: 400
+    white-space: nowrap
+    z-index: 100
+    transition-delay: 200ms
+    -webkit-transition-delay: 200ms
+
+.tt-userinfo
+  padding-right: 8px
+  font-size: 8pt
+  line-height: 27px
+  vertical-align: middle
+
+a.tt-userinfo
+  cursor: pointer
+
+.titelhigh .tooltip span.tt-userinfo
+  vertical-align: middle
+  color: #a1c2d3
+
+.titelbalk .tooltip span.tt-userinfo
+  vertical-align: middle
+  color: #939597
+
+.titelhigh .fpost-lastedit
+  display: inline-block
+  position: relative
+  top: 0
+  left: 0
+  width: 22px
+  height: 22px
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  background-position: 2px -291px
+  vertical-align: middle
+
+.titelbalk .fpost-lastedit
+  display: inline-block
+  position: relative
+  top: 0
+  left: 0
+  width: 22px
+  height: 22px
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  background-position: -28px -291px
+  vertical-align: middle
+
+.fpost-lastedit .submessage
+  color: #939597
+
+.fpost > div:hover .postaction
+  color: #404041
+
+.postaction .submessage, .fpost-actionable .submessage
+  color: #a0a1a3
+  outline: 0
+
+.postaction .submessage:hover
+  color: #404041
+
+.fpost-actionable
+  position: relative
+  min-height: 8px
+  padding-left: 4px
+  text-align: left
+  cursor: default
+  .submessage
+    display: inline-block
+    padding: 1px 4px 0 4px
+
+.forumsig
+  .submessage
+    padding-left: 8px
+  > div
+    padding: 3px 8px
+
+.contrib
+  display: inline-block
+  position: relative
+  padding: 0 4px 1px 0
+
+.userinfo
+  display: inline-block
+  position: relative
+  line-height: 16px
+
+.contrib
+  .lpspr, > a > img
+    vertical-align: middle
+
+#tb_msgnote
+  margin: 0 -6px
+  height: 15px
+  padding: 3px
+  font-size: 12px
+  margin-top: -1px
+  margin-bottom: 2px
+  text-align: center
+
+#mc_modnote
+  padding: 6px
+  color: #404041
+  margin: 10px 0
+  position: relative
+  top: 0
+  left: 1px
+  border: 1px solid #b3b2b2
+  background-color: #c4c3c3
+
+#tb_msgnote a, #mc_modnote a
+  text-decoration: underline
+
+#mc_publicnote
+  padding: 6px 6px 9px
+  color: #404041
+  background: #f6f7f7
+  margin-top: 2px
+  border: 1px solid #467a95
+  position: relative
+  left: 1px
+  a
+    color: #467a95
+
+.pnt01
+  background-repeat: no-repeat
+  background-position: right bottom
+
+.userarrow
+  display: inline-block
+  margin-left: 4px
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  background-position: -41px -37px
+  vertical-align: middle
+  height: 10px
+  width: 10px
+
+.fpost-username
+  &:hover .userarrow
+    background-position: 1px 1px
+  display: inline-block
+  position: relative
+  min-width: 70px
+  margin-left: 10px
+  height: 29px
+  line-height: 29px
+  font-weight: 700
+  color: #404041
+  cursor: pointer
+  outline: 0
+
+.admin
+  color: #6c0000
+  font-weight: bold
+
+.titelbalk .fpost-userinfo
+  display: inline-block
+  position: relative
+  color: #939597
+  cursor: default
+
+.titelhigh .fpost-userinfo
+  display: inline-block
+  position: relative
+  cursor: default
+  color: #a1c2d3
+
+.fpost-postinfo
+  position: relative
+  top: -1px
+  padding: 0 8px 0 16px
+  color: #939597
+  cursor: default
+  z-index: 1
+  text-align: right
+  a.submessage
+    color: #fff
+
+.titelhigh .fpost-postinfo
+  color: #a1c2d3
+  text-align: right
+
+.modaction
+  display: inline-block
+
+.useraction
+  display: inline-block
+  padding-right: 16px
+
+#forummsginfoa, .forummsginfoa
+  font-family: arial
+  font-size: 9pt
+  color: #fff
+
+td.titelbalk >
+  #forummsginfo, .forummsginfo
+    color: #939597
+
+b.forummsginfo
+  font-family: arial
+  font-size: 9pt
+  color: #6c0000
+  font-weight: bold
+
+.forummsginfo > div > strong
+  margin-right: 16px
+
+#forummsg, .forummsg
+  font-family: arial
+  font-size: 10pt
+
+#forummsg
+  overflow: hidden
+  margin: 0 auto
+  width: 98%
+  padding-bottom: 8px
+  img
+    max-width: 100%
+    height: auto
+
+.titelbalk .forummmsg
+  color: #404041
+
+#submessage, .submessage
+  font-family: arial
+  font-size: 8pt
+
+.titelbalk
+  #submessage, .submessage
+    display: inline-block
+    font-family: arial
+    font-size: 8pt
+    margin-left: 4px
+
+.titelhigh
+  #submessage, .submessage
+    display: inline-block
+    font-family: arial
+    font-size: 8pt
+    margin-left: 4px
+  a
+    color: #fff
+    &:hover, &:visited
+      color: #fff
+
+.submessage a
+  font-family: arial
+  font-size: 8pt
+  color: #fff
+
+.pm-border span.submessage a, .submessage label
+  color: #404041
+
+#shortmenu, .shortmenu
+  font-family: arial
+  font-size: 10pt
+  color: #404041
+  font-weight: lighter
+
+#createtopic
+  position: absolute
+  top: 206px
+  left: 350px
+  z-index: 2
+
+#positie
+  position: relative
+  left: 50%
+  z-index: 2
+
+div.positietitel
+  position: relative
+  left: 6ex
+  top: 9ex
+  width: 500px
+  height: 100px
+  margin-left: -250px
+  margin-top: -50px
+  font-family: arial
+  font-size: 11pt
+  color: #1b215f
+
+#shortmenu
+  font-family: arial
+  font-size: 9pt
+  color: #1b215f
+
+.forumsig
+  &:first-child
+    text-align: left
+    width: 80%
+  display: inline-block
+  vertical-align: top
+  color: #939597
+  font-family: arial
+  font-size: 8pt
+  text-align: right
+  width: 20%
+  min-height: 22px
+
+.quote
+  margin-right: 8px
+  margin-left: 22px
+  margin-top: 8px
+  margin-bottom: 8px
+  color: #58585b
+  padding: 8px
+  font: 8pt arial
+  box-shadow: -4px 0 #99b2bf
+  &:hover
+    box-shadow: -4px 0 #467a95
+  > .quote
+    margin-left: 12px
+    box-shadow: -2px 0 #99b2bf
+
+.sqr > .quote
+  margin-left: 12px
+  box-shadow: -2px 0 #99b2bf
+
+.quote > .quote:hover, .sqr > .quote:hover
+  margin-left: 12px
+  box-shadow: -2px 0 #467a95
+
+.quote hr
+  height: 1px
+  border-left: none
+  color: #635840
+  border-top: 1px solid #cbc9c7
+
+span.overlib
+  font-size: 9pt
+  color: #fff
+
+.loggedin
+  display: block
+  margin-top: 12px
+  margin-left: 16px
+  font-size: 9pt
+  color: #fff
+  a
+    &:link, &:hover, &:visited
+      color: #fff
+  .newpm
+    font-weight: bold
+    color: yellow
+    a
+      &:link, &:hover, &:visited
+        color: yellow
+
+a.openlb:link, .aopenlb:hover, a.openlb:visited
+  font-weight: bold
+  color: yellow
+
+.topright
+  display: block
+  margin-top: 12px
+  margin-right: 12px
+  font-size: 9pt
+  color: #404041
+  text-align: right
+
+div.centered
+  position: relative
+  left: 56ex
+  top: 9ex
+  width: 500px
+  height: 55px
+  margin-left: -250px
+  margin-top: -95px
+
+#rightmenu, .rightmenu
+  text-decoration: none
+  font-family: arial
+  font-size: 8pt
+
+#main-content
+  #rightmenu, .rightmenu
+    text-decoration: none
+    font-family: arial
+    font-size: 8pt
+
+#newstitle, .newstitle
+  font-family: arial
+  font-size: 11pt
+  color: #0d124b
+  font-weight: bold
+
+#newsinfo, .newsinfo
+  font-family: arial
+  font-size: 9pt
+  color: #1b215f
+  font-weight: bold
+
+#newspostimg
+  display: inline-block
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  width: 45px
+  height: 45px
+  background-position: -18px -523px
+  float: left
+  margin: 6px 8px 0 8px
+
+a
+  color: #404041
+
+#userpanel li > a:hover, .top_menu a:hover
+  color: #eceaeb !important
+
+.smallnav a:hover
+  color: #eceaeb !important
+  background: #4d5d64
+
+a
+  &:hover
+    text-decoration: underline
+    color: #404041
+  &.links
+    &:link, &:visited
+      text-decoration: underline
+      font-family: arial
+      font-size: 10pt
+    &:hover
+      text-decoration: none
+      color: #404041
+      font-family: arial
+      font-size: 10pt
+  &.nounderline
+    &:link
+      text-decoration: none
+      color: #404041
+      font-family: arial
+      font-size: 8pt
+    &:hover
+      text-decoration: underline
+      color: #404041
+      font-family: arial
+      font-size: 8pt
+  &.createicon
+    div
+      position: relative
+      top: 2px
+    &:link
+      background-color: #fff
+      border: 1px solid #284855
+      color: #404041 !important
+      padding: 5px 12px 5px 12px
+      font-family: arial
+      font-size: 8pt
+      text-decoration: none
+      margin-left: 60px
+    &:visited
+      font-family: arial
+      font-size: 8pt
+      text-decoration: none
+      margin-left: 60px
+    &:hover
+      color: #fff
+      font-family: arial
+      font-size: 8pt
+      text-decoration: none
+      color: #404041
+      margin-left: 60px
+  &.pagetitle
+    &:link
+      text-decoration: none
+      color: #13175e
+      font-size: 10pt
+      font-family: Verdana, arial
+      font-weight: bold
+    &:visited
+      text-decoration: none
+      font-family: Verdana, arial
+      font-size: 10pt
+      font-weight: bold
+    &:hover
+      text-decoration: underline
+      color: #13175e
+      font-family: Verdana, arial
+      font-size: 10pt
+      font-weight: bold
+  &.rightmenu
+    text-decoration: none
+    font-family: arial
+    font-size: 8pt
+    &:link, &:visited
+      text-decoration: none
+      font-family: arial
+      font-size: 8pt
+    &:hover
+      text-decoration: underline
+      font-family: arial
+      font-size: 8pt
+
+#main-content
+  a.rightmenu
+    text-decoration: none
+    font-family: arial
+    font-size: 8pt
+    &:link, &:visited
+      text-decoration: none
+      font-family: arial
+      font-size: 8pt
+    &:hover
+      text-decoration: underline
+      font-family: arial
+      font-size: 8pt
+  img
+    max-width: 100%
+    height: auto
+
+a.clean
+  text-decoration: none
+  &:visited
+    text-decoration: none
+  &:hover
+    text-decoration: underline
+
+#tabs
+  position: relative
+  width: 100%
+  height: 3em
+  margin: 0
+  margin-left: 18px
+  padding: 0
+  width: 550px
+  ul#primary
+    margin: 0
+    padding: 0
+    position: absolute
+    bottom: -1px
+    width: 45em
+    li
+      display: inline
+      list-style: none
+    a, span, a.current
+      width: 8em
+      display: block
+      float: left
+      padding: 4px 0
+      margin: 1px 5px 0 0
+      text-align: center
+      font-family: tahoma, verdana, sans-serif
+      font-size: 85%
+      text-decoration: none
+      color: #333
+    span
+      border-bottom: 0
+      background: #b3bfd1
+      padding-bottom: 6px
+      margin-top: 0
+    a
+      &.current
+        border-bottom: 0
+        background: #b3bfd1
+        padding-bottom: 6px
+        margin-top: 0
+        &:hover
+          border-bottom: 0
+          background: #b3bfd1
+          padding-bottom: 6px
+          margin-top: 0
+      background: #eee
+      border-bottom: 0
+      &:hover
+        margin-top: 0
+        border-color: #000
+        background: #b3bfd1
+        padding-bottom: 5px
+
+.roundcont
+  width: 735px
+  margin-left: 5px
+  background-color: #b3bfd1
+  color: #000
+  p
+    color: #232f41
+    margin: 0 10px
+  * a
+    color: #232f41
+    &:visited
+      color: #232f41
+
+.roundtop
+  background: url(/tlpd/images/tr.gif) no-repeat top right
+
+.roundbottom
+  background: url(/tlpd/images/br.gif) no-repeat top right
+
+img.corner
+  width: 15px
+  height: 15px
+  border: 0
+  display: block !important
+
+#tabulator_div, .tblt_div
+  margin-left: 10px
+  margin-right: 10px
+
+.srch_hd
+  background-color: #467a95
+  font: bold 10pt Arial
+  color: #fff
+  padding: 6px
+
+.srch_hd_box
+  width: 100%
+  border: 1px solid #cbc9c7
+
+.res1, .srch_res1
+  font: 8pt Arial
+  background-color: #eceaeb
+
+.res2, .srch_res2
+  font: 8pt Arial
+  background-color: #e0e0df
+
+.srch_frmname
+  padding-left: 10px
+  background-color: #ebeff2
+  font: bold 10pt Arial
+
+A
+  &.sl
+    font: 9pt Arial
+    color: #404041
+  &.sls
+    font: 8pt Arial
+    color: #404041
+
+.greenbox
+  border: 1px solid black
+  background-color: #9d9
+  padding: 2px
+  text-align: center
+  font-size: 12px
+  font-weight: bold
+
+#loginform
+  span
+    font-size: 11px
+    text-align: left
+  margin: 0
+  padding: 0
+  background: url(/mirror/layout/formbg.png) top left repeat-x
+  height: 25px
+  position: relative
+  top: 0
+  left: 0
+  width: 367px
+
+#username_container
+  position: absolute
+  top: 0
+  left: 0
+  label
+    position: absolute
+    top: 5px
+    left: 5px
+    color: #bdcfe7
+    font-size: 11px
+  input
+    position: absolute
+    top: 2px
+    left: 60px
+
+#password_container
+  position: absolute
+  top: 0
+  left: 180px
+  label
+    position: absolute
+    top: 5px
+    left: 5px
+    color: #bdcfe7
+    font-size: 11px
+  input
+    position: absolute
+    top: 2px
+    left: 60px
+
+#loginform input.text
+  width: 112px
+  padding: 0
+  background: #fff
+  border: solid 1px #bdcfe7
+  height: 18px
+  line-height: 18px
+  font-size: 12px
+
+#loginSubmit
+  display: block
+  position: absolute
+  width: 75px
+  height: 25px
+  padding: 0
+  margin: 0
+  border: 0
+  background: url(/mirror/layout/loginbutton.png) top left no-repeat
+  left: 367px
+  top: 0
+  text-indent: -9999px
+  overflow: hidden
+  cursor: pointer
+
+#login_extras
+  position: absolute
+  top: 0
+  left: 442px
+  width: 136px
+  background: url(/mirror/layout/extrabg.png) top left repeat-x
+  height: 16px
+  label
+    font-size: 11px
+    color: #fff
+    position: absolute
+    top: 0
+    left: 25px
+    height: 16px
+    color: #bdcfe7
+  input
+    position: absolute
+    margin: 0
+    top: 1px
+    padding: 0
+    left: 1px
+  span
+    position: absolute
+    top: 0
+    left: 90px
+    background: url(/mirror/layout/extraright.png) top right no-repeat
+    height: 16px
+    padding-right: 23px
+    a
+      color: #fff
+      text-decoration: underline
+      &:visited, &:hover
+        color: #fff
+        text-decoration: underline
+
+div
+  &.tlpdrank_left
+    overflow: hidden
+    font-size: 8pt
+    width: 95px
+    float: left
+    white-space: nowrap
+    margin-top: 5px
+    margin-right: 5px
+  &.tlpdrank_right
+    overflow: hidden
+    font-size: 8pt
+    width: 95px
+    float: left
+    white-space: nowrap
+    margin-top: 5px
+
+#timebar
+  color: #bac8d2
+  text-shadow: 0 0 3px #404041
+
+#more_streams
+  display: none
+  padding-left: 7px
+
+.spr2
+  background-image: url(/mirror/layout/SpecialSprite5.png)
+  background-color: transparent
+  background-repeat: no-repeat
+  width: 219px
+  height: 25px
+
+#nav_tlpd
+  background-position: -657px 0
+
+#nav_wiki
+  background-position: -438px 0
+
+#nav_streams
+  background-position: -219px 0
+
+#nav_calendar
+  background-position: 0 0
+
+.block-games
+  .subheading79, .subheading80
+    padding-left: 6px
+
+.sb-forum-toggle
+  width: 7px
+  height: 6px
+  float: right
+  padding: 4px
+  margin-right: -6px
+  border: 1px solid transparent
+  &:hover
+    background-color: #eceaeb
+    border: 1px solid #cbc9c7
+
+.sidebar_block
+  a
+    display: inline-block
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+  .sbtitle a
+    display: inline
+  .block-news_left_mid a
+    width: 86%
+    &.comments
+      float: right
+      clear: both
+      font-size: 10px
+      width: auto
+      display: inline
+      color: #7c7a6f
+      text-shadow: 1px 1px rgba(255, 255, 255, 0.35)
+
+a.block_header
+  display: block
+  height: 23px
+  background-color: #284855
+  padding-top: 2px
+  color: #fff
+  font-size: 15px
+  font-weight: 600
+  text-decoration: none
+  font-family: "Open Sans", "Arial"
+
+#streams_content
+  padding: 8px 0 10px 10px
+  cursor: default
+
+span.viewers
+  float: right
+  clear: both
+  font-size: 10px
+  width: auto
+  display: inline
+  color: #7c7a6f
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.35)
+  padding-right: 8px
+
+#sb_sponsored a
+  width: 190px
+
+.lpspr
+  background-image: url(/images/forum/wiki_sprite.png)
+  background-color: transparent
+  background-repeat: no-repeat
+  display: inline-block
+  margin: 0
+
+.lpcoin-bronze1
+  background-position: 0 0
+  width: 18px
+  height: 19px
+
+.lpcoin-bronze2
+  background-position: 0 -24px
+  width: 31px
+  height: 19px
+
+.lpcoin-bronze3
+  background-position: 0 -48px
+  width: 31px
+  height: 19px
+
+.lpcoin-bronze4
+  background-position: 0 -72px
+  width: 31px
+  height: 21px
+
+.lpcoin-gold1
+  background-position: 0 -98px
+  width: 18px
+  height: 19px
+
+.lpcoin-gold2
+  background-position: 0 -122px
+  width: 29px
+  height: 21px
+
+.lpcoin-gold3
+  background-position: 0 -148px
+  width: 29px
+  height: 21px
+
+.lpcoin-gold4
+  background-position: 0 -174px
+  width: 29px
+  height: 21px
+
+.lpcoin-silver1
+  background-position: 0 -200px
+  width: 18px
+  height: 19px
+
+.lpcoin-silver2
+  background-position: 0 -224px
+  width: 31px
+  height: 19px
+
+.lpcoin-silver3
+  background-position: 0 -248px
+  width: 31px
+  height: 19px
+
+.lpcoin-silver4
+  background-position: 0 -272px
+  width: 31px
+  height: 21px
+
+.countdown_rtl
+  direction: rtl
+
+.conutdown_row
+  clear: both
+  width: 100%
+  padding: 0
+  text-align: center
+
+.countdown_show1 .countdown_section
+  width: 98%
+
+.countdown_show2 .countdown_section
+  width: 48%
+
+.countdown_show3 .countdown_section
+  width: 32.5%
+
+.countdown_show4 .countdown_section
+  width: 24%
+
+.countdown_show5 .countdown_section
+  width: 19.5%
+
+.countdown_show6 .countdown_section
+  width: 16.25%
+
+.countdown_show7 .countdown_section
+  width: 14%
+
+.countdown_section
+  display: block
+  float: left
+  font-size: 6pt
+  text-align: center
+
+.countdown_amount
+  font-size: 9pt
+
+.countdown_descr
+  display: block
+  width: 100%
+
+#sidebar_dimmer
+  display: none
+  height: 100%
+  width: 100%
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 100 !important
+  background-color: black
+  filter: alpha(opacity = 75)
+  -khtml-opacity: .75
+  -moz-opacity: .75
+  opacity: 0.75
+
+#sidebar_options
+  display: none
+  z-index: 101
+  position: fixed
+  top: 12.5%
+  left: 50%
+  margin-left: -336px
+  width: 600px
+  overflow-y: auto
+  background-color: #EEE
+  color: #333
+  border: 1px solid black
+  padding: 36px
+  text-align: left
+
+#calendar_refresh_icon
+  cursor: pointer
+  display: none
+  top: 28px
+  right: 1px
+  margin-right: 5px
+  opacity: .5
+  width: 11px
+  height: 11px
+  position: absolute
+
+#streams_refresh_icon
+  cursor: pointer
+  display: none
+  float: right
+  margin-right: 5px
+  opacity: .5
+  width: 11px
+  height: 11px
+
+.ev_wikilink
+  float: left
+  margin-left: -8px
+  margin-right: 4px
+  margin-top: 2px
+
+.ev_nolink
+  float: left
+  margin-left: -8px
+  margin-right: 4px
+  margin-top: -1px
+  width: 12px
+
+.upcoming_time
+  font-weight: bold
+  font-size: 8pt
+  width: 45px
+  white-space: nowrap
+  text-align: right
+
+.upcoming_text
+  white-space: nowrap
+
+table.upcoming
+  table-layout: fixed
+  width: 100%
+  td
+    font-size: 8pt
+    text-indent: 8px
+
+#loginbox
+  color: #fff
+  font-size: 8pt
+  z-index: 101
+  form > button
+    float: left
+    margin-right: 10px
+  div:nth-child(3)
+    margin-top: 4px
+  a
+    color: #fff
+    text-decoration: none
+    &:hover
+      color: #fff
+  input
+    background: rgba(0, 0, 0, 0.25)
+    margin: 2px
+    border: 1px solid rgba(255, 255, 255, 0.18)
+    padding: 2px
+    color: #bac8d2
+    &.text
+      width: 140px
+  td
+    font-size: 11px
+    color: #bac8d2
+
+#makeAcookie
+  margin: 0 0 0 2px !important
+  padding: 0 !important
+  vertical-align: middle
+
+#cornerright
+  position: absolute
+  top: -1px
+  right: -12px
+  height: 12px
+  width: 12px
+  display: block
+  background: url(/mirror/layout/login_corners.png) 12px 0
+
+#cornerleft
+  position: absolute
+  top: -1px
+  left: -12px
+  height: 12px
+  width: 12px
+  display: block
+  background: url(/mirror/layout/login_corners.png) 0 0
+
+#loginlink
+  float: left
+  font-size: 11px
+  margin-top: 2px
+  margin-right: 16px
+
+#loginlinktext
+  color: #fff
+  font-size: 11px
+  font-weight: bold
+  text-decoration: none
+
+#loginbox_dimmer
+  display: none
+  height: 100%
+  width: 100%
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 100 !important
+  background-color: transparent
+
+#loginname, #loginpasswd
+  width: 145px
+
+#loginsubmit
+  white-space: nowrap
+
+a.spoiler
+  opacity: 0.5
+
+img.rateblog
+  cursor: pointer
+
+#sitesettings
+  margin-top: 3px
+  margin-right: 8px
+  cursor: pointer
+  padding-right: 0
+
+body > footer
+  text-align: center
+  padding-top: 8px
+
+footer span a
+  font-weight: 700
+
+.spinner
+  transition: all 5s ease
+  -moz-transition: all 5s ease
+  -webkit-transition: all 5s ease
+  -ms-transition: all 5s ease
+  -o-transition: all 5s ease
+  &:hover
+    transform: rotate(1800deg)
+    -webkit-transform: rotate(1800deg)
+    -moz-transform: rotate(1800deg)
+    -ms-transform: rotate(1800deg)
+    -o-transform: rotate(1800deg)
+
+#countdown
+  position: absolute
+  right: 12px
+  width: 273px
+
+.tb-sprite
+  background-image: url(/images/layout/topbannersprite.png)
+
+#dropdown-lock
+  background-image: url(/images/layout/PinInactive.png)
+  width: 11px
+  height: 10px
+  display: block
+  &.pinned
+    background-image: url(/images/layout/PinActive.png)
+
+#navwrapper
+  color: #404041
+  font-family: arial
+  font-size: 10pt
+  min-width: 1214px
+  margin: auto
+  position: relative
+  display: table
+
+.clear
+  clear: both
+
+.left
+  float: left
+
+.right
+  float: right
+
+.topmenubar
+  top: 0
+  height: 18px
+  padding-right: 5px
+  text-align: right
+
+.top_menu
+  span
+    color: #818da0
+    float: left
+    padding-right: 20px
+    line-height: 20px
+  > div
+    height: 18px
+    float: left
+  a
+    color: #bac8d2
+    font-size: 11px
+    font-weight: bold
+    text-decoration: none
+  img
+    margin-top: 1px
+
+#userpanel
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 2
+  li > a
+    color: #bac8d2
+    text-decoration: none
+  ul
+    float: left
+    height: 20px
+    margin: 0
+    border: 0
+    padding: 0 0 0 6px
+    list-style-type: none
+    color: #FFF
+    line-height: 20px
+    font-size: 8pt
+  a.toggle_link, .guestlink
+    font-weight: 700
+  li
+    position: relative
+    float: right
+    margin-left: 4px
+    cursor: default
+    &.guestlink
+      float: left
+      margin-left: 8px
+      margin-right: 10px
+    &:first-child
+      margin-right: 10px
+      float: left
+  .upicons
+    display: block
+    height: 21px
+    width: 21px
+    background-repeat: no-repeat
+  #up_pms
+    background-image: url(/images/layout/topbannersprite.png)
+    background-position: 0 -213px
+    &:hover
+      background-position: -21px -213px
+  #up_threads
+    background-image: url(/images/layout/topbannersprite.png)
+    background-position: 0 -435px
+    &:hover
+      background-position: -21px -435px
+  #up_stream
+    background-image: url(/images/layout/topbannersprite.png)
+    background-position: 0 -404px
+    &:hover
+      background-position: -21px -404px
+  #up_drop
+    background-image: url(/images/layout/topbannersprite.png)
+    background-position: 0 0
+    &:hover
+      background-position: -21px 0
+    &.open_liquibets
+      background-position: -16px -30px
+      &:hover
+        background-position: -21px 0
+  .up_notif
+    display: inline-block
+    vertical-align: middle
+    width: auto
+    padding: 0 6px
+    height: 14px
+    border-radius: 2px
+    line-height: 15px
+    color: #fff
+    margin-top: -2px
+    &.admin
+      background: #931212
+    &.standard
+      background: #467a95
+      margin: -2px 0 0 6px
+    &.admin:hover
+      background: #c01818
+    &.standard:hover
+      background: #7cbdd6
+
+#userpanelend
+  width: 12px
+  height: 28px
+  float: left
+
+.up_pmsactive
+  background-position: -21px -213px !important
+  font-size: 7.5px
+  font-weight: bold
+  text-decoration: none !important
+  text-align: right
+  padding-right: 2px
+  width: 19px !important
+  span
+    background: #c01818
+    border-radius: 6px
+    width: 6px
+    padding: 0 2px
+    margin-right: -3px
+
+.up_streamactive
+  background: url(/images/layout/stream_on.gif) !important
+
+#up_dropdown
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+  a
+    color: #fff
+
+#up_dropdown_content
+  float: left
+  min-width: 210px
+  padding: 30px 0 10px 15px
+  color: #fff
+  font-size: 9pt
+
+#up_dropdown_end
+  position: absolute
+  right: -12px
+  width: 12px
+  height: 100%
+
+.filtersettings img
+  width: 12px
+  height: 12px
+  margin-right: 5px
+  margin-left: -4px
+  margin-bottom: 2px
+
+#banner
+  background: url(/images/vary/LiquidDotaBanner.image) no-repeat center #5a291b
+  height: 128px
+
+#tlverytopbanner
+  height: 134px
+
+#homelink
+  position: relative
+  width: 428px
+  height: 79px
+  display: block
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: -70px
+  top: 31px
+  left: -66px
+
+#stats
+  color: #FFF
+  text-align: right
+  font-size: 8pt
+  padding: 4px 12px 0 0
+  a
+    color: #FFF
+
+#siteheader
+  background: url(/images/vary/LiquidDotaBanner.image) no-repeat #21353d
+  background-position: center -5px
+
+.navbar
+  border-top: 1px solid transparent
+  border-bottom: 1px solid transparent
+
+#navwrap
+  margin-top: -6px
+
+.navbar
+  ul
+    margin: 0
+    padding: 0
+    border: 0
+    list-style-type: none
+    height: 31px
+  li
+    float: left
+  a
+    text-decoration: none
+    font-family: Arial
+    font-size: 8pt
+    font-weight: bold
+    &:hover .sn_dropdown
+      background-position: -27px -5px
+  &.submenu
+    height: 24px
+    line-height: 24px
+    z-index: 10
+    background: #152126
+    margin-top: -1px
+    border: none !important
+
+#filters
+  float: right
+
+.smallnav
+  float: left
+  a
+    padding: 8px 10px 10px 10px
+    color: #bac8d2
+    display: block
+  &.subnav
+    a
+      padding: 0 8px
+      color: #d2d4d6
+      display: block
+      &:hover
+        background: #3f4746
+        color: #fff
+    li
+      height: 20px
+
+.smallnav_spacer
+  width: 135px
+
+.smallnav .sn_dropdown
+  display: inline-block
+  position: relative
+  top: 1px
+  left: 2px
+  background: url(/images/layout/topbannersprite.png) -6px -5px no-repeat
+  height: 10px
+  width: 10px
+  &:hover, &.hovered
+    background-position: -27px -5px
+
+#rightnav
+  float: right
+  li.store
+    height: 28px
+    a
+      color: #c4d1dd
+      padding: 14px 0 10px 27px
+      display: block
+      &:hover
+        color: #fff
+
+#searchbox
+  position: relative
+  input
+    border: 0
+    height: 22px
+    width: 190px
+    margin: 4px 4px 0 0
+  > div > a
+    background-position: -7px -239px
+    position: absolute
+    top: 5px
+    right: 5px
+    height: 22px
+    width: 22px
+    z-index: 5
+    margin: 0
+    padding: 0
+
+#searchicon
+  background: #fff
+  box-shadow: inset 0 6px 4px -5px #202020
+  padding-right: 20px
+  padding-left: 4px
+  border: 1px solid #555
+
+.tb-dropdown_icon
+  background-position: 0 0
+
+.tb-filter_spacer
+  background-position: 0 -165px
+
+.tb-pm_icon
+  background-position: 0 -213px
+
+.tb-search_icon
+  background-position: 0 -244px
+
+.tb-smallnav_end
+  background-position: 0 -266px
+
+.tb-smallnav_spacer
+  background-position: 0 -314px
+
+.tb-smallnav_start
+  background-position: 0 -356px
+
+.tb-stream_icon
+  background-position: 0 -404px
+
+.tb-threads_icon
+  background-position: 0 -435px
+
+.tb-up_corner
+  background-position: 0 -492px
+
+.tb-userpanelend
+  background-position: 0 -596px
+
+.topmenuicons
+  background-image: url(/images/layout/topbannersprite.png)
+  width: 16px
+  height: 16px
+  display: inline-block
+
+.topmenufont
+  font-family: 'Open Sans', 'Arial'
+  font-weight: 600
+  font-size: 9pt
+
+#tb-twitter
+  background-position: 0 -466px
+
+#tb-facebook
+  background-position: 0 -31px
+
+#tb-youtube
+  background-position: 0 -634px
+
+.filtericons
+  background-image: url(/images/layout/topbannersprite.png)
+  display: inline-block
+
+#tb-filter
+  background-position: 0 -57px
+  width: 34px
+  height: 17px
+
+#tb-filter-bw
+  background-position: 0 -84px
+  width: 40px
+  height: 17px
+
+#tb-filter-dota2
+  background-position: 0 -111px
+  width: 58px
+  height: 17px
+
+#tb-filter-sc2
+  background-position: 0 -138px
+  width: 44px
+  height: 17px
+
+#tb-filter-other
+  background-position: -16px -166px
+  background-repeat: no-repeat
+  width: 31px
+  height: 17px
+
+#tb-filter-bw-off
+  background-position: 0 -498px
+  width: 40px
+  height: 17px
+
+#tb-filter-dota2-off
+  background-position: 0 -525px
+  width: 58px
+  height: 17px
+
+#tb-filter-sc2-off
+  background-position: 0 -552px
+  width: 44px
+  height: 17px
+
+#tb-filter-other-off
+  background-position: -16px -579px
+  width: 31px
+  height: 17px
+
+#topstreamlink
+  text-decoration: none
+  font-size: 10px
+
+hr
+  border-top: 1px solid #cdc9be
+  color: #fff9f3
+  border-left: none
+
+#streamTable
+  th
+    background-color: #467a95
+    color: #fff
+    padding: 4px
+  td
+    padding: 4px
+
+#sortable1, #sortable2
+  background-color: #eceaeb
+
+#streamTable
+  border: 1px solid #cbc9c7
+  .header
+    background-color: #467a95
+    color: #ebeff2
+
+tr
+  &.even
+    background-color: #e0e0df
+  &.odd
+    background-color: #eceaeb
+
+div.calendar-head
+  background: #467a95
+  color: #fff
+  font-size: 13pt
+  font-weight: bold
+  padding: 5px
+  margin-bottom: 5px
+
+.lb-border
+  border-top: 0 solid #bcb8af
+
+.gen-boxcard
+  border: 1px solid #00005d
+
+.profile-usertabs
+  border: 1px solid #cbc9c7
+
+.userpanel-tabs
+  width: 80%
+  background-color: #eceaeb
+  border: 1px solid #cbc9c7
+  font
+    font-weight: 700
+    cursor: default
+  a
+    display: inline-block
+    width: 100%
+    height: 100%
+    font: 9pt Arial
+    color: 284855
+    line-height: 26px
+    text-decoration: none
+    &:hover
+      text-decoration: none
+      background-color: #fff
+  td
+    text-align: center
+    padding: 0
+
+#edit_profile table
+  margin-left: auto
+  margin-right: auto
+
+.p_heading
+  background-color: #467a95
+  border-bottom: 1px solid #3e728d
+  color: #fff
+
+.p_data, .p_links
+  background-color: #eceaeb
+  border-bottom: 1px solid #cbc9c7
+
+.boxbdr
+  width: 90%
+  border: 1px solid #cbc9c7
+
+.boxtop
+  background-color: #467a95
+  color: #fff
+  td
+    font-weight: bold
+    color: #fff
+
+.boxhead, .boxmain
+  background-color: #eceaeb
+
+.boxhead th
+  border: 0
+  cursor: default
+
+.boxtop td, .boxhead th
+  padding: 6px
+
+.pm_row td
+  padding: 4px
+
+.boxmain a, .pm-border a
+  text-decoration: underline
+
+.boxmain td small a, .boxtop td small a
+  color: #eceaeb
+  text-decoration: underline
+
+.boxmain
+  td hr
+    border-top: 1px solid #cdc9be
+    color: #fff9f3
+    border-left: none
+  #myquote
+    width: 80%
+  textarea
+    width: 98%
+
+.inbox-bg
+  border: 1px solid #cbc9c7
+  background-color: #eceaeb
+  margin-right: 6px
+
+.inbox-btn
+  td
+    cursor: pointer
+    &:hover
+      background-color: #fff
+  a:hover
+    text-decoration: none
+
+.pm-border
+  background-color: #eceaeb
+  border: 1px solid #cbc9c7
+  > tbody > tr
+    &:first-child, &:last-child
+      background-color: #467a95
+      color: #fff
+
+.pm-head, .pm-foot
+  background-color: #467a95
+  color: #fff
+  font-weight: bold
+
+.pm-body
+  width: 100%
+  background-color: #eceaeb
+  textarea
+    width: 99%
+
+.pm_inbox
+  border: 1px solid #cbc9c7
+  background-color: #eceaeb
+
+.pm_row
+  background-color: #e0e0df
+
+.pm_row_even, .forum-index
+  background-color: #eceaeb
+
+.forumPost pre, #fpreview pre, td.lichtb > table pre
+  overflow-x: auto
+  font-size: 10pt
+  font-family: monospace !important
+  margin: 0 5px 0 9px
+  padding: 4px 6px
+  background-color: #e5e5e5
+  color: #58585b
+  padding: 8px
+  box-shadow: -6px 0 #467a95
+  border-top: 1px solid #d6d6d5
+  border-right: 1px solid #d6d6d5
+  border-bottom: 1px solid #d6d6d5
+
+.spoiler
+  display: none
+  background-color: #f6f7f7
+  border: 1px solid #dedad9
+  padding: 5px
+
+.btn_down
+  padding: 8px
+  border: 1px solid #b3b2b2
+  background-color: #c4c3c3
+  font: bold 9pt Arial
+  cursor: default
+
+.btn_up
+  padding: 8px
+  border: 1px solid #cbc9c7
+  background-color: #eceaeb
+  cursor: default
+  &:hover
+    background-color: #fff
+
+.rssnews
+  font-weight: 700
+  text-align: right
+
+#reply_area
+  min-width: 97%
+  max-width: 97%
+  width: 98%
+  margin-left: 1%
+
+.fadd-topic #reply_area
+  margin-left: 0
+
+.rep-controls
+  margin: 0 auto
+  width: 98%
+  vertical-align: top
+  text-align: left
+  padding: 2px 0 4px 0
+  input, button
+    vertical-align: middle
+    height: 28px
+    line-height: 24px
+    padding: 0 32px
+    color: #404041
+    background: #eceaeb
+    border: 1px solid #cbc9c7
+    margin-bottom: 4px
+  input:hover, button:hover
+    background: #f6f7f7
+
+.solid .rep-controls
+  input, button
+    color: #404041
+    background: #f6f7f7
+    border: 1px solid #cbc9c7
+  input:hover, button:hover
+    background: #fff
+
+#fp_postbtn
+  background: #467a95
+  border: 1px solid #467a95
+  color: #fff
+  min-width: 140px
+  &:hover
+    background: #4f89a3
+
+.eventlisting tr > td
+  &:first-child
+    width: 70%
+  width: 30%
+
+.navmenu
+  display: none
+  .sn_dropdown
+    display: inline-block
+    background: url(/images/layout/topbannersprite.png) no-repeat
+
+.top_menu, .social
+  display: inline-block
+  line-height: 26px
+
+.top_menu
+  z-index: 10
+
+.topmenubar .navmenu
+  height: 20px
+  text-align: left
+  color: #bac8d2
+  width: 62px
+  vertical-align: top
+  line-height: 20px
+  font-size: 8pt
+  font-weight: 700
+  cursor: pointer
+  &:hover
+    color: #eceaeb
+  .sn_dropdown
+    background-position: -1px -1px
+    width: 20px
+    height: 20px
+    text-align: left
+    color: #bac8d2
+    vertical-align: top
+    line-height: 20px
+  &:hover .sn_dropdown
+    background-position: -22px -1px
+
+#navwrap .navmenu
+  position: relative
+  left: 6px
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  cursor: pointer
+  background-position: 4px -314px
+  width: 31px
+  height: 31px
+  &:hover
+    background-position: 4px -344px
+
+.social > a
+  vertical-align: top
+
+.video-cont
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 25px
+  height: 0
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: 0
+
+.postop1, .postop2, .postop3, .postop4, .postop5, .postop6, .postop7, .postop8, .postop9, .postop10
+  display: block
+  background: url(/images/layout/fpostoptions.png) no-repeat center
+  width: 26px
+  height: 26px
+  border: 1px solid transparent
+
+.postop1:hover, .postop2:hover, .postop3:hover, .postop4:hover, .postop5:hover, .postop6:hover, .postop7:hover, .postop8:hover, .postop9:hover, .postop10:hover
+  background-color: #f6f7f7
+  border: 1px solid #cbc9c7
+
+.postop1
+  background-position: 8px 0
+
+.postop2
+  background-position: -14px 0
+
+.postop3
+  background-position: -40px 0
+
+.postop5
+  background-position: -67px 0
+
+.postop7
+  background-position: -95px -1px
+
+.postop6
+  background-position: -121px -1px
+
+.postop4
+  background-position: -152px -1px
+
+.postop8
+  background-position: -182px -1px
+
+.postop9
+  background-position: 0px 210px
+
+.postop10
+  background-position: -235px 0
+
+#fpreview
+  background-color: #eceaeb
+  border: 1px solid #cbc9c7
+  padding: 8px 8px 14px 8px
+
+.fp_poll
+  display: block
+  text-align: left
+  > div
+    margin: 0 16px
+
+#sr_block_inner
+  width: 90%
+
+#reply tr > td > span
+  padding: 5px 0 0 8px
+
+.imgdiv
+  display: inline-block
+  vertical-align: middle
+  max-width: 100%
+  overflow: hidden
+
+#inbox_block
+  margin: 0 auto
+  width: 99%
+  margin-top: 4px
+
+.pminbox_srch
+  margin-left: 15%
+  label
+    display: inline-block
+    width: 20%
+  input.text
+    width: 50%
+
+#timezoneselect
+  width: 100%
+
+#solid .lichtb
+  > table
+    width: 100%
+  a
+    color: #467a95
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+#userstreams > div
+  text-align: center
+
+.breadcrumb
+  padding-bottom: 8px
+
+.mod_links
+  display: block
+  vertical-align: middle
+  margin: 16px 0
+  a
+    margin: 0 4px
+
+.mytlreg tr > td
+  &:first-child
+    width: 28%
+    text-align: right
+  width: 70%
+  text-align: left
+
+#message
+  width: 90%
+
+#subscribe_link
+  vertical-align: middle
+  outline: 0
+
+.admin_featureset
+  column-count: 2
+  -moz-column-count: 2
+  -webkit-column-count: 2
+
+.admin_userinfo
+  margin: 0 auto
+  width: 98%
+  table-layout: fixed
+  border-collapse: collapse
+  .type, .data
+    padding: 6px
+  .type
+    width: 30%
+    background-color: #467a95
+    border-bottom: 1px solid #3e728d
+    color: #fff
+  .data
+    width: 70%
+    background-color: #eceaeb
+    border-bottom: 1px solid #cbc9c7
+    img
+      max-width: 100%
+      height: auto
+
+.admin_cta
+  background: #53302d !important
+  border: 1px solid #53302d !important
+  background: -moz-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(26%, #772d2b), color-stop(100%, #53302d)) !important
+  background: -webkit-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important
+  background: -o-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important
+  background: -ms-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important
+  background: radial-gradient(ellipse at center, #772d2b 26%, #53302d 100%) !important
+  /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#772d2b', endColorstr='#53302d', GradientType=1)!important
+  &:active
+    background: #53302d !important
+    border: 1px solid #53302d !important
+    background: -moz-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(26%, #772d2b), color-stop(100%, #53302d)) !important
+    background: -webkit-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important
+    background: -o-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important
+    background: -ms-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important
+    background: radial-gradient(ellipse at center, #772d2b 26%, #53302d 100%) !important
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#772d2b', endColorstr='#53302d', GradientType=1)!important
+  &:hover
+    background: #772d2b !important
+    border: 1px solid #772d2b !important
+
+.warnpost
+  padding: 3px
+  border: 1px solid navy
+  background-color: #ebeff2
+  table-layout: fixed
+  width: 100%
+
+.fileupload_panel a
+  text-decoration: underline
+
+.fp_rvod_controls
+  width: 90%
+  tbody > tr
+    &:first-child
+      width: 18%
+      margin-right: 2%
+    display: inline-block
+    vertical-align: top
+    width: 80%
+    >
+      th, td
+        display: block
+        line-height: 22px
+      th
+        text-align: right
+      td
+        text-align: left
+        input
+          width: 90%
+
+.notif_global
+  position: fixed
+  right: 10px
+  overflow: hidden
+  white-space: nowrap
+  background: #fff
+  color: #404041
+  line-height: 16px
+  z-index: 10
+  cursor: default
+  box-shadow: 0 1px 5px -1px #303031
+  animation: 7s mytlprompt
+  -webkit-animation: 7s mytlprompt
+  animation-fill-mode: both
+  -webkit-animation-fill-mode: both
+  .notice, .noticemsg
+    display: inline-block
+    vertical-align: middle
+
+@keyframes mytlprompt
+  0%
+    bottom: -300px
+
+  10%
+    bottom: 10px
+
+  80%
+    bottom: 10px
+
+  100%
+    bottom: -300px
+
+
+@-webkit-keyframes mytlprompt
+  0%
+    bottom: -300px
+
+  10%
+    bottom: 10px
+
+  80%
+    bottom: 10px
+
+  100%
+    bottom: -300px
+
+
+.notice
+  height: auto
+  width: 48px
+  text-indent: 20px
+  font-family: 'open sans'
+  font-size: 28px
+  color: #FFF
+  line-height: 9px
+  font-family: 'open sans'
+  font-size: 28px
+  color: white
+
+.noticemsg
+  padding: 6px 8px
+  font-weight: 400
+
+.notif_global
+  &.admin
+    .notif-block
+      box-shadow: inset 48px 0 0 0 #931212
+    a
+      color: #931212
+  &.standard
+    .notif-block
+      box-shadow: inset 48px 0 0 0 #467a95
+    a
+      color: #467a95
+  span
+    white-space: normal
+  h1
+    margin: 0 0 2px 0
+    font-family: 'open sans'
+    font-size: 14px
+  a
+    text-decoration: none
+    font-weight: 700
+    &:hover
+      text-decoration: underline
+
+.notif_userpanel
+  position: absolute
+  left: -20px
+  top: 20px
+  width: 300px
+  padding: 0
+  background: #fff
+  border-radius: 1px
+  z-index: 1
+  line-height: 14px
+  box-shadow: 0 2px 5px -1px #303031
+  .notif-block
+    color: #404041
+    margin-bottom: 0
+    min-height: 40px
+    .notice, .noticemsg
+      display: inline-block
+      vertical-align: top
+  .notice
+    width: 6px
+  &.standard .noticemsg
+    padding: 6px 8px
+  &.admin .notif-block:hover
+    box-shadow: inset 6px 0 0 0 #c01818
+  &.standard .notif-block:hover
+    box-shadow: inset 6px 0 0 0 #bac8d2
+
+.notif-block a
+  text-decoration: none
+
+.notif_userpanel
+  .notif-block .noticemsg span
+    display: block
+  &.admin
+    z-index: 10
+    .notif-block
+      box-shadow: inset 6px 0 0 0 #931212
+      a
+        color: #931212
+        &:hover
+          text-decoration: underline
+  &.standard .notif-block
+    box-shadow: inset 6px 0 0 0 #467a95
+    a
+      color: #467a95
+      &:hover
+        text-decoration: underline
+
+#calendar_mdiv
+  background-color: #dbdad8
+  position: relative
+
+#showmore_link
+  margin-left: 10px
+  margin-bottom: 10px
+
+.teamsprite
+  background: url(/images/vary/dota-teams.sprite.01.image) no-repeat top left
+  width: 128px
+  height: 42px
+  &.t1
+    background-position: 0 0
+  &.t2
+    background-position: 0 -52px
+  &.t3
+    background-position: 0 -104px
+  &.t4
+    background-position: 0 -156px
+  &.t5
+    background-position: 0 -208px
+  &.t6
+    background-position: 0 -260px
+  &.t7
+    background-position: 0 -312px
+  &.t8
+    background-position: 0 -364px
+  &.t9
+    background-position: 0 -416px
+  &.t10
+    background-position: 0 -468px
+  &.t11
+    background-position: 0 -520px
+  &.t18
+    background-position: 0 -572px
+  &.t22
+    background-position: 0 -624px
+  &.t24
+    background-position: 0 -676px
+  &.t25
+    background-position: 0 -728px
+  &.t29
+    background-position: 0 -780px
+  &.t31
+    background-position: 0 -832px
+  &.t32
+    background-position: 0 -884px
+  &.t33
+    background-position: 0 -936px
+  &.t36
+    background-position: 0 -988px
+  &.t37
+    background-position: 0 -1040px
+  &.t41
+    background-position: 0 -1092px
+  &.t44
+    background-position: 0 -1144px
+  &.t46
+    background-position: 0 -1196px
+
+.league-sprite-big
+  background: url(/images/vary/dota-leagues-big-sprite.04.image) no-repeat 0 0
+  width: 64px
+  height: 64px
+  &.l0
+    background-position: 0 0
+    width: 64px
+    height: 64px
+  &.l1
+    background-position: 0 -74px
+    width: 45px
+    height: 64px
+  &.l2
+    background-position: 0 -148px
+    width: 65px
+    height: 36px
+  &.l3
+    background-position: 0 -194px
+    width: 64px
+    height: 42px
+  &.l5
+    background-position: 0 -246px
+    width: 64px
+    height: 33px
+  &.l6
+    background-position: 0 -289px
+    width: 64px
+    height: 46px
+  &.l7
+    background-position: 0 -345px
+    width: 63px
+    height: 45px
+  &.l8
+    background-position: 0 -400px
+    width: 54px
+    height: 63px
+  &.l9
+    background-position: 0 -473px
+    width: 64px
+    height: 63px
+  &.l10
+    background-position: 0 -546px
+    width: 57px
+    height: 64px
+  &.l12
+    background-position: 0 -620px
+    width: 53px
+    height: 64px
+  &.l13
+    background-position: 0 -694px
+    width: 64px
+    height: 32px
+  &.l14
+    background-position: 0 -736px
+    width: 64px
+    height: 62px
+  &.l15
+    background-position: 0 -808px
+    width: 64px
+    height: 57px
+  &.l16
+    background-position: 0 -875px
+    width: 64px
+    height: 64px
+  &.l17
+    background-position: 0 -949px
+    width: 63px
+    height: 62px
+  &.l18
+    background-position: 0 -1021px
+    width: 64px
+    height: 60px
+  &.l19
+    background-position: 0 -1091px
+    width: 64px
+    height: 44px
+  &.l20
+    background-position: 0 -1145px
+    width: 60px
+    height: 64px
+  &.l21
+    background-position: 0 -1219px
+    width: 64px
+    height: 64px
+  &.l39
+    background-position: 0 -1293px
+    width: 64px
+    height: 64px
+  &.l41
+    background-position: 0 -1367px
+    width: 64px
+    height: 64px
+  &.l42
+    background-position: 0 -1441px
+    width: 65px
+    height: 50px
+  &.l43
+    background-position: 0 -1501px
+    width: 46px
+    height: 57px
+  &.l46
+    background-position: 0 -1568px
+    width: 65px
+    height: 40px
+  &.l49
+    background-position: 0 -1618px
+    width: 65px
+    height: 60px
+  &.l55
+    background-position: 0 -1688px
+    width: 62px
+    height: 62px
+  &.l56
+    background-position: 0 -1760px
+    width: 53px
+    height: 63px
+
+.league-sprite-small
+  background: url(/images/vary/dota-leagues-small-sprite.04.image) no-repeat 0 0
+  width: 16px
+  height: 16px
+  display: inline-block
+  &.l0
+    background-position: 0 0
+    width: 16px
+    height: 16px
+  &.l1
+    background-position: 0 -26px
+    width: 11px
+    height: 16px
+  &.l2
+    background-position: 0 -52px
+    width: 29px
+    height: 16px
+  &.l3
+    background-position: 0 -78px
+    width: 16px
+    height: 16px
+  &.l5
+    background-position: 0 -104px
+    width: 26px
+    height: 16px
+  &.l6
+    background-position: 0 -130px
+    width: 18px
+    height: 16px
+  &.l7
+    background-position: 0 -156px
+    width: 23px
+    height: 16px
+  &.l8
+    background-position: 0 -182px
+    width: 14px
+    height: 16px
+  &.l9
+    background-position: 0 -208px
+    width: 16px
+    height: 16px
+  &.l10
+    background-position: 0 -234px
+    width: 15px
+    height: 16px
+  &.l12
+    background-position: 0 -260px
+    width: 14px
+    height: 16px
+  &.l13
+    background-position: 0 -286px
+    width: 26px
+    height: 16px
+  &.l14
+    background-position: 0 -312px
+    width: 18px
+    height: 16px
+  &.l15
+    background-position: 0 -338px
+    width: 16px
+    height: 16px
+  &.l16
+    background-position: 0 -364px
+    width: 16px
+    height: 16px
+  &.l17
+    background-position: 0 -390px
+    width: 16px
+    height: 16px
+  &.l18
+    background-position: 0 -416px
+    width: 17px
+    height: 16px
+  &.l19
+    background-position: 0 -442px
+    width: 20px
+    height: 16px
+  &.l20
+    background-position: 0 -468px
+    width: 15px
+    height: 16px
+  &.l21
+    background-position: 0 -494px
+    width: 16px
+    height: 16px
+  &.l39
+    background-position: 0 -520px
+    width: 20px
+    height: 16px
+  &.l41
+    background-position: 0 -546px
+    width: 16px
+    height: 16px
+  &.l42
+    background-position: 0 -572px
+    width: 17px
+    height: 14px
+  &.l43
+    background-position: 0 -596px
+    width: 13px
+    height: 16px
+  &.l46
+    background-position: 0 -622px
+    width: 25px
+    height: 17px
+  &.l49
+    background-position: 0 -649px
+    width: 18px
+    height: 16px
+  &.l55
+    background-position: 0 -675px
+    width: 16px
+    height: 16px
+  &.l56
+    background-position: 0 -701px
+    width: 14px
+    height: 16px
+
+.heroes
+  display: inline-block
+  position: relative
+  top: 0
+  vertical-align: middle
+  background: url(/images/vary/dota-heroes-sprite.03.image) no-repeat top left
+  width: 39px
+  height: 22px
+  &.h1
+    background-position: 0 0
+  &.h2
+    background-position: 0 -32px
+  &.h3
+    background-position: 0 -64px
+  &.h4
+    background-position: 0 -96px
+  &.h5
+    background-position: 0 -128px
+  &.h6
+    background-position: 0 -160px
+  &.h7
+    background-position: 0 -192px
+  &.h8
+    background-position: 0 -224px
+  &.h9
+    background-position: 0 -256px
+  &.h10
+    background-position: 0 -288px
+  &.h11
+    background-position: 0 -320px
+  &.h12
+    background-position: 0 -352px
+  &.h13
+    background-position: 0 -384px
+  &.h14
+    background-position: 0 -416px
+  &.h15
+    background-position: 0 -448px
+  &.h16
+    background-position: 0 -480px
+  &.h17
+    background-position: 0 -512px
+  &.h18
+    background-position: 0 -544px
+  &.h19
+    background-position: 0 -576px
+  &.h20
+    background-position: 0 -608px
+  &.h21
+    background-position: 0 -640px
+  &.h22
+    background-position: 0 -672px
+  &.h23
+    background-position: 0 -704px
+  &.h24
+    background-position: 0 -736px
+  &.h25
+    background-position: 0 -768px
+  &.h26
+    background-position: 0 -800px
+  &.h27
+    background-position: 0 -832px
+  &.h28
+    background-position: 0 -864px
+  &.h29
+    background-position: 0 -896px
+  &.h30
+    background-position: 0 -928px
+  &.h31
+    background-position: 0 -960px
+  &.h32
+    background-position: 0 -992px
+  &.h33
+    background-position: 0 -1024px
+  &.h34
+    background-position: 0 -1056px
+  &.h35
+    background-position: 0 -1088px
+  &.h36
+    background-position: 0 -1120px
+  &.h37
+    background-position: 0 -1152px
+  &.h38
+    background-position: 0 -1184px
+  &.h39
+    background-position: 0 -1216px
+  &.h40
+    background-position: 0 -1248px
+  &.h41
+    background-position: 0 -1280px
+  &.h42
+    background-position: 0 -1312px
+  &.h43
+    background-position: 0 -1344px
+  &.h44
+    background-position: 0 -1376px
+  &.h45
+    background-position: 0 -1408px
+  &.h46
+    background-position: 0 -1440px
+  &.h47
+    background-position: 0 -1472px
+  &.h48
+    background-position: 0 -1504px
+  &.h49
+    background-position: 0 -1536px
+  &.h50
+    background-position: 0 -1568px
+  &.h51
+    background-position: 0 -1600px
+  &.h52
+    background-position: 0 -1632px
+  &.h53
+    background-position: 0 -1664px
+  &.h54
+    background-position: 0 -1696px
+  &.h55
+    background-position: 0 -1728px
+  &.h56
+    background-position: 0 -1760px
+  &.h57
+    background-position: 0 -1792px
+  &.h58
+    background-position: 0 -1824px
+  &.h59
+    background-position: 0 -1856px
+  &.h60
+    background-position: 0 -1888px
+  &.h61
+    background-position: 0 -1920px
+  &.h62
+    background-position: 0 -1952px
+  &.h63
+    background-position: 0 -1984px
+  &.h64
+    background-position: 0 -2016px
+  &.h65
+    background-position: 0 -2048px
+  &.h66
+    background-position: 0 -2080px
+  &.h67
+    background-position: 0 -2112px
+  &.h68
+    background-position: 0 -2144px
+  &.h69
+    background-position: 0 -2176px
+  &.h70
+    background-position: 0 -2208px
+  &.h71
+    background-position: 0 -2240px
+  &.h72
+    background-position: 0 -2272px
+  &.h73
+    background-position: 0 -2304px
+  &.h74
+    background-position: 0 -2336px
+  &.h75
+    background-position: 0 -2368px
+  &.h76
+    background-position: 0 -2400px
+  &.h77
+    background-position: 0 -2432px
+  &.h78
+    background-position: 0 -2464px
+  &.h79
+    background-position: 0 -2496px
+  &.h80
+    background-position: 0 -2528px
+  &.h81
+    background-position: 0 -2560px
+  &.h82
+    background-position: 0 -2592px
+  &.h83
+    background-position: 0 -2624px
+  &.h84
+    background-position: 0 -2656px
+  &.h85
+    background-position: 0 -2688px
+  &.h86
+    background-position: 0 -2720px
+  &.h87
+    background-position: 0 -2752px
+  &.h88
+    background-position: 0 -2784px
+  &.h89
+    background-position: 0 -2816px
+  &.h90
+    background-position: 0 -2848px
+  &.h91
+    background-position: 0 -2880px
+  &.h92
+    background-position: 0 -2912px
+  &.h93
+    background-position: 0 -2944px
+  &.h94
+    background-position: 0 -2976px
+  &.h95
+    background-position: 0 -3008px
+  &.h96
+    background-position: 0 -3040px
+  &.h97
+    background-position: 0 -3072px
+  &.h98
+    background-position: 0 -3104px
+  &.h99
+    background-position: 0 -3136px
+  &.h100
+    background-position: 0 -3168px
+  &.h101
+    background-position: 0 -3200px
+  &.h102
+    background-position: 0 -3232px
+  &.h103
+    background-position: 0 -3264px
+  &.h104
+    background-position: 0 -3296px
+  &.h105
+    background-position: 0 -3328px
+  &.h106
+    background-position: 0 -3360px
+  &.h107
+    background-position: 0 -3392px
+  &.h108
+    background-position: 0 -3456px
+  &.h109
+    background-position: 0 -3424px
+  &.h110
+    background-position: 0 -3488px
+
+.ficon
+  background: url(/images/layout/topbannersprite.png) no-repeat
+  width: 14px
+  height: 12px
+  margin-left: auto
+  margin-right: auto
+
+.forumindex > .ficon
+  margin: 0 6px
+
+.ficon
+  &.icon_blue
+    background-position: 0 -130px
+  &.icon_grey
+    background-position: 0 -148px
+  &.icon_black
+    background-position: 0 -166px
+  &.lock_blue
+    background-position: -22px -130px
+  &.lock_grey
+    background-position: -22px -150px
+
+.createicon:hover .ficon.icon_black
+  background-position: 0 -130px
+
+.staff_title
+  display: inline-block
+  margin-right: 16px
+  font-weight: bold
+  color: #467a95
+
+@-ms-viewport
+  width: device-width
+
+
+@-o-viewport
+  width: device-width
+
+
+@viewport
+  width: device-width
+
+
+@media screen and (min-width: 480px)
+  .fpost-lastedit:hover .tooltip
+    right: 16px
+    top: -4px
+    animation: lastedit .5s
+    animation-fill-mode: forwards
+    -webkit-animation: lastedit .5s
+    -webkit-animation-fill-mode: forwards
+  @keyframes lastedit
+    0%
+      right: 0
+      opacity: 0
+
+    100%
+      right: 16px
+      opacity: 1
+
+  @-webkit-keyframes lastedit
+    0%
+      right: 0
+      opacity: 0
+
+    100%
+      right: 16px
+      opacity: 1
+
+@media screen and (min-width: 371px)
+  .titelbalk .fpost-username:hover .tooltip, .titelhigh .fpost-username:hover .tooltip
+    top: 0
+    left: 100%
+  .titelbalk .fpost-username:hover .tooltip, .titelhigh .fpost-username:hover .tooltip
+    animation: .5s tooltip
+    -webkit-animation: .5s tooltip
+    animation-fill-mode: forwards
+    -webkit-animation-fill-mode: forwards
+    left: 100%
+    top: 0
+  @keyframes tooltip
+    0%
+      left: 60%
+      opacity: 0
+
+    60%
+      left: 60%
+      opacity: 0
+
+    100%
+      left: 100%
+      opacity: 1
+
+  @-webkit-keyframes tooltip
+    0%
+      left: 60%
+      opacity: 0
+
+    60%
+      left: 60%
+      opacity: 0
+
+    100%
+      left: 100%
+      opacity: 1
+
+@media screen and (min-width: 1230px)
+  #navwrapper
+    min-width: 1214px
+  #main-content
+    width: 752px
+  #main-content-wide
+    width: 1202px
+  #main-left-sidebar
+    width: 219px
+    margin-right: 6px
+  #main-right-sidebar
+    width: 219px
+    margin-left: 6px
+  .is-head .sf-cost
+    width: 73%
+  #storefront .sf-cost
+    width: 75.8%
+  .ev-ctrl
+    max-width: 83%
+  td.sidemenu .ev-feed
+    max-width: 217px
+  .ev-btn
+    &.wikibtn
+      width: 44.25%
+      &:last-child
+        width: 96%
+    &.lrbtn
+      width: 96%
+    &.wikibtn + .ev-btn.lrbtn
+      width: 44.25%
+  #evcal .ev-timer
+    width: 22%
+
+@media screen and (min-width: 641px)
+  .thread_dock
+    &.top
+      .thread_cta
+        width: 37%
+      .pagination
+        width: 63%
+    &.bot
+      .thread_cta
+        width: 30%
+      .pagination
+        width: 70%
+
+@media screen and (min-width: 1024px) and (max-width: 1229px)
+  #navwrapper
+    min-width: 1005px
+  #main-content
+    width: 641px
+  #main-content-wide
+    width: 994px
+  #main-left-sidebar
+    width: 170px
+    margin-right: 6px
+  #main-right-sidebar
+    width: 170px
+    margin-left: 6px
+  #searchicon
+    background-position: -105px 0
+  .is-head .sf-cost
+    width: 69.3%
+  #storefront .sf-cost
+    width: 72.5%
+  .sf-filter input
+    width: 73%
+  .ev-ctrl
+    max-width: 79%
+  td.sidemenu .ev-feed
+    max-width: 167px
+  .ev-btn
+    span
+      display: none
+    &.wikibtn
+      width: 40.25%
+      &:last-child
+        width: 96%
+    &.lrbtn
+      width: 96%
+    &.wikibtn + .ev-btn.lrbtn
+      width: 40.25%
+  #evcal .ev-timer
+    width: 24%
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+  #navwrapper
+    min-width: 100%
+    width: 100%
+  #main-content
+    width: 100%
+    margin: -2px
+    padding: 0
+  #main-content-wide
+    width: 98.5%
+    h1.title
+      margin: -1px -6px 0
+  h1.title
+    margin: -1px -1px 0
+  #searchicon
+    background-position: 214px 0
+  #lsb-toggle, #rsb-toggle
+    display: inline-block
+  #lsb-toggle
+    width: 59%
+    margin: 4px 2% 8px 0
+  #rsb-toggle
+    width: 39%
+  #main-left-sidebar, #main-right-sidebar
+    z-index: 1000
+    box-shadow: 0 0 5px #404041
+  #main-left-sidebar
+    position: absolute
+    left: -9000px
+    top: 229px
+    width: 59%
+  #main-right-sidebar
+    position: absolute
+    right: 9000px
+    top: 229px
+    width: 39%
+  a.block_header
+    background-color: #467a95
+  .sidebar-after
+    background: #dbdad8
+    border: 1px solid #cbc9c7
+  .sidebar_block
+    .block-news_left_mid a
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .sbcontents a:link
+      width: 90%
+  a.comments
+    width: 16px !important
+    text-align: center
+  .sidebar_block a
+    white-space: normal
+  .is-head .sf-cost
+    width: 71%
+  #storefront .sf-cost
+    width: 73.8%
+  .sf-filter input
+    width: 75%
+  .ev-ctrl
+    max-width: 82%
+  .ev-btn
+    &.wikibtn
+      width: 44.25%
+      &:last-child
+        width: 96%
+    &.lrbtn
+      width: 96%
+    &.wikibtn + .ev-btn.lrbtn
+      width: 44.25%
+
+@media screen and (max-width: 767px)
+  #siteheader
+    background-position: 47.7% -5px
+  #navwrapper
+    min-width: 100%
+    width: 100%
+  #main-content
+    width: 100%
+    margin: -2px
+    padding: 0
+  #main-content-wide
+    width: 98.2%
+  h1.title
+    margin: -1px -1px 0
+  #main-content-wide h1.title
+    margin: -1px -6px 0
+  #lsb-toggle, #rsb-toggle
+    display: inline-block
+  #lsb-toggle
+    width: 49%
+    margin: 4px 2% 8px 0
+  #rsb-toggle
+    width: 49%
+  #main-left-sidebar, #main-right-sidebar
+    z-index: 1000
+    box-shadow: 0 0 5px #404041
+  #main-left-sidebar
+    position: absolute
+    left: -9000px
+    top: 231px
+    width: 100%
+    background: #dbdad8
+  #main-right-sidebar
+    position: absolute
+    right: 9000px
+    top: 231px
+    width: 100%
+    background: #dbdad8
+  a.block_header
+    background-color: #467a95
+  .sidebar-after
+    z-index: 2
+    background: #dbdad8
+  .sidebar_end
+    height: 0
+  #homelink
+    position: relative
+    width: auto
+    z-index: -1
+  .newspost > div
+    &:first-child
+      width: 100% !important
+    width: 100% !important
+  .titelhigh > div:first-child, .titelbalk > div:first-child, .titelhigh > div, .titelbalk > div
+    width: 50%
+  footer, .solid footer
+    width: 100%
+    margin: 0 auto
+  .navmenu
+    display: inline-block
+  #navwrap > .smallnav
+    background: #21353d
+  .smallnav
+    display: none
+    position: absolute
+    height: auto !important
+    z-index: 4
+    li
+      display: block
+      width: 100%
+  #dropdown-menu-liquipedia
+    width: 180px
+    height: 156px
+  .smallnav.subnav li
+    height: 26px
+    line-height: 26px
+  .top_menu
+    display: none
+    position: absolute
+    top: 20px
+    right: 24px
+    width: 100px
+    padding: 4px 8px
+    background: #21353d
+  .quote
+    margin-left: 6px
+    > .quote
+      margin-left: 2px
+  .sqr > .quote, .quote > .quote:hover, .sqr > .quote:hover
+    margin-left: 2px
+  .postop-cont > tbody > tr > td
+    display: block
+    width: 100%
+  .fadd-ubb > tbody > tr > td > table
+    padding-bottom: 16px
+  a.createicon
+    display: block
+    position: relative
+    top: -9px
+    div
+      display: none
+  #forumindex, .forumindex
+    font-size: 8pt
+  .userpanel-tabs
+    width: 100%
+  #blog_title
+    width: 98%
+  .inbox-bg
+    width: 100%
+    margin-right: 0
+  #inbox_block > tbody > tr > td, .fadd-ubb > tbody > tr > td
+    display: block
+    width: 100%
+  .pm_inbox tr >
+    td:first-child, th:first-child
+      padding-left: 8px
+  .pminbox_srch
+    margin-left: 0
+    label
+      display: inline-block
+      width: 30%
+    input.text
+      width: 50%
+  .pm-body textarea
+    width: 98%
+  .boxbdr
+    width: 99%
+  .lightborder.forum tr >
+    th:first-child
+      display: none
+    td
+      &:first-child, &:nth-last-child(1), &:nth-last-child(2)
+        display: none
+  .findex_newsblock tr >
+    td:first-child, th:nth-last-child(2)
+      display: none
+    td
+      &:nth-last-child(2), &:nth-child(3)
+        display: none
+  .findex_block tr >
+    th:nth-last-child(1), td:nth-last-child(1)
+      display: none
+  .subtable
+    &.s tr > td
+      &:nth-last-child(2), &:nth-last-child(4), &:first-child
+        display: none
+    &.q tr > td
+      &:nth-child(1), &:nth-child(3)
+        display: none
+  .srch_hd_box tr > td
+    &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3), &:first-child
+      display: none
+  .subtable.s tr > td:last-child
+    width: 30px
+  .lightborder.forum tr >
+    th:nth-child(2), td:nth-child(2)
+      padding-left: 8px
+  .findex_newsblock tr >
+    th:nth-child(2), td:nth-child(2)
+      padding-left: 8px
+  .subtable.s tr > td:nth-child(2), .srch_hd_box tr > td:nth-child(2)
+    width: 55%
+    padding-left: 8px
+  td.kopfb
+    > span
+      position: relative
+    .createicon
+      position: absolute
+      top: -19px
+      left: 8px
+      margin-left: 0
+      white-space: nowrap
+  .forumindex
+    &.lichtb, &.donkerb
+      height: 34px
+  #sr_block_inner .boxmain td
+    display: block
+  .calhead > div
+    &:first-child
+      width: 100%
+    width: 100%
+  .calfilter, .calhead > div
+    display: block
+    text-align: left
+  #evcal tr > td:nth-last-child(n+5) .ev-ctrl:focus aside
+    top: 0
+    right: -405% !important
+  .ev-ctrl
+    aside
+      top: 0
+      right: 0
+      width: 90%
+    max-width: 90%
+  .evce-req > div > span:first-child, .evce-rec > div > span:first-child, #playersbox > div > div > span:first-child
+    display: block
+    width: 100%
+    text-align: left
+  .evc-edit input[type="text"]
+    width: 100%
+  .pbmu select
+    width: 35%
+  .evc-commit > div
+    display: block
+    width: 100%
+  .evc-block > div
+    &:first-child
+      display: block
+      width: 100%
+      margin: 0
+      text-align: left
+    display: block
+    width: 100%
+    margin: 0
+    text-align: left
+  .evc-undo
+    text-align: left
+  .evc-link > div > div
+    display: block
+    width: 100%
+    text-align: left
+  .evc-head > div:first-child
+    display: none
+  .sf-block
+    width: 96%
+  .is-head .sf-cost
+    width: 76%
+  #storefront .sf-cost
+    width: 78%
+  .sf-filter input
+    width: 99%
+    margin-bottom: 8px
+  #it-store .sf-block:hover button
+    width: 112%
+    right: -10%
+  .admin_dock > tbody > tr > td > table > tbody > tr > td
+    display: inline-block
+    text-align: left
+  .admin_featureset
+    column-count: 1
+    -moz-column-count: 1
+    -webkit-column-count: 1
+  #tb_msgnote
+    margin: -1px -1px 2px
+  .ev-btn
+    &.wikibtn
+      width: 44.25%
+      &:last-child
+        width: 96%
+    &.lrbtn
+      width: 96%
+    &.wikibtn + .ev-btn.lrbtn
+      width: 44.25%
+
+@media screen and (max-width: 640px)
+  .thread_cta
+    display: block
+    width: 100%
+  .pagination
+    display: block
+    width: 100%
+    line-height: 20px
+    padding-top: 16px
+
+@media screen and (max-width: 480px)
+  #main-content-wide
+    width: 97.2%
+  .calhead > div
+    display: block
+    width: 100%
+    text-align: left
+    &:first-child
+      display: block
+      width: 100%
+      text-align: left
+  .calfilter
+    width: 100%
+  .calsubmit
+    margin-left: 0
+  .titelhigh .fpost-lastedit .tooltip
+    background: #467a95
+  .titelbalk .fpost-lastedit .tooltip
+    background: #eceaeb
+  .fpost-lastedit:hover .tooltip
+    right: -80px
+    top: 24px
+    animation: lastedit .5s
+    animation-fill-mode: forwards
+    -webkit-animation: lastedit .5s
+    -webkit-animation-fill-mode: forwards
+  @keyframes lastedit
+    0%
+      right: -150px
+      opacity: 0
+
+    100%
+      right: -80px
+      opacity: 1
+
+  @-webkit-keyframes lastedit
+    0%
+      right: -150px
+      opacity: 0
+
+    100%
+      right: -80px
+      opacity: 1
+
+  .mytlreg tr > td
+    &:first-child
+      display: block
+      width: 100%
+      text-align: left
+    display: block
+    width: 100%
+    text-align: left
+  .sf-block
+    width: 96%
+  .is-head .sf-cost
+    width: 76%
+  #storefront .sf-cost
+    width: 78%
+  .sf-filter input
+    width: 99%
+    margin-bottom: 8px
+  #it-store .sf-block:hover button
+    width: 105%
+    right: -5%
+
+@media screen and (max-width: 370px)
+  .titelbalk .fpost-username:hover .tooltip, .titelhigh .fpost-username:hover .tooltip
+    top: 28px !important
+    left: -53px !important
+  .titelbalk .fpost-username:hover .tooltip, .titelhigh .fpost-username:hover .tooltip
+    animation: .5s tooltip
+    -webkit-animation: .5s tooltip
+    animation-fill-mode: forwards
+    -webkit-animation-fill-mode: forwards
+    left: -53px
+    top: 28px
+  @keyframes tooltip
+    0%
+      left: -53px
+      opacity: 0
+
+    60%
+      left: -53px
+      opacity: 0
+
+    100%
+      left: -53px
+      opacity: 1
+
+  @-webkit-keyframes tooltip
+    0%
+      left: --53px
+      opacity: 0
+
+    60%
+      left: -53px
+      opacity: 0
+
+    100%
+      left: -53px
+      opacity: 1
+
+  .sf-block
+    width: 96%
+  .is-head .sf-cost
+    width: 72%
+  #storefront .sf-cost
+    width: 75%
+  .sf-filter input
+    width: 99%
+  #it-store .sf-block:hover button
+    width: 108%
+  #sft1, #sft2, #sft3
+    padding: 0 20px
+
+@media screen and (min-width: 1200px)
+  #evcal.viewwk tbody td > div
+    min-height: 486px !important
+
+@media screen and (min-width: 1024px)
+  #evcal.viewwk
+    td
+      height: auto
+    tbody td > div
+      min-height: 486px !important
+    .ev-block
+      width: 90%
+      padding: 7% 4% 6% 3%
+      margin-bottom: 4px
+      overflow: hidden
+      &:hover
+        background: #f6f7f7
+    .ev-match
+      > div > span
+        &:first-child
+          width: 75%
+          margin-left: 5%
+        width: 20%
+      .ev
+        display: none
+
+@media screen and (max-width: 1023px)
+  #evcal.viewwk
+    thead th
+      display: none
+    tbody tr
+      border-top: 1px solid #cbc9c7
+    td
+      display: block
+      width: 100% !important
+      min-height: 80px
+      overflow: visible
+      border-top: 0
+    tbody td > div > div:first-child
+      padding: 0.5% 0
+      > span
+        display: inline
+        margin-right: 8px
+    .ev-block
+      width: 95%
+      padding: 1%
+      &:hover
+        background: #f6f7f7
+    .ev-match
+      > div > span
+        &:first-child
+          width: 78%
+          margin-left: 2%
+        width: 20%
+      .ev
+        display: none
+
+@media screen and (min-width: 1200px)
+  #evcal.viewmo tbody td > div
+    min-height: 120px !important
+
+@media screen and (min-width: 1024px)
+  #evcal.viewmo tbody
+    td
+      height: auto
+      > div
+        min-height: 100px
+    .ev-feed
+      margin-bottom: 16px
+    .ev-stage, .ev-body
+      position: absolute
+      left: -12000px
+    .ev-block
+      width: 90%
+      padding: 0 4% 0 3%
+      margin-bottom: 0
+      line-height: 21px
+      &:hover
+        background: #f6f7f7
+    .ev-match
+      margin-bottom: 0
+
+@media screen and (max-width: 1023px)
+  #evcal.viewmo
+    tbody
+      td > div
+        min-height: 85px
+      .ev-feed
+        margin-bottom: 16px
+      .ev-head > div
+        width: 100%
+      .ev-stage, .ev-body, .ev-timer
+        position: absolute
+        left: -12000px
+      .ev-block
+        width: 90%
+        padding: 0 4% 0 3%
+        margin-bottom: 0
+        line-height: 21px
+      .ev-match
+        margin-bottom: 0
+    .ev-ctrl > span, tfoot .ev-match
+      color: #404041
+
+@media screen and (max-width: 767px)
+  #evcal.viewmo
+    thead th
+      font-size: 8pt
+      overflow: hidden
+    tbody
+      td
+        &:hover
+          background: #f6f7f7
+        > div
+          min-height: 60px
+      .ev-feed
+        width: 90%
+      .ev
+        position: absolute
+        left: -12000px
+      .ev-block
+        display: inline-block
+        width: 6px
+        height: 6px
+        padding: 0
+        line-height: 12px
+        text-indent: 10px
+        border-radius: 3px
+        background: green
+      .ev-head
+        position: absolute
+        line-height: 12px
+    tfoot
+      display: table-footer-group
+      tr:first-child > td
+        height: 0
+        background: #cbc9c7
+      td
+        font-size: 8pt
+        > div > div:first-child
+          padding: .5% 0
+          margin-left: 2%
+      tr
+        border-top: 1px solid #cbc9c7
+      td
+        min-height: 80px
+        overflow: visible
+        border-top: 0
+        > div > div:first-child
+          padding: 0.5% 0
+          > span
+            display: inline
+            margin-right: 8px
+      .ev-head
+        width: 75% !important
+      .ev-block
+        width: 95%
+        padding: 1% 1% 0 1%
+        &:hover
+          background: #f6f7f7
+      .ev-match
+        > div > span
+          &:first-child
+            width: 78%
+            margin-left: 2%
+          width: 20%
+        .ev
+          display: none
+
+@media (max-width: 480px)
+  #evcal.viewmo
+    thead th
+      font-size: 7pt
+    tbody
+      td > div
+        min-height: 45px
+      .ev-feed
+        min-height: 0

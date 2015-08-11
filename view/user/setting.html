@@ -1,0 +1,165 @@
+{% extends 'snippet/layout.html' %}
+{% block main %}
+	<div class="container-box">
+		<div class="form-horizontal">
+			<div id="legend">
+				<p class="">用户信息设置</p>
+			</div>
+			{{ errors|dump_errors }}
+
+			<div class="control-group">
+				<!-- Avatar -->
+				<label class="control-label" for="avatar">头像</label>
+				<div class="controls">
+					<img src="/static/images/avatar/{{ user_info.avatar }}_sb.png?t={{ gen_random() }}" alt="" class="avatar" />
+					<a href="/setting/avatar" class="btn btn-sm">设置头像</a>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<!-- Username -->
+				<label class="control-label" for="username">用户名</label>
+				<div class="controls">
+					<input type="text" id="username" name="username" placeholder="" class="input-xlarge" value="{{ user_info.username or '' }}" readonly>
+					<p class="help-block">用户名由字母开头，只能含有字母、数字或者下划线</p>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<!-- E-mail -->
+				<label class="control-label" for="email">E-mail</label>
+				<div class="controls">
+					<input type="text" id="email" name="email" placeholder="" class="input-xlarge" value="{{ user_info.email or '' }}" readonly>
+					<p class="help-block">你的E-mail，便于登录和找回密码</p>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<!-- Nickname -->
+				<label class="control-label" for="nickname">昵称</label>
+				<div class="controls">
+					<input type="text" id="nickname" name="nickname" placeholder="" class="input-xlarge" value="{{ user_info.nickname or '' }}">
+					<p class="help-block">你的昵称，便于其他人更好的认识你</p>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<!-- signature -->
+				<label class="control-label" for="signature">个性签名</label>
+				<div class="controls">
+					<input type="text" id="signature" name="signature" placeholder="" class="input-xlarge" value="{{ user_info.signature or '' }}">
+					<p class="help-block">你的签名，用于展示在评论和个人首页，64字以内</p>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<!-- Location -->
+				<label class="control-label" for="location">城市</label>
+				<div class="controls">
+					<input type="text" id="location" name="location" placeholder="" class="input-xlarge" value="{{ user_info.location or '' }}">
+					<p class="help-block">你的城市，有助于后续你在社区的交友</p>
+				</div>
+			</div>
+			{#
+			<div class="control-group">
+				<!-- E-mail -->
+				<label class="control-label" for="website">个人网站</label>
+				<div class="controls">
+					<input type="text" id="website" name="website" placeholder="" class="input-xlarge" value="{{ user_info.website or '' }}">
+					<p class="help-block">你的个人网站，让你的朋友了解你更多一点</p>
+				</div>
+			</div>
+			<div class="control-group">
+				<!-- E-mail -->
+				<label class="control-label" for="company">所在公司</label>
+				<div class="controls">
+					<input type="text" id="company" name="company" placeholder="" class="input-xlarge" value="{{ user_info.company or '' }}">
+					<p class="help-block">你所在的公司，让你的朋友了解你更多一点</p>
+				</div>
+			</div>
+			#}
+
+			<div class="control-group">
+				<!-- fvteam -->
+				<label class="control-label" for="fvteam">喜欢的战队：</label>
+				<div class="controls">
+					<select id="fvteam" class="form-control" name="fvteam">
+					    <option value="{{ user_info.fvteam or '' }}">None</option>
+					    <option value="3">Alliance</option>
+					    <option value="10">Cloud 9</option>
+					    <option value="192">CompLexity Gaming</option>
+					    <option value="254">EHOME</option>
+					    <option value="6">Evil Geniuses</option>
+					    <option value="7">Fnatic</option>
+					    <option value="189">HellRaisers</option>
+					    <option value="2">Invictus Gaming</option>
+					    <option value="33">LGD.Taobao</option>
+					    <option value="22">Mineski</option>
+					    <option value="45">Mousesports</option>
+					    <option value="24">MVP Phoenix</option>
+					    <option value="1">Natus Vincere</option>
+					    <option value="8">NewBee</option>
+					    <option value="252">Ninjas in Pyjamas</option>
+					    <option value="49">Power Rangers</option>
+					    <option value="53">Rave</option>
+					    <option value="180">Secret Team</option>
+					    <option value="4">Team DK</option>
+					    <option value="11">Team Empire</option>
+					    <option value="32">TongFu</option>
+					    <option value="9">Vici Gaming</option>
+					    <option value="44">Virtus.pro</option>
+					</select>
+					<p class="help-block">你喜欢的战队，用于展示在回复帖子中。</p>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<!-- E-mail -->
+				<label class="control-label" for="weibo">weibo：</label>
+				<div class="controls">
+					<input type="text" id="weibo" name="weibo" placeholder="" class="input-xlarge" value="{{ user_info.weibo or '' }}">
+					<p class="help-block">你的weibo用户名，用以在你的个人页面展示。</p>
+				</div>
+			</div>
+			<div class="control-group">
+				<!-- E-mail -->
+				<label class="control-label" for="steamid">SteamID:</label>
+				<div class="controls">
+					<input type="text" id="steamid" name="steamid" placeholder="" class="input-xlarge" value="{{ user_info.steamid or '' }}">
+					<p class="help-block">你的SteamID，用以向其他玩家展示。</p>
+				</div>
+			</div>
+			{#
+			<div class="control-group">
+				<!-- E-mail -->
+				<label class="control-label" for="self_intro">个人简介：</label>
+				<div class="controls">
+					<textarea type="text" id="self_intro" name="self_intro" placeholder="" class="input-xlarge">{{ user_info.self_intro or '' }}</textarea>
+					<p class="help-block">可以稍微详细的介绍自己。</p>
+				</div>
+			</div>
+			#}
+			<div class="control-group">
+				<!-- Button -->
+				<div class="controls">
+					<a id="save_userinfo" class="btn btn-sm btn-success" href="javascript:void(0)">保存改动</a>
+					<a href="/setting/password" class="ml10 btn">设置密码</a>
+				</div>
+			</div>
+			{{ xsrf_form_html() }}
+		</div>
+	</div>
+	<script type="text/javascript" src="/static/js/d2ark/setuserinfo.js"></script>
+{% endblock %}
+
+{% block sidebar %}
+	<div class="sidenav container-box">
+		<ul>
+			<li class="current"><a href="/setting">用户中心</a></li>
+			<li><a href="/itemshop">我的物品</a></li>
+			<li><a href="/setting/avatar">设置头像</a></li>
+			<li><a href="/setting/password">设置密码</a></li>
+			<li><a href="/">返回首页</a></li>
+		</ul>
+	</div>
+{% endblock %}

@@ -1,0 +1,8062 @@
+/* line 1, ../itemshop.sass */
+html {
+  overflow-y: scroll;
+}
+
+/* line 4, ../itemshop.sass */
+body {
+  background-color: #fafafa;
+  margin: 0;
+  font-family: arial, helvetica;
+  font-size: 10pt;
+  color: #404041;
+}
+
+/* line 11, ../itemshop.sass */
+img {
+  border-width: 0;
+}
+
+/* line 14, ../itemshop.sass */
+#main-left-sidebar {
+  float: left;
+  width: 219px;
+  text-align: center;
+}
+
+/* line 19, ../itemshop.sass */
+#main-content {
+  float: left;
+  min-height: 600px;
+  padding: 0 5px;
+  padding-bottom: 5px;
+  width: 752px;
+  background: #dbdad8;
+  border: 1px solid #cbc9c7;
+}
+
+/* line 28, ../itemshop.sass */
+#main-content-wide {
+  padding: 0 5px;
+  min-height: 600px;
+  padding-bottom: 5px;
+  background: #dbdad8;
+  border: 1px solid #dedad9;
+}
+
+/* line 35, ../itemshop.sass */
+#main-right-sidebar {
+  width: 219px;
+  text-align: center;
+  float: left;
+}
+
+/* line 40, ../itemshop.sass */
+#lsb-toggle, #rsb-toggle {
+  display: none;
+  height: 36px;
+  line-height: 36px;
+  margin: 4px 0 8px 0;
+  background-color: #284855;
+  color: #fff;
+  z-index: 2;
+  font-family: "Open Sans", "Arial";
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 54, ../itemshop.sass */
+#lsb-toggle:hover, #rsb-toggle:hover {
+  background-color: #467a95;
+}
+
+/* line 57, ../itemshop.sass */
+.no-padding {
+  margin: 0 -6px;
+  margin-bottom: -5px;
+}
+
+/* line 62, ../itemshop.sass */
+h1.title {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Open Sans", "Arial";
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  padding-top: 2px;
+  height: 23px;
+  background-color: #284855;
+  margin: 0 -6px;
+  margin-top: -1px;
+}
+/* line 74, ../itemshop.sass */
+h1.padding {
+  margin-bottom: 5px;
+}
+
+/* line 77, ../itemshop.sass */
+#crossdomainsubmit img {
+  vertical-align: middle;
+  position: relative;
+  bottom: 2px;
+}
+
+/* line 82, ../itemshop.sass */
+.forum {
+  width: 100%;
+}
+
+/* line 85, ../itemshop.sass */
+article.highlighted {
+  background-color: #c1d3e0;
+}
+
+/* line 88, ../itemshop.sass */
+.forumPost {
+  font: 10pt Arial;
+  color: #404041;
+  width: 100%;
+}
+/* line 92, ../itemshop.sass */
+.forumPost > section {
+  padding: 10px 8px 20px 8px;
+  word-wrap: break-word;
+}
+/* line 95, ../itemshop.sass */
+.forumPost > section * {
+  max-width: 100%;
+}
+
+/* line 98, ../itemshop.sass */
+#forummsg * {
+  max-width: 100%;
+}
+
+/* line 102, ../itemshop.sass */
+.forumPost a {
+  color: #467a95;
+  outline: 0;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+}
+/* line 107, ../itemshop.sass */
+.forumPost a:link {
+  color: #467a95;
+  outline: 0;
+}
+/* line 110, ../itemshop.sass */
+.forumPost a:hover {
+  text-decoration: underline;
+}
+/* line 112, ../itemshop.sass */
+.forumPost img {
+  max-width: 100%;
+  height: auto !important;
+  width: auto;
+}
+
+/* line 117, ../itemshop.sass */
+button {
+  color: #404041;
+}
+
+/* line 120, ../itemshop.sass */
+.forumPostHighlight {
+  font: 10pt Arial;
+  color: #404041;
+  width: 100%;
+}
+
+/* line 125, ../itemshop.sass */
+.forumPostOld {
+  background: url(/images/forum/oldpost.gif) no-repeat bottom right;
+}
+
+/* line 128, ../itemshop.sass */
+.greybox {
+  margin-bottom: 8px;
+  padding: 4px;
+  border: 1px solid #cbc9c7;
+  background-color: #eceaeb;
+}
+/* line 133, ../itemshop.sass */
+.greybox:hover {
+  background: #f6f7f7;
+}
+/* line 135, ../itemshop.sass */
+.greybox a {
+  text-decoration: none;
+}
+/* line 137, ../itemshop.sass */
+.greybox a:hover {
+  text-decoration: none;
+}
+
+/* line 141, ../itemshop.sass */
+td.nopad {
+  padding: 0 1px;
+}
+/* line 143, ../itemshop.sass */
+td.l {
+  text-align: left;
+}
+/* line 145, ../itemshop.sass */
+td.greybox.active {
+  background-color: #fff;
+}
+
+/* line 148, ../itemshop.sass */
+table.sidemenu {
+  width: 100%;
+  padding: 0;
+  background-color: #dbdad8;
+  border-collapse: collapse;
+  margin-left: 0;
+}
+
+/* line 155, ../itemshop.sass */
+td.sidemenu {
+  width: 100%;
+  border-left: 1px solid #cbc9c7;
+  border-right: 1px solid #cbc9c7;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* line 162, ../itemshop.sass */
+#wikiform {
+  padding-left: 10px;
+}
+
+/* line 165, ../itemshop.sass */
+.calendar_content {
+  padding-top: 6px;
+}
+/* line 167, ../itemshop.sass */
+.calendar_content td.sidemenu {
+  padding: 2px 0 0 0;
+}
+
+/* line 170, ../itemshop.sass */
+#main-content > blockquote a {
+  text-decoration: underline;
+}
+
+/* line 173, ../itemshop.sass */
+.mir {
+  color: #6c0000;
+}
+
+/* line 176, ../itemshop.sass */
+.mib {
+  color: #104e92;
+}
+
+/* line 179, ../itemshop.sass */
+.evc-tabs, .evc-radio {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 187, ../itemshop.sass */
+.ev-feed {
+  margin: 0 auto;
+  width: 100%;
+  color: #404041;
+}
+
+/* line 192, ../itemshop.sass */
+td.sidemenu .ev-feed {
+  margin: 8px 0 16px 0;
+}
+
+/* line 195, ../itemshop.sass */
+#evcal .ev-feed {
+  min-height: 40px;
+}
+
+/* line 198, ../itemshop.sass */
+.ev-block {
+  position: relative;
+  margin: 0 auto;
+  font-size: 8pt;
+  line-height: 12px;
+  margin-bottom: 8px;
+  width: 90%;
+}
+/* line 204, ../itemshop.sass */
+.ev-block.ev-live {
+  width: 88%;
+}
+
+/* line 208, ../itemshop.sass */
+td.sidemenu .ev-live {
+  background: #eceaeb;
+  border: 1px solid #cbc9c7;
+  padding: 3% 4% 3% 3%;
+}
+
+/* line 213, ../itemshop.sass */
+.lev-none {
+  margin: 0 auto;
+  text-align: center;
+  font-family: open sans;
+  font-size: 18px;
+  color: #939597;
+}
+
+/* line 220, ../itemshop.sass */
+.ev-head {
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 225, ../itemshop.sass */
+.icon-container {
+  display: inline-block;
+  width: 26px;
+  vertical-align: top;
+  text-align: center;
+}
+
+/* line 231, ../itemshop.sass */
+.ev-head > div {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 700;
+}
+
+/* line 236, ../itemshop.sass */
+.ev-timer {
+  display: inline-block;
+  vertical-align: top;
+  color: #939597;
+  text-align: right;
+}
+
+/* line 242, ../itemshop.sass */
+.ev-head > div {
+  width: 97%;
+}
+
+/* line 245, ../itemshop.sass */
+#evcal .ev-head {
+  width: 103%;
+}
+
+/* line 249, ../itemshop.sass */
+.ev-live .ev-head > div {
+  display: block;
+  width: 100%;
+}
+/* line 252, ../itemshop.sass */
+.ev-live .ev-head > span {
+  display: none;
+}
+
+/* line 255, ../itemshop.sass */
+.ev-timer {
+  width: 30%;
+}
+
+/* line 258, ../itemshop.sass */
+.ev-head .ev-timer {
+  margin-top: 2px;
+}
+
+/* line 261, ../itemshop.sass */
+td.sidemenu .ev-timer {
+  width: 30%;
+}
+
+/* line 265, ../itemshop.sass */
+.ev-head > div > span {
+  display: inline-block;
+}
+/* line 267, ../itemshop.sass */
+.ev-head .ev {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  vertical-align: top;
+}
+
+/* line 273, ../itemshop.sass */
+.ev-stage {
+  color: #939597;
+}
+
+/* line 276, ../itemshop.sass */
+td.sidemenu .ev-stage {
+  margin: 0 0 8px 0;
+}
+
+/* line 279, ../itemshop.sass */
+#evcal .ev-stage {
+  margin: -2px 0 4px 0;
+}
+
+/* line 282, ../itemshop.sass */
+.ev-match {
+  margin-bottom: 8px;
+}
+/* line 284, ../itemshop.sass */
+.ev-match > div > span:first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 289, ../itemshop.sass */
+td.sidemenu .ev-match > div > span:first-child {
+  width: 65%;
+  margin-left: 5%;
+}
+
+/* line 293, ../itemshop.sass */
+.ev-match > div > span {
+  display: inline-block;
+  width: 25%;
+}
+
+/* line 297, ../itemshop.sass */
+td.sidemenu .ev-match .ev {
+  display: none;
+}
+
+/* line 300, ../itemshop.sass */
+.ev-stream {
+  margin: 0 0 8px 5%;
+}
+/* line 302, ../itemshop.sass */
+.ev-stream > div > span {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  color: #939597;
+  vertical-align: top;
+}
+/* line 303, ../itemshop.sass */
+.ev-stream > div > span:first-child {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  color: #404041;
+}
+/* line 314, ../itemshop.sass */
+.ev-stream a {
+  color: #008f59 !important;
+}
+
+/* line 317, ../itemshop.sass */
+.ev-foot {
+  text-align: center;
+}
+/* line 319, ../itemshop.sass */
+.ev-foot a {
+  text-decoration: none;
+}
+
+/* line 322, ../itemshop.sass */
+.ev-lp, .ev-lr {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  margin-right: 8px;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  vertical-align: middle;
+}
+
+/* line 330, ../itemshop.sass */
+.ev-lp {
+  width: 17px;
+  height: 12px;
+  background-position: -47px -381px;
+}
+
+/* line 335, ../itemshop.sass */
+.ev-lr {
+  width: 15px;
+  height: 12px;
+  background-position: -20px -381px;
+}
+
+/* line 340, ../itemshop.sass */
+.ev-btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 2px 4px;
+  font-size: 8pt;
+  line-height: 18px;
+  cursor: pointer;
+}
+/* line 347, ../itemshop.sass */
+.ev-btn:hover {
+  background: #f6f7f7;
+  border: 1px solid #cbc9c7;
+  text-decoration: none;
+}
+
+/* line 352, ../itemshop.sass */
+.ev-ctrl {
+  display: inline-block;
+  width: auto;
+  outline: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+/* line 360, ../itemshop.sass */
+.ev-ctrl > span {
+  cursor: pointer;
+}
+/* line 362, ../itemshop.sass */
+.ev-ctrl > span:hover {
+  text-decoration: underline;
+}
+/* line 364, ../itemshop.sass */
+.ev-ctrl aside {
+  position: absolute;
+  position: absolute;
+  width: 600px;
+  height: auto;
+  background: #f6f7f7;
+  border: 1px solid #cbc9c7;
+  text-align: left;
+  padding: 12px;
+  z-index: 1;
+  font-size: 9pt;
+  font-weight: 400;
+  box-shadow: 0 4px 3px -1px rgba(0, 0, 0, 0.25);
+  white-space: normal;
+  overflow: visible;
+  cursor: default;
+}
+
+/* line 381, ../itemshop.sass */
+td.sidemenu .ev-ctrl aside {
+  right: 12000px;
+}
+
+/* line 384, ../itemshop.sass */
+#evcal tfoot tr > td .ev-ctrl aside, .evc-l .ev-ctrl aside {
+  left: -12000px;
+}
+
+/* line 387, ../itemshop.sass */
+.evc-c .ev-ctrl aside, .evc-r .ev-ctrl aside {
+  right: 12000px;
+}
+
+/* line 390, ../itemshop.sass */
+#evcal td.today {
+  background-color: white;
+}
+
+/* line 393, ../itemshop.sass */
+td.sidemenu .ev-ctrl:focus aside {
+  top: 5px;
+  right: 5px;
+}
+
+/* line 397, ../itemshop.sass */
+#evcal tfoot tr > td .ev-ctrl:focus aside, .evc-l .ev-ctrl:focus aside {
+  top: -1px;
+  left: 0;
+}
+
+/* line 401, ../itemshop.sass */
+.evc-c .ev-ctrl:focus aside {
+  top: -1px;
+  right: -180px;
+}
+
+/* line 405, ../itemshop.sass */
+.evc-r .ev-ctrl:focus aside {
+  top: -1px;
+  right: 0;
+}
+
+/* line 409, ../itemshop.sass */
+#eventeditform {
+  overflow: hidden;
+}
+
+/* line 412, ../itemshop.sass */
+.evc-hist, .evc-edit {
+  width: 102%;
+  max-height: 410px;
+  overflow-y: scroll;
+}
+
+/* line 417, ../itemshop.sass */
+.evc-head {
+  margin: 4px 0;
+}
+/* line 419, ../itemshop.sass */
+.evc-head > div {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 420, ../itemshop.sass */
+.evc-head > div:first-child {
+  margin-right: 8px;
+}
+
+/* line 426, ../itemshop.sass */
+.ev-ctrl h1, .ev-ctrl h2 {
+  font-family: "open sans", sans-serif;
+}
+/* line 428, ../itemshop.sass */
+.ev-ctrl h1 {
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;
+}
+/* line 432, ../itemshop.sass */
+.ev-ctrl h2 {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 6px 0 5px 0;
+}
+/* line 436, ../itemshop.sass */
+.ev-ctrl h2 a {
+  text-decoration: none;
+  color: #467a95 !important;
+}
+
+/* line 440, ../itemshop.sass */
+.evc-link a {
+  text-decoration: none;
+  color: #467a95 !important;
+}
+
+/* line 444, ../itemshop.sass */
+.ev-ctrl h2 a:hover {
+  text-decoration: underline;
+}
+
+/* line 447, ../itemshop.sass */
+.evc-tabs {
+  margin: 8px 0 12px 0;
+}
+/* line 449, ../itemshop.sass */
+.evc-tabs div {
+  display: inline-block;
+  width: auto;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 32px;
+  text-align: center;
+  border-bottom: 1px solid #cbc9c7;
+  -webkit-transition: border 200ms ease-out;
+  -moz-transition: border 200ms ease-out;
+  -o-transition: border 200ms ease-out;
+  transition: border 200ms ease-out;
+}
+/* line 461, ../itemshop.sass */
+.evc-tabs div:hover {
+  border-bottom: 1px solid #404041;
+}
+
+/* line 464, ../itemshop.sass */
+#evc-t1.tabin, #evc-t2.tabin, #evc-t3.tabin, #evc-t4.tabin {
+  border-bottom: 1px solid #404041;
+}
+
+/* line 468, ../itemshop.sass */
+.evc-body > div {
+  margin-bottom: 16px;
+}
+/* line 470, ../itemshop.sass */
+.evc-body a {
+  color: #467a95;
+}
+/* line 472, ../itemshop.sass */
+.evc-body a:hover {
+  color: #467a95;
+}
+/* line 474, ../itemshop.sass */
+.evc-body img {
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+
+/* line 478, ../itemshop.sass */
+.evc-hist, .evch-more, .evc-edit, .evc-admin {
+  margin-bottom: 16px;
+}
+
+/* line 481, ../itemshop.sass */
+.evc-block > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 29%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 24px;
+  text-align: right;
+}
+/* line 482, ../itemshop.sass */
+.evc-block > div:first-child {
+  width: 71%;
+  text-align: left;
+}
+/* line 493, ../itemshop.sass */
+.evc-block > div > span {
+  display: inline-block;
+}
+/* line 494, ../itemshop.sass */
+.evc-block > div > span:nth-child(2) {
+  margin: 0 8px;
+}
+/* line 496, ../itemshop.sass */
+.evc-block > div > span:first-child {
+  text-align: right;
+  width: 41%;
+}
+/* line 499, ../itemshop.sass */
+.evc-block > div > span:last-child {
+  width: 41%;
+}
+
+/* line 503, ../itemshop.sass */
+.evc-undo {
+  text-align: right;
+  margin-right: 10%;
+}
+
+/* line 507, ../itemshop.sass */
+.evc-link > div > div {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+}
+/* line 508, ../itemshop.sass */
+.evc-link > div > div:first-child {
+  width: 84px;
+  margin-right: 16px;
+  text-align: right;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+/* line 518, ../itemshop.sass */
+.evch-plist {
+  line-height: 19px;
+}
+
+/* line 522, ../itemshop.sass */
+.evc-radio input[type="radio"] {
+  position: absolute;
+  left: -12000px;
+}
+/* line 525, ../itemshop.sass */
+.evc-radio label {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 8px;
+  background: #eceaeb;
+  border: 1px solid #cbc9c7;
+  color: #939597;
+  margin-left: 4px;
+}
+/* line 534, ../itemshop.sass */
+.evc-radio label:hover {
+  background: #fff;
+}
+/* line 536, ../itemshop.sass */
+.evc-radio input[type="radio"]:checked + label {
+  color: white;
+  background: #467a95;
+  border: 1px solid #467a95;
+}
+
+/* line 541, ../itemshop.sass */
+.evc-hist > div > div > span:first-child, .evch-more > div > div > span:first-child {
+  color: #404041;
+  font-size: 9pt;
+}
+
+/* line 545, ../itemshop.sass */
+.evc-hist > div > div > span {
+  color: #939597;
+  font-size: 8pt;
+  line-height: 10pt;
+  margin-right: 8px;
+}
+
+/* line 551, ../itemshop.sass */
+.evch-more > div {
+  margin-bottom: 8px;
+}
+/* line 552, ../itemshop.sass */
+.evch-more > div > div > span {
+  color: #939597;
+  font-size: 8pt;
+  line-height: 10pt;
+  margin-right: 8px;
+}
+
+/* line 559, ../itemshop.sass */
+.evc-hist .flag {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  background-position: 6px -191px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+/* line 568, ../itemshop.sass */
+.evc-hist .flag:hover {
+  background-position: -9px -191px;
+}
+
+/* line 571, ../itemshop.sass */
+.undo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  background-position: -28px -192px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+/* line 580, ../itemshop.sass */
+.undo:hover {
+  background-position: -45px -192px;
+}
+
+/* line 583, ../itemshop.sass */
+.evch-block > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2px 0;
+}
+
+/* line 588, ../itemshop.sass */
+.evch-un {
+  color: #124d93;
+  font-weight: 700;
+}
+
+/* line 592, ../itemshop.sass */
+.evch-more {
+  height: 20px;
+  overflow: hidden;
+  outline: 0;
+}
+/* line 593, ../itemshop.sass */
+.evch-more > div:first-child {
+  width: 52px;
+  font-size: 8pt;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 0;
+  cursor: pointer;
+}
+/* line 603, ../itemshop.sass */
+.evch-more:focus {
+  height: 100%;
+}
+/* line 605, ../itemshop.sass */
+.evch-more:focus > div:first-child {
+  display: none;
+}
+
+/* line 608, ../itemshop.sass */
+.evc-edit > div {
+  margin-bottom: 16px;
+}
+
+/* line 611, ../itemshop.sass */
+.evce-req > div > span:first-child, .evce-rec > div > span:first-child {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  line-height: 30px;
+  margin-right: 3%;
+  text-align: right;
+}
+
+/* line 619, ../itemshop.sass */
+.evce-req > div > span > span, .evce-rec > div > span > span {
+  display: block;
+  color: #939597;
+  font-size: 8pt;
+  line-height: 12px;
+  margin-top: -6px;
+}
+
+/* line 627, ../itemshop.sass */
+.evc-edit input[type="text"] {
+  width: 65%;
+}
+/* line 629, ../itemshop.sass */
+.evc-edit textarea {
+  width: 65%;
+  max-width: 65%;
+  min-width: 65%;
+  min-height: 65px;
+  margin: 4px 0;
+}
+/* line 635, ../itemshop.sass */
+.evc-edit input[type="text"], .evc-edit select {
+  color: #404041;
+  margin-top: 4px;
+}
+
+/* line 639, ../itemshop.sass */
+.matchstatus {
+  text-align: left;
+  text-indent: 28%;
+  padding-bottom: 8px;
+}
+/* line 643, ../itemshop.sass */
+.matchstatus input {
+  vertical-align: middle;
+  margin: 0 6px;
+}
+/* line 646, ../itemshop.sass */
+.matchstatus label {
+  vertical-align: middle;
+}
+
+/* line 650, ../itemshop.sass */
+#playersbox > div > div > span:first-child {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  line-height: 30px;
+  margin-right: 3%;
+  text-align: right;
+}
+/* line 657, ../itemshop.sass */
+#playersbox > div > b {
+  display: block;
+  padding-bottom: 8px;
+}
+
+/* line 661, ../itemshop.sass */
+.pbmu {
+  margin-right: 2%;
+}
+/* line 663, ../itemshop.sass */
+.pbmu select {
+  width: 22.5%;
+}
+
+/* line 666, ../itemshop.sass */
+.evce-add {
+  line-height: 12px;
+  padding: 0 1% 16px 0;
+  text-align: right;
+}
+/* line 670, ../itemshop.sass */
+.evce-add a {
+  margin-left: 16px;
+  line-height: 21px;
+}
+
+/* line 675, ../itemshop.sass */
+.evc-admin input, .evc-admin label, .evc-admin select {
+  vertical-align: middle;
+  margin-top: 4px;
+}
+/* line 678, ../itemshop.sass */
+.evc-admin > div > a {
+  margin-left: 33%;
+}
+
+/* line 681, ../itemshop.sass */
+.evca-timezone {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 4px;
+}
+
+/* line 687, ../itemshop.sass */
+.evc-commit > div {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  vertical-align: middle;
+}
+/* line 688, ../itemshop.sass */
+.evc-commit > div:first-child {
+  text-align: left;
+}
+/* line 694, ../itemshop.sass */
+.evc-commit > div > span {
+  color: #939597;
+  font-size: 8pt;
+  line-height: 12pt;
+  margin-right: 8px;
+}
+/* line 699, ../itemshop.sass */
+.evc-commit button {
+  height: 32px;
+  width: 120px;
+  background: #467a95;
+  color: #fff;
+  border: 1px solid #467a95;
+  margin-left: 8px;
+}
+/* line 700, ../itemshop.sass */
+.evc-commit button:first-child {
+  height: 32px;
+  width: 80px;
+  background: #eceaeb;
+  border: 1px solid #cbc9c7;
+  color: #404041;
+  margin-left: 0;
+}
+/* line 707, ../itemshop.sass */
+.evc-commit button:first-child:hover {
+  background: #fff;
+}
+/* line 715, ../itemshop.sass */
+.evc-commit button:hover {
+  background: #4f89a3;
+}
+
+/* line 718, ../itemshop.sass */
+#evcal {
+  table-layout: fixed;
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+/* line 725, ../itemshop.sass */
+#evcal thead {
+  line-height: 18px;
+}
+/* line 727, ../itemshop.sass */
+#evcal th {
+  text-align: center;
+  font-weight: 400;
+}
+/* line 730, ../itemshop.sass */
+#evcal td {
+  width: 14.285%;
+  background: #eceaeb;
+  color: #939597;
+  vertical-align: top;
+  border: 1px solid #cbc9c7;
+  outline: 0;
+}
+/* line 737, ../itemshop.sass */
+#evcal td.mo_out {
+  background: #e0e0df;
+}
+/* line 739, ../itemshop.sass */
+#evcal tbody td > div {
+  height: 100%;
+  width: 100%;
+}
+/* line 742, ../itemshop.sass */
+#evcal tbody td > div > div:first-child {
+  margin: 0 auto;
+  width: 95%;
+  font-size: 8pt;
+  padding-top: 3%;
+}
+/* line 747, ../itemshop.sass */
+#evcal tbody td > div > div:first-child > span {
+  display: none;
+}
+
+/* line 750, ../itemshop.sass */
+.calhead {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+/* line 754, ../itemshop.sass */
+.calhead > div {
+  width: 50%;
+  text-align: right;
+  margin-top: 6px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 755, ../itemshop.sass */
+.calhead > div:first-child {
+  text-align: left;
+}
+/* line 757, ../itemshop.sass */
+.calhead > div:first-child > div:first-child button {
+  margin-right: 16px;
+}
+/* line 758, ../itemshop.sass */
+.calhead > div:first-child > div:first-child button:first-child {
+  margin-right: 0;
+}
+/* line 766, ../itemshop.sass */
+.calhead > div > div {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 8px;
+}
+/* line 770, ../itemshop.sass */
+.calhead > div > span {
+  margin-left: 16px;
+}
+/* line 772, ../itemshop.sass */
+.calhead button, .calhead select {
+  color: #404041;
+}
+
+/* line 775, ../itemshop.sass */
+.calfilter {
+  margin-bottom: 8px;
+}
+/* line 777, ../itemshop.sass */
+.calfilter form {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1px 0 0 4px;
+  font-size: 9pt;
+}
+/* line 782, ../itemshop.sass */
+.calfilter select {
+  margin-top: 1px;
+  margin-left: 8px;
+}
+/* line 783, ../itemshop.sass */
+.calfilter select:first-child {
+  margin-left: 0;
+}
+/* line 787, ../itemshop.sass */
+.calfilter span {
+  vertical-align: middle;
+}
+
+/* line 790, ../itemshop.sass */
+.calsubmit {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0 !important;
+  margin-left: 16px;
+}
+/* line 795, ../itemshop.sass */
+.calsubmit > button {
+  float: right;
+  clear: both;
+  margin-right: 0 !important;
+}
+
+/* line 800, ../itemshop.sass */
+.calkey {
+  display: none;
+  margin: 0 0 4px;
+  padding-bottom: 24px;
+}
+/* line 804, ../itemshop.sass */
+.calkey > div {
+  width: 100%;
+  margin: 0 0 0 12px;
+  text-align: left;
+}
+/* line 805, ../itemshop.sass */
+.calkey > div:first-child {
+  display: block;
+  width: 100%;
+  font-size: 10pt;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+/* line 814, ../itemshop.sass */
+.calkey > div > span {
+  display: inline-block;
+  width: 105px;
+  font-size: 8pt;
+  vertical-align: top;
+}
+/* line 819, ../itemshop.sass */
+.calkey > div > span > span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin: 0 4px 0 0;
+}
+
+/* line 827, ../itemshop.sass */
+.calflip button {
+  vertical-align: middle;
+}
+/* line 829, ../itemshop.sass */
+.calflip button > span {
+  display: block;
+  width: 12px;
+  height: 16px;
+  margin-left: 0;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+}
+/* line 835, ../itemshop.sass */
+.calflip button:first-child > span {
+  background-position: -2px -606px;
+}
+/* line 837, ../itemshop.sass */
+.calflip button > span {
+  background-position: -21px -606px;
+}
+/* line 839, ../itemshop.sass */
+.calflip > span {
+  margin: 0 16px;
+  vertical-align: middle;
+}
+
+/* line 843, ../itemshop.sass */
+#evcal tfoot {
+  display: none;
+}
+
+/* line 846, ../itemshop.sass */
+.sb-blck {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 850, ../itemshop.sass */
+.sb-blck > a:first-child {
+  margin-top: 12px;
+}
+
+/* line 853, ../itemshop.sass */
+.block-blogs .sb-blck {
+  margin-top: 12px;
+}
+/* line 855, ../itemshop.sass */
+.block-blogs .sb-blck > a:first-child {
+  margin-top: 0;
+}
+
+/* line 858, ../itemshop.sass */
+.block-staff .sb-blck > a:first-child, .block-community .sb-blck > a:first-child, .subheading148 .sb-blck > a:first-child, .subheading134 .sb-blck > a:first-child, .subheading95 .sb-blck > a:first-child {
+  margin-top: 0;
+}
+
+/* line 861, ../itemshop.sass */
+.sb-blck > a {
+  display: block !important;
+  line-height: 17px;
+}
+
+/* line 865, ../itemshop.sass */
+.sidebar_block .sbcontents {
+  text-align: left;
+  border-left: 1px solid #cbc9c7;
+  border-right: 1px solid #cbc9c7;
+  background-color: #dbdad8;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 876, ../itemshop.sass */
+.subheading94 {
+  margin-left: 8px;
+}
+
+/* line 880, ../itemshop.sass */
+.sidebar_block .sbcontents .sbtitle {
+  padding: 12px 0 0 0 !important;
+  clear: both;
+}
+/* line 884, ../itemshop.sass */
+.sidebar_block .sbcontents a:link {
+  text-decoration: none;
+  color: #404041;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 889, ../itemshop.sass */
+.sidebar_block .sbcontents a:hover {
+  text-decoration: none;
+  color: #404041;
+  font-family: arial;
+  font-size: 8pt;
+  text-decoration: underline;
+}
+/* line 896, ../itemshop.sass */
+.sidebar_block .sbcontents .sbtitle a:link, .sidebar_block .sbcontents .sbtitle a:hover {
+  color: #404041;
+  font: bold 12px Arial;
+}
+
+/* line 900, ../itemshop.sass */
+#wikiform input[type="text"] {
+  width: 75%;
+}
+
+/* line 903, ../itemshop.sass */
+.sidebar_end {
+  width: 100%;
+  border-top: 1px solid #cbc9c7;
+  height: 2px;
+}
+
+/* line 908, ../itemshop.sass */
+.rsb-block {
+  border: 1px solid #cbc9c7;
+  background-color: #dbdad8;
+  padding-bottom: 16px;
+  cursor: default;
+}
+/* line 913, ../itemshop.sass */
+.rsb-block a:first-child {
+  margin: -1px -1px 16px -1px;
+}
+
+/* line 916, ../itemshop.sass */
+.lp-lgblock {
+  margin: 0 auto;
+  padding-bottom: 16px;
+  width: 90%;
+  font-size: 8pt;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 923, ../itemshop.sass */
+.lp-lgblock h2 {
+  margin: 0 0 4px 0;
+  font-size: 8pt;
+  text-align: left;
+}
+/* line 927, ../itemshop.sass */
+.lp-lgblock > div {
+  text-align: left;
+  margin: 4px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 932, ../itemshop.sass */
+.lp-lgblock div.icon-container {
+  margin-right: 4px;
+}
+/* line 934, ../itemshop.sass */
+.lp-lgblock .ev {
+  margin-right: 8px;
+}
+/* line 936, ../itemshop.sass */
+.lp-lgblock a {
+  text-decoration: none;
+}
+/* line 938, ../itemshop.sass */
+.lp-lgblock a:hover {
+  text-decoration: underline;
+}
+
+/* line 941, ../itemshop.sass */
+#tlpronews a {
+  width: 190px;
+}
+
+/* line 944, ../itemshop.sass */
+td.c {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 948, ../itemshop.sass */
+p {
+  font: 10pt arial;
+  color: #404041;
+}
+
+/* line 952, ../itemshop.sass */
+b.quote {
+  font: 8pt arial;
+  font-weight: bolder;
+}
+
+/* line 956, ../itemshop.sass */
+span.error {
+  font: 10pt arial;
+  color: red;
+}
+
+/* line 960, ../itemshop.sass */
+th {
+  font-family: arial;
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* line 966, ../itemshop.sass */
+td.hoofdmenu {
+  width: 914px;
+  vertical-align: bottom;
+  padding-bottom: 4pt;
+}
+
+/* line 971, ../itemshop.sass */
+h3 {
+  font-family: arial;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+/* line 977, ../itemshop.sass */
+h4 {
+  font-family: arial;
+  font-size: 10pt;
+}
+
+/* line 981, ../itemshop.sass */
+h5 {
+  font-family: arial;
+  font-size: 11pt;
+}
+
+/* line 986, ../itemshop.sass */
+td.grijs {
+  background-color: #d9dde0;
+  padding: 5px;
+  border-left: 1px solid #404041;
+  border-right: 1px solid #404041;
+  height: 600px;
+}
+/* line 992, ../itemshop.sass */
+td.lichtb {
+  background-color: #eceaeb;
+}
+/* line 994, ../itemshop.sass */
+td.donkerb {
+  background-color: #e0e0df;
+}
+/* line 996, ../itemshop.sass */
+td.kopfb {
+  background-color: #467a95;
+  color: #fff;
+}
+/* line 999, ../itemshop.sass */
+td.kopfb a {
+  color: #fff;
+}
+/* line 1001, ../itemshop.sass */
+td.kopfb .createicon {
+  position: relative;
+  top: -2px;
+  color: #404041;
+}
+
+/* line 1006, ../itemshop.sass */
+.titelhigh {
+  background-color: #467a95;
+  color: #fff;
+  cursor: default;
+}
+
+/* line 1011, ../itemshop.sass */
+.titelbalk {
+  color: #404041;
+}
+
+/* line 1015, ../itemshop.sass */
+.titelhigh .fpost-username > span {
+  color: #fff !important;
+}
+/* line 1017, ../itemshop.sass */
+.titelhigh a, .titelhigh .submessage, .titelhigh .fpost-username {
+  color: #fff;
+}
+/* line 1019, ../itemshop.sass */
+.titelhigh .userarrow {
+  background-position: -27px -7px;
+}
+
+/* line 1022, ../itemshop.sass */
+.newspost h1 {
+  font-family: "open sans", sans-serif;
+  font-weight: 600;
+}
+
+/* line 1026, ../itemshop.sass */
+.titelhigh > div, .titelbalk > div {
+  vertical-align: top;
+}
+
+/* line 1029, ../itemshop.sass */
+.newspost > div {
+  width: 20% !important;
+  line-height: 29px;
+}
+/* line 1030, ../itemshop.sass */
+.newspost > div:first-child {
+  width: 80% !important;
+}
+
+/* line 1035, ../itemshop.sass */
+.titelhigh > div:first-child, .titelbalk > div:first-child {
+  width: 70%;
+}
+
+/* line 1038, ../itemshop.sass */
+.titelhigh > div, .titelbalk > div {
+  width: 30%;
+  line-height: 29px;
+}
+
+/* line 1042, ../itemshop.sass */
+footer .lighback {
+  display: inline-block;
+}
+
+/* line 1045, ../itemshop.sass */
+.solid footer {
+  border-top: 1px solid #dedad9;
+}
+
+/* line 1049, ../itemshop.sass */
+.titelhigh h1 {
+  padding: 4px 0 0 8px;
+  margin: 0;
+}
+/* line 1052, ../itemshop.sass */
+.titelhigh .subtitle {
+  font-size: 8pt;
+  line-height: 16px;
+  padding: 0 0 8px 8px;
+}
+
+/* line 1057, ../itemshop.sass */
+.author {
+  line-height: 16px;
+  text-align: right;
+  font-size: 8pt;
+}
+/* line 1058, ../itemshop.sass */
+.author:first-child {
+  padding-top: 13px;
+}
+/* line 1063, ../itemshop.sass */
+.author > span {
+  font-weight: 700;
+  padding-right: 8px;
+}
+/* line 1064, ../itemshop.sass */
+.author > span:first-child {
+  font-weight: 400;
+  padding-right: 4px;
+}
+
+/* line 1070, ../itemshop.sass */
+.titelbalk a {
+  color: #404041;
+}
+
+/* line 1073, ../itemshop.sass */
+.titelhigh .submessage {
+  color: #a1c2d3;
+}
+
+/* line 1076, ../itemshop.sass */
+.lightback {
+  margin: 8px 2px 4px 2px;
+}
+
+/* line 1079, ../itemshop.sass */
+td {
+  color: #404041;
+  font-family: arial;
+  font-size: 10pt;
+}
+/* line 1081, ../itemshop.sass */
+td.titelbalk.plus1 {
+  background-color: #f5e1ae;
+}
+/* line 1083, ../itemshop.sass */
+td.titelbalk.plus2 {
+  background-color: #f6dda1;
+}
+/* line 1085, ../itemshop.sass */
+td.titelbalk.plus3 {
+  background-color: #f9d78f;
+}
+/* line 1087, ../itemshop.sass */
+td.titelbalk.plus4 {
+  background-color: #fccd71;
+}
+/* line 1089, ../itemshop.sass */
+td.titelbalk.plus5 {
+  background-color: #ffc65c;
+}
+/* line 1091, ../itemshop.sass */
+td.titelbalk.plus10 {
+  background-color: #ffa500;
+}
+/* line 1093, ../itemshop.sass */
+td.replaylight {
+  background-color: #c7d0dc;
+  height: 25px;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 1101, ../itemshop.sass */
+td.replaydark {
+  background-color: #b3bfd1;
+  height: 25px;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 1106, ../itemshop.sass */
+td.caldate {
+  font-weight: bold;
+  padding-right: 4px;
+  width: 37px;
+}
+
+/* line 1112, ../itemshop.sass */
+hr.lichtb {
+  background-color: #eceaeb;
+  height: 1px;
+}
+/* line 1115, ../itemshop.sass */
+hr.donkerb {
+  background-color: #e0e0e0;
+  height: 1px;
+}
+
+/* line 1119, ../itemshop.sass */
+table {
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0;
+}
+/* line 1123, ../itemshop.sass */
+table.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1128, ../itemshop.sass */
+img.css-image {
+  font-size: 8pt;
+  color: #d00;
+}
+/* line 1131, ../itemshop.sass */
+img.sbimg {
+  width: 180px;
+  height: 25px;
+}
+
+/* line 1135, ../itemshop.sass */
+#bold {
+  font: 12pt arial;
+  font-weight: bold;
+}
+
+/* line 1139, ../itemshop.sass */
+#small {
+  font: 6pt arial, courier;
+  color: silver;
+}
+
+/* line 1143, ../itemshop.sass */
+#forumtable {
+  table-layout: fixed;
+  width: 99%;
+  margin: 0 auto;
+  text-decoration: none;
+  padding-top: 8px;
+}
+
+/* line 1150, ../itemshop.sass */
+.fpost a {
+  text-decoration: none;
+}
+/* line 1152, ../itemshop.sass */
+.fpost a:hover {
+  text-decoration: underline;
+}
+
+/* line 1155, ../itemshop.sass */
+#solid, .solid {
+  position: relative;
+  background-color: #eceaeb;
+  border: 1px solid #cbc9c7;
+  width: 100%;
+  border-top: 0;
+}
+
+/* line 1162, ../itemshop.sass */
+table#solid {
+  table-layout: fixed;
+  width: 99%;
+  margin: 0 auto;
+  border-top: 1px solid #cbc9c7;
+  margin-bottom: 16px;
+}
+/* line 1168, ../itemshop.sass */
+table#solid > tbody > tr:first-child {
+  line-height: 22px;
+}
+/* line 1170, ../itemshop.sass */
+table#solid img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 1174, ../itemshop.sass */
+.solid header > div {
+  display: inline-block;
+}
+
+/* line 1177, ../itemshop.sass */
+.thread_dock {
+  cursor: default;
+}
+/* line 1179, ../itemshop.sass */
+.thread_dock td {
+  font-size: 9pt;
+}
+/* line 1181, ../itemshop.sass */
+.thread_dock > td > div {
+  padding: 8px 0;
+}
+
+/* line 1184, ../itemshop.sass */
+.subs_link, .pagination, .thread_cta {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 1189, ../itemshop.sass */
+.thread_dock.top .pagination {
+  text-align: right;
+}
+/* line 1192, ../itemshop.sass */
+.thread_dock.bot td > div {
+  margin-top: -8px;
+}
+/* line 1194, ../itemshop.sass */
+.thread_dock.bot .pagination {
+  text-align: right;
+}
+
+/* line 1197, ../itemshop.sass */
+.thread_cta a:first-child {
+  margin-right: 4px;
+}
+
+/* line 1200, ../itemshop.sass */
+.modalwindow {
+  background: #eceaeb;
+  color: #404041;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  font-family: "arial";
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  z-index: 2;
+  border-radius: 1px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  cursor: default;
+}
+
+/* line 1216, ../itemshop.sass */
+.pagination a {
+  display: inline-block;
+  vertical-align: 1px;
+  font-size: 8pt;
+  text-decoration: none !important;
+  height: 19px;
+  line-height: 19px;
+  padding: 0 7px;
+  border: 1px solid #cbc9c7;
+  background: #eceaeb;
+  border-radius: 1px;
+}
+
+/* line 1228, ../itemshop.sass */
+.pg_local a {
+  margin-left: -1px;
+}
+
+/* line 1233, ../itemshop.sass */
+.pagination a:hover {
+  background: #f6f7f7;
+}
+/* line 1235, ../itemshop.sass */
+.pagination a.active {
+  background: #f6f7f7;
+  font-weight: 700;
+}
+/* line 1239, ../itemshop.sass */
+.pagination > div {
+  display: inline-block;
+  position: relative;
+}
+/* line 1242, ../itemshop.sass */
+.pagination > div > span {
+  cursor: pointer;
+}
+/* line 1244, ../itemshop.sass */
+.pagination > b {
+  padding: 0 2px;
+}
+/* line 1246, ../itemshop.sass */
+.pagination > div {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  height: 19px;
+  line-height: 19px;
+  padding: 0 6px;
+  background: #eceaeb;
+  border: 1px solid #cbc9c7;
+  text-decoration: none !important;
+}
+/* line 1257, ../itemshop.sass */
+.pagination > div:hover {
+  background: #f6f7f7;
+  border: 1px solid #cbc9c7;
+  text-decoration: none;
+}
+
+/* line 1262, ../itemshop.sass */
+.pg_local {
+  margin-left: 1px;
+}
+
+/* line 1267, ../itemshop.sass */
+.pagination > div .modalwindow {
+  position: absolute;
+  bottom: -37px;
+  right: 70000px;
+}
+/* line 1271, ../itemshop.sass */
+.pagination > div:focus .modalwindow {
+  position: absolute;
+  bottom: -37px;
+  right: -70px;
+  width: 184px;
+  text-align: center;
+}
+/* line 1278, ../itemshop.sass */
+.pagination .modalwindow input {
+  border: 1px solid #ccc;
+  height: 18px;
+  width: 36px;
+  margin: 0 8px;
+  text-align: center;
+}
+/* line 1285, ../itemshop.sass */
+.pagination .modalwindow .mw-main div {
+  display: inline-block;
+  margin: 6px 0;
+  line-height: 1em;
+  vertical-align: middle;
+}
+/* line 1290, ../itemshop.sass */
+.pagination .modalwindow .mw-main button {
+  line-height: 20px;
+  padding: 1px 8px;
+  text-align: center;
+  background: #467a95;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 1298, ../itemshop.sass */
+.pagination .modalwindow .mw-main button:hover {
+  background: #4f89a3;
+}
+
+/* line 1301, ../itemshop.sass */
+.bkmrk {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  background-position: 6px -101px;
+  width: 22px;
+  height: 18px;
+}
+
+/* line 1309, ../itemshop.sass */
+.bkmrk-cont:hover .bkmrk, .bkmrk.subbed {
+  background-position: -12px -101px;
+}
+
+/* line 1312, ../itemshop.sass */
+.commbubble, .replyarrow {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  width: 17px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+/* line 1322, ../itemshop.sass */
+.commbubble {
+  background-position: 3px -547px;
+}
+
+/* line 1325, ../itemshop.sass */
+.replyarrow {
+  background-position: 2px -526px;
+}
+
+/* line 1328, ../itemshop.sass */
+.pg_bk, .pg_fw {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  background: url(/images/layout/topbannersprite.png) no-repeat #eceaeb;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #cbc9c7;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+/* line 1340, ../itemshop.sass */
+.pg_bk {
+  background-position: 2px -605px;
+}
+
+/* line 1343, ../itemshop.sass */
+.pg_fw {
+  background-position: -18px -605px;
+  margin-left: -1px;
+}
+
+/* line 1347, ../itemshop.sass */
+.pg_bk:hover {
+  background: url(/images/layout/topbannersprite.png) no-repeat #f6f7f7;
+  background-position: 2px -605px;
+  border: 1px solid #cbc9c7;
+}
+
+/* line 1352, ../itemshop.sass */
+.pg_fw:hover {
+  background: url(/images/layout/topbannersprite.png) no-repeat #f6f7f7;
+  background-position: -18px -605px;
+  border: 1px solid #cbc9c7;
+}
+
+/* line 1357, ../itemshop.sass */
+.lightborder {
+  border: 1px solid #cbc9c7;
+}
+
+/* line 1360, ../itemshop.sass */
+.gold {
+  border: 1px solid #daa590;
+}
+
+/* line 1363, ../itemshop.sass */
+#solid2 {
+  border: 1px solid #404041;
+}
+
+/* line 1366, ../itemshop.sass */
+#forum {
+  font-family: arial;
+  font-size: 10pt;
+  color: #b3bfd1;
+}
+
+/* line 1371, ../itemshop.sass */
+#forumindex, .forumindex {
+  font-family: arial;
+  font-size: 10pt;
+  color: #404041;
+}
+
+/* line 1376, ../itemshop.sass */
+#forummsginfo, .forummsginfo {
+  font-family: arial;
+  font-size: 9pt;
+  color: #21353d;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+/* line 1383, ../itemshop.sass */
+#reply {
+  border-top: 1px solid #cbc9c7;
+}
+/* line 1384, ../itemshop.sass */
+#reply .forummsginfo {
+  color: #404041;
+  padding-left: 10px;
+  cursor: default;
+}
+
+/* line 1391, ../itemshop.sass */
+#main-content h2 > a.forummsginfo {
+  color: #467a95;
+}
+/* line 1393, ../itemshop.sass */
+#main-content > hr {
+  border-top: 1px solid #cdc9be;
+  color: #c6c4c5;
+}
+
+/* line 1397, ../itemshop.sass */
+.fpost {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+/* line 1401, ../itemshop.sass */
+.fpost-username:hover {
+  border: 0;
+  outline: 0;
+}
+
+/* line 1405, ../itemshop.sass */
+.titelhigh .fpost-username .tooltip {
+  position: absolute;
+  top: 0;
+  left: -12000px;
+  background: #467a95;
+  min-width: 178px;
+  height: 26px;
+  padding-left: 4px;
+  font-size: 8pt;
+  font-weight: 400;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* line 1418, ../itemshop.sass */
+.titelbalk .fpost-username .tooltip {
+  position: absolute;
+  top: 0;
+  left: -12000px;
+  background: #eceaeb;
+  min-width: 178px;
+  height: 26px;
+  padding-left: 4px;
+  font-size: 8pt;
+  font-weight: 400;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* line 1431, ../itemshop.sass */
+.classicon {
+  outline: 0;
+}
+/* line 1433, ../itemshop.sass */
+.classicon:hover {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+}
+/* line 1435, ../itemshop.sass */
+.classicon .tooltip {
+  position: absolute;
+  top: 10px;
+  left: -12000px;
+  background: #232728;
+  padding-left: 4px;
+  font-size: 8pt;
+  font-weight: 400;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 0;
+}
+/* line 1446, ../itemshop.sass */
+.classicon:hover .tooltip {
+  animation: 0.4s inventory;
+  -webkit-animation: 0.4s inventory;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  top: 30px;
+  left: 0;
+  opacity: 1;
+}
+
+@keyframes inventory {
+  0% {
+    top: -500px;
+    opacity: 0;
+  }
+  60% {
+    top: 10px;
+    opacity: 0;
+  }
+  100% {
+    top: 30px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes inventory {
+  0% {
+    top: -500px;
+    opacity: 0;
+  }
+  60% {
+    top: 10px;
+    opacity: 0;
+  }
+  100% {
+    top: 30px;
+    opacity: 1;
+  }
+}
+/* line 1483, ../itemshop.sass */
+.tooltip .tt-tail {
+  left: 8px;
+}
+
+/* line 1486, ../itemshop.sass */
+.tt-tail {
+  background: url(/images/layout/topbannersprite.png);
+  background-position: -4px -269px;
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  width: 20px;
+  height: 8px;
+}
+
+/* line 1495, ../itemshop.sass */
+.tooltip .hitbox {
+  position: absolute;
+  left: 0;
+  top: -29px;
+  width: 30%;
+  height: 30px;
+  z-index: -1;
+}
+
+/* line 1503, ../itemshop.sass */
+.inventory, .buymenu {
+  display: inline-block;
+  vertical-align: top;
+  margin: 4px 1px;
+}
+
+/* line 1508, ../itemshop.sass */
+.inventory {
+  width: 132px;
+  white-space: normal;
+}
+/* line 1511, ../itemshop.sass */
+.inventory > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 30px;
+  background: #101011;
+  margin: 2px 4px 2px 0;
+}
+
+/* line 1519, ../itemshop.sass */
+.buymenu {
+  padding-left: 8px;
+  width: 82px;
+  margin-right: 5px;
+}
+/* line 1523, ../itemshop.sass */
+.buymenu > div {
+  line-height: 36px;
+  vertical-align: middle;
+}
+/* line 1526, ../itemshop.sass */
+.buymenu > div > span {
+  color: #eceaeb;
+}
+
+/* line 1529, ../itemshop.sass */
+.goldico {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(/static/images/layout/topbannersprite.png) no-repeat;
+}
+
+/* line 1534, ../itemshop.sass */
+.tooltip .goldico {
+  background-position: 0 -497px;
+  width: 25px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+/* line 1540, ../itemshop.sass */
+.buyitem {
+  display: block;
+  color: #eceaeb !important;
+  border: 0;
+  padding: 5px 4px;
+  font-size: 8pt;
+  cursor: pointer;
+  line-height: 17px;
+  margin-top: 4px;
+  text-align: center;
+}
+/* line 1550, ../itemshop.sass */
+.buyitem:hover {
+  text-decoration: none !important;
+}
+
+/* line 1553, ../itemshop.sass */
+#smallgold {
+  background-position: -35px -501px;
+  width: 13px;
+  height: 8px;
+}
+
+/* line 1558, ../itemshop.sass */
+#userpanel .goldcount a {
+  color: gold !important;
+}
+/* line 1560, ../itemshop.sass */
+#userpanel .goldcount a:hover {
+  color: gold !important;
+}
+
+/* line 1563, ../itemshop.sass */
+#it-store {
+  margin: 0 auto;
+  width: 99%;
+  background: #232728;
+  color: #eceaeb;
+  margin-bottom: 8px;
+}
+/* line 1569, ../itemshop.sass */
+#it-store .introdiv {
+  font-size: 8pt;
+  line-height: 16px;
+  color: #949597;
+  margin-left: 2%;
+  padding: 8px 0;
+  margin-right: 2%;
+}
+/* line 1576, ../itemshop.sass */
+#it-store h1 {
+  margin: 0 0 8px 0;
+  font-family: "open sans", sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+}
+/* line 1581, ../itemshop.sass */
+#it-store h1 > span {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  text-align: right;
+}
+/* line 1582, ../itemshop.sass */
+#it-store h1 > span:first-child {
+  width: 70%;
+  text-align: left;
+}
+/* line 1589, ../itemshop.sass */
+#it-store h1 > span > span {
+  margin-left: 0;
+}
+
+/* line 1592, ../itemshop.sass */
+.is-head {
+  margin: 0 auto;
+  width: 96%;
+  border-radius: 1px;
+  padding-bottom: 16px;
+}
+/* line 1597, ../itemshop.sass */
+.is-head > div {
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  text-align: right;
+}
+/* line 1598, ../itemshop.sass */
+.is-head > div:first-child {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+/* line 1607, ../itemshop.sass */
+.is-head .sf-item {
+  margin-right: 6px;
+}
+/* line 1609, ../itemshop.sass */
+.is-head .goldico {
+  background-position: 0 -495px;
+  width: 32px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+/* line 1615, ../itemshop.sass */
+#it-store a {
+  color: #eceaeb;
+  text-decoration: none;
+}
+
+/* line 1619, ../itemshop.sass */
+.sf-tabs {
+  margin-bottom: 16px;
+}
+
+/* line 1622, ../itemshop.sass */
+.itemcategory {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: auto;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 32px;
+  text-align: center;
+  border-bottom: 1px solid #101010;
+  -webkit-transition: border 200ms ease-out;
+  -moz-transition: border 200ms ease-out;
+  -o-transition: border 200ms ease-out;
+  transition: border 200ms ease-out;
+  cursor: pointer;
+}
+/* line 1637, ../itemshop.sass */
+.itemcategory.active, .itemcategory:hover {
+  border-bottom: 1px solid #467a95;
+}
+
+/* line 1640, ../itemshop.sass */
+.sf-filter {
+  text-align: right;
+  line-height: 25px;
+  margin-bottom: 8px;
+}
+/* line 1644, ../itemshop.sass */
+.sf-filter > div {
+  text-align: right;
+}
+/* line 1646, ../itemshop.sass */
+.sf-filter span {
+  color: #606061;
+}
+/* line 1648, ../itemshop.sass */
+.sf-filter > div > div {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  margin-left: 1%;
+}
+/* line 1654, ../itemshop.sass */
+.sf-filter input {
+  width: 77%;
+  height: 18px;
+  margin: 1px 1% 0 0;
+  background: #1b1e1f;
+  color: white;
+  border: 0;
+  padding: 4px 0 4px 8px;
+  vertical-align: middle;
+}
+/* line 1663, ../itemshop.sass */
+.sf-filter select {
+  background: #1b1e1f;
+  color: white;
+  border: 0;
+  padding: 4px 0 4px 8px;
+  vertical-align: middle;
+  width: 160px;
+  margin-right: -18px;
+  outline: 0;
+}
+/* line 1672, ../itemshop.sass */
+.sf-filter .selectarrow {
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  background-position: -3px -63px;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+}
+
+/* line 1682, ../itemshop.sass */
+#storefront {
+  margin: 0 auto;
+  width: 96%;
+  border-radius: 1px;
+  padding-bottom: 36px;
+}
+
+/* line 1688, ../itemshop.sass */
+.sf-block {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 31.3%;
+  height: 32px;
+  color: #d1871a;
+  padding: 6px;
+  text-align: left;
+  outline: 0;
+}
+/* line 1698, ../itemshop.sass */
+.sf-block:hover {
+  vertical-align: top;
+  background: #3a3a3a;
+}
+
+/* line 1702, ../itemshop.sass */
+#sfi1, #sfi2, #sfi3, #sfi4, #sfi5, #sf6 {
+  position: absolute;
+  left: -12000px;
+}
+
+/* line 1707, ../itemshop.sass */
+.sf-block input[type="checkbox"] + label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/* line 1715, ../itemshop.sass */
+.sf-block input[type="checkbox"]:checked + label {
+  background: rgba(70, 122, 149, 0.3);
+}
+
+/* line 1718, ../itemshop.sass */
+.sf-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 30px;
+  background: #101011;
+  margin-bottom: 0;
+}
+
+/* line 1726, ../itemshop.sass */
+.sf-cost {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  height: 32px;
+  margin-left: 5.2%;
+  font-size: 8pt;
+}
+/* line 1733, ../itemshop.sass */
+.sf-cost > div:first-child {
+  font-size: 9pt;
+  color: #eceaeb;
+}
+/* line 1736, ../itemshop.sass */
+.sf-cost .goldico {
+  background-position: -34px -500px;
+  width: 16px;
+  height: 12px;
+  margin-right: 4px;
+}
+/* line 1741, ../itemshop.sass */
+.sf-cost button {
+  position: absolute;
+  right: 12000px;
+  width: 96%;
+  height: 29px;
+  font-weight: 300;
+  color: #eceaeb;
+  border: 0;
+  cursor: pointer;
+}
+/* line 1750, ../itemshop.sass */
+.sf-cost button:hover {
+  background: #467a95;
+}
+/* line 1752, ../itemshop.sass */
+.sf-cost button:active {
+  background: #d1871a;
+}
+
+/* line 1755, ../itemshop.sass */
+.sf-block:hover .sf-cost button {
+  bottom: 2px;
+  right: 8px;
+}
+
+/* line 1759, ../itemshop.sass */
+#is-checkout {
+  text-align: left;
+  margin: 0 1%;
+  padding: 16px 0;
+}
+/* line 1763, ../itemshop.sass */
+#is-checkout > div > h1 {
+  text-align: right;
+  margin: 8px 0 16px 0;
+}
+
+/* line 1767, ../itemshop.sass */
+.sf-controls {
+  text-align: right;
+  padding: 24px 0;
+}
+
+/* line 1771, ../itemshop.sass */
+#is-checkout .sf-controls {
+  padding: 0 0 24px 0;
+}
+
+/* line 1774, ../itemshop.sass */
+.sf-controls button {
+  height: 36px;
+  width: 160px;
+  border: 0;
+  color: #eceaeb;
+}
+/* line 1775, ../itemshop.sass */
+.sf-controls button:first-child {
+  width: 100px;
+  margin-right: 8px;
+  background: #303031;
+}
+/* line 1779, ../itemshop.sass */
+.sf-controls button:first-child:hover {
+  background: #404041;
+}
+
+/* line 1786, ../itemshop.sass */
+.buyitem, .sf-cost button, .sf-controls button {
+  background: #d46795;
+  background: -moz-linear-gradient(top, #467a95 0, #284855 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #467a95), color-stop(100%, #284855));
+  background: -webkit-linear-gradient(top, #467a95 0, #284855 100%);
+  background: -o-linear-gradient(top, #467a95 0, #284855 100%);
+  background: -ms-linear-gradient(top, #467a95 0, #284855 100%);
+  background: linear-gradient(to bottom, #467a95 0, #284855 100%);
+  /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#467A95', endColorstr='#284855', GradientType=0) */
+}
+
+/* line 1796, ../itemshop.sass */
+.buyitem:hover, .sf-cost button:hover, .sf-controls button:hover {
+  background: #467a95;
+}
+
+/* line 1799, ../itemshop.sass */
+.buyitem:active, .sf-cost button:active, .sf-controls button:active {
+  background: #284855;
+  background: -moz-linear-gradient(top, #284855 0, #467a95 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #284855), color-stop(100%, #467a95));
+  background: -webkit-linear-gradient(top, #284855 0, #467a95 100%);
+  background: -o-linear-gradient(top, #284855 0, #467a95 100%);
+  background: -ms-linear-gradient(top, #284855 0, #467a95 100%);
+  background: linear-gradient(to bottom, #284855 0, #467a95 100%);
+  /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#284855', endColorstr='#467A95', GradientType=0) */
+}
+
+/* line 1809, ../itemshop.sass */
+.tooltip {
+  cursor: default;
+}
+/* line 1811, ../itemshop.sass */
+.tooltip > .tt-userinfo:first-child {
+  padding-left: 4px;
+}
+
+/* line 1814, ../itemshop.sass */
+.profile, .invntry {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 1819, ../itemshop.sass */
+.fpost-lastedit:hover .tooltip {
+  top: -4px;
+  right: 16px;
+}
+/* line 1822, ../itemshop.sass */
+.fpost-lastedit .tooltip {
+  position: absolute;
+  top: -4px;
+  right: 9000px;
+  font-size: 8pt;
+  font-weight: 400;
+  white-space: nowrap;
+  z-index: 100;
+  transition-delay: 200ms;
+  -webkit-transition-delay: 200ms;
+}
+
+/* line 1833, ../itemshop.sass */
+.tt-userinfo {
+  padding-right: 8px;
+  font-size: 8pt;
+  line-height: 27px;
+  vertical-align: middle;
+}
+
+/* line 1839, ../itemshop.sass */
+a.tt-userinfo {
+  cursor: pointer;
+}
+
+/* line 1842, ../itemshop.sass */
+.titelhigh .tooltip span.tt-userinfo {
+  vertical-align: middle;
+  color: #a1c2d3;
+}
+
+/* line 1846, ../itemshop.sass */
+.titelbalk .tooltip span.tt-userinfo {
+  vertical-align: middle;
+  color: #939597;
+}
+
+/* line 1850, ../itemshop.sass */
+.titelhigh .fpost-lastedit {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  background-position: 2px -291px;
+  vertical-align: middle;
+}
+
+/* line 1861, ../itemshop.sass */
+.titelbalk .fpost-lastedit {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  background-position: -28px -291px;
+  vertical-align: middle;
+}
+
+/* line 1872, ../itemshop.sass */
+.fpost-lastedit .submessage {
+  color: #939597;
+}
+
+/* line 1875, ../itemshop.sass */
+.fpost > div:hover .postaction {
+  color: #404041;
+}
+
+/* line 1878, ../itemshop.sass */
+.postaction .submessage, .fpost-actionable .submessage {
+  color: #a0a1a3;
+  outline: 0;
+}
+
+/* line 1882, ../itemshop.sass */
+.postaction .submessage:hover {
+  color: #404041;
+}
+
+/* line 1885, ../itemshop.sass */
+.fpost-actionable {
+  position: relative;
+  min-height: 8px;
+  padding-left: 4px;
+  text-align: left;
+  cursor: default;
+}
+/* line 1891, ../itemshop.sass */
+.fpost-actionable .submessage {
+  display: inline-block;
+  padding: 1px 4px 0 4px;
+}
+
+/* line 1896, ../itemshop.sass */
+.forumsig .submessage {
+  padding-left: 8px;
+}
+/* line 1898, ../itemshop.sass */
+.forumsig > div {
+  padding: 3px 8px;
+}
+
+/* line 1901, ../itemshop.sass */
+.contrib {
+  display: inline-block;
+  position: relative;
+  padding: 0 4px 1px 0;
+}
+
+/* line 1906, ../itemshop.sass */
+.userinfo {
+  display: inline-block;
+  position: relative;
+  line-height: 16px;
+}
+
+/* line 1912, ../itemshop.sass */
+.contrib .lpspr, .contrib > a > img {
+  vertical-align: middle;
+}
+
+/* line 1915, ../itemshop.sass */
+#tb_msgnote {
+  margin: 0 -6px;
+  height: 15px;
+  padding: 3px;
+  font-size: 12px;
+  margin-top: -1px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+/* line 1924, ../itemshop.sass */
+#mc_modnote {
+  padding: 6px;
+  color: #404041;
+  margin: 10px 0;
+  position: relative;
+  top: 0;
+  left: 1px;
+  border: 1px solid #b3b2b2;
+  background-color: #c4c3c3;
+}
+
+/* line 1934, ../itemshop.sass */
+#tb_msgnote a, #mc_modnote a {
+  text-decoration: underline;
+}
+
+/* line 1937, ../itemshop.sass */
+#mc_publicnote {
+  padding: 6px 6px 9px;
+  color: #404041;
+  background: #f6f7f7;
+  margin-top: 2px;
+  border: 1px solid #467a95;
+  position: relative;
+  left: 1px;
+}
+/* line 1945, ../itemshop.sass */
+#mc_publicnote a {
+  color: #467a95;
+}
+
+/* line 1948, ../itemshop.sass */
+.pnt01 {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* line 1952, ../itemshop.sass */
+.userarrow {
+  display: inline-block;
+  margin-left: 4px;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  background-position: -41px -37px;
+  vertical-align: middle;
+  height: 10px;
+  width: 10px;
+}
+
+/* line 1961, ../itemshop.sass */
+.fpost-username {
+  display: inline-block;
+  position: relative;
+  min-width: 70px;
+  margin-left: 10px;
+  height: 29px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #404041;
+  cursor: pointer;
+  outline: 0;
+}
+/* line 1962, ../itemshop.sass */
+.fpost-username:hover .userarrow {
+  background-position: 1px 1px;
+}
+
+/* line 1975, ../itemshop.sass */
+.admin {
+  color: #6c0000;
+  font-weight: bold;
+}
+
+/* line 1979, ../itemshop.sass */
+.titelbalk .fpost-userinfo {
+  display: inline-block;
+  position: relative;
+  color: #939597;
+  cursor: default;
+}
+
+/* line 1985, ../itemshop.sass */
+.titelhigh .fpost-userinfo {
+  display: inline-block;
+  position: relative;
+  cursor: default;
+  color: #a1c2d3;
+}
+
+/* line 1991, ../itemshop.sass */
+.fpost-postinfo {
+  position: relative;
+  top: -1px;
+  padding: 0 8px 0 16px;
+  color: #939597;
+  cursor: default;
+  z-index: 1;
+  text-align: right;
+}
+/* line 1999, ../itemshop.sass */
+.fpost-postinfo a.submessage {
+  color: #fff;
+}
+
+/* line 2002, ../itemshop.sass */
+.titelhigh .fpost-postinfo {
+  color: #a1c2d3;
+  text-align: right;
+}
+
+/* line 2006, ../itemshop.sass */
+.modaction {
+  display: inline-block;
+}
+
+/* line 2009, ../itemshop.sass */
+.useraction {
+  display: inline-block;
+  padding-right: 16px;
+}
+
+/* line 2013, ../itemshop.sass */
+#forummsginfoa, .forummsginfoa {
+  font-family: arial;
+  font-size: 9pt;
+  color: #fff;
+}
+
+/* line 2019, ../itemshop.sass */
+td.titelbalk > #forummsginfo, td.titelbalk > .forummsginfo {
+  color: #939597;
+}
+
+/* line 2022, ../itemshop.sass */
+b.forummsginfo {
+  font-family: arial;
+  font-size: 9pt;
+  color: #6c0000;
+  font-weight: bold;
+}
+
+/* line 2028, ../itemshop.sass */
+.forummsginfo > div > strong {
+  margin-right: 16px;
+}
+
+/* line 2031, ../itemshop.sass */
+#forummsg, .forummsg {
+  font-family: arial;
+  font-size: 10pt;
+}
+
+/* line 2035, ../itemshop.sass */
+#forummsg {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 98%;
+  padding-bottom: 8px;
+}
+/* line 2040, ../itemshop.sass */
+#forummsg img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 2044, ../itemshop.sass */
+.titelbalk .forummmsg {
+  color: #404041;
+}
+
+/* line 2047, ../itemshop.sass */
+#submessage, .submessage {
+  font-family: arial;
+  font-size: 8pt;
+}
+
+/* line 2052, ../itemshop.sass */
+.titelbalk #submessage, .titelbalk .submessage {
+  display: inline-block;
+  font-family: arial;
+  font-size: 8pt;
+  margin-left: 4px;
+}
+
+/* line 2059, ../itemshop.sass */
+.titelhigh #submessage, .titelhigh .submessage {
+  display: inline-block;
+  font-family: arial;
+  font-size: 8pt;
+  margin-left: 4px;
+}
+/* line 2064, ../itemshop.sass */
+.titelhigh a {
+  color: #fff;
+}
+/* line 2066, ../itemshop.sass */
+.titelhigh a:hover, .titelhigh a:visited {
+  color: #fff;
+}
+
+/* line 2069, ../itemshop.sass */
+.submessage a {
+  font-family: arial;
+  font-size: 8pt;
+  color: #fff;
+}
+
+/* line 2074, ../itemshop.sass */
+.pm-border span.submessage a, .submessage label {
+  color: #404041;
+}
+
+/* line 2077, ../itemshop.sass */
+#shortmenu, .shortmenu {
+  font-family: arial;
+  font-size: 10pt;
+  color: #404041;
+  font-weight: lighter;
+}
+
+/* line 2083, ../itemshop.sass */
+#createtopic {
+  position: absolute;
+  top: 206px;
+  left: 350px;
+  z-index: 2;
+}
+
+/* line 2089, ../itemshop.sass */
+#positie {
+  position: relative;
+  left: 50%;
+  z-index: 2;
+}
+
+/* line 2094, ../itemshop.sass */
+div.positietitel {
+  position: relative;
+  left: 6ex;
+  top: 9ex;
+  width: 500px;
+  height: 100px;
+  margin-left: -250px;
+  margin-top: -50px;
+  font-family: arial;
+  font-size: 11pt;
+  color: #1b215f;
+}
+
+/* line 2106, ../itemshop.sass */
+#shortmenu {
+  font-family: arial;
+  font-size: 9pt;
+  color: #1b215f;
+}
+
+/* line 2111, ../itemshop.sass */
+.forumsig {
+  display: inline-block;
+  vertical-align: top;
+  color: #939597;
+  font-family: arial;
+  font-size: 8pt;
+  text-align: right;
+  width: 20%;
+  min-height: 22px;
+}
+/* line 2112, ../itemshop.sass */
+.forumsig:first-child {
+  text-align: left;
+  width: 80%;
+}
+
+/* line 2124, ../itemshop.sass */
+.quote {
+  margin-right: 8px;
+  margin-left: 22px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #58585b;
+  padding: 8px;
+  font: 8pt arial;
+  box-shadow: -4px 0 #99b2bf;
+}
+/* line 2133, ../itemshop.sass */
+.quote:hover {
+  box-shadow: -4px 0 #467a95;
+}
+/* line 2135, ../itemshop.sass */
+.quote > .quote {
+  margin-left: 12px;
+  box-shadow: -2px 0 #99b2bf;
+}
+
+/* line 2139, ../itemshop.sass */
+.sqr > .quote {
+  margin-left: 12px;
+  box-shadow: -2px 0 #99b2bf;
+}
+
+/* line 2143, ../itemshop.sass */
+.quote > .quote:hover, .sqr > .quote:hover {
+  margin-left: 12px;
+  box-shadow: -2px 0 #467a95;
+}
+
+/* line 2147, ../itemshop.sass */
+.quote hr {
+  height: 1px;
+  border-left: none;
+  color: #635840;
+  border-top: 1px solid #cbc9c7;
+}
+
+/* line 2153, ../itemshop.sass */
+span.overlib {
+  font-size: 9pt;
+  color: #fff;
+}
+
+/* line 2157, ../itemshop.sass */
+.loggedin {
+  display: block;
+  margin-top: 12px;
+  margin-left: 16px;
+  font-size: 9pt;
+  color: #fff;
+}
+/* line 2164, ../itemshop.sass */
+.loggedin a:link, .loggedin a:hover, .loggedin a:visited {
+  color: #fff;
+}
+/* line 2166, ../itemshop.sass */
+.loggedin .newpm {
+  font-weight: bold;
+  color: yellow;
+}
+/* line 2170, ../itemshop.sass */
+.loggedin .newpm a:link, .loggedin .newpm a:hover, .loggedin .newpm a:visited {
+  color: yellow;
+}
+
+/* line 2173, ../itemshop.sass */
+a.openlb:link, .aopenlb:hover, a.openlb:visited {
+  font-weight: bold;
+  color: yellow;
+}
+
+/* line 2177, ../itemshop.sass */
+.topright {
+  display: block;
+  margin-top: 12px;
+  margin-right: 12px;
+  font-size: 9pt;
+  color: #404041;
+  text-align: right;
+}
+
+/* line 2185, ../itemshop.sass */
+div.centered {
+  position: relative;
+  left: 56ex;
+  top: 9ex;
+  width: 500px;
+  height: 55px;
+  margin-left: -250px;
+  margin-top: -95px;
+}
+
+/* line 2194, ../itemshop.sass */
+#rightmenu, .rightmenu {
+  text-decoration: none;
+  font-family: arial;
+  font-size: 8pt;
+}
+
+/* line 2200, ../itemshop.sass */
+#main-content #rightmenu, #main-content .rightmenu {
+  text-decoration: none;
+  font-family: arial;
+  font-size: 8pt;
+}
+
+/* line 2205, ../itemshop.sass */
+#newstitle, .newstitle {
+  font-family: arial;
+  font-size: 11pt;
+  color: #0d124b;
+  font-weight: bold;
+}
+
+/* line 2211, ../itemshop.sass */
+#newsinfo, .newsinfo {
+  font-family: arial;
+  font-size: 9pt;
+  color: #1b215f;
+  font-weight: bold;
+}
+
+/* line 2217, ../itemshop.sass */
+#newspostimg {
+  display: inline-block;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  width: 45px;
+  height: 45px;
+  background-position: -18px -523px;
+  float: left;
+  margin: 6px 8px 0 8px;
+}
+
+/* line 2226, ../itemshop.sass */
+a {
+  color: #404041;
+}
+
+/* line 2229, ../itemshop.sass */
+#userpanel li > a:hover, .top_menu a:hover {
+  color: #eceaeb !important;
+}
+
+/* line 2232, ../itemshop.sass */
+.smallnav a:hover {
+  color: #eceaeb !important;
+  background: #4d5d64;
+}
+
+/* line 2237, ../itemshop.sass */
+a:hover {
+  text-decoration: underline;
+  color: #404041;
+}
+/* line 2241, ../itemshop.sass */
+a.links:link, a.links:visited {
+  text-decoration: underline;
+  font-family: arial;
+  font-size: 10pt;
+}
+/* line 2245, ../itemshop.sass */
+a.links:hover {
+  text-decoration: none;
+  color: #404041;
+  font-family: arial;
+  font-size: 10pt;
+}
+/* line 2251, ../itemshop.sass */
+a.nounderline:link {
+  text-decoration: none;
+  color: #404041;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 2256, ../itemshop.sass */
+a.nounderline:hover {
+  text-decoration: underline;
+  color: #404041;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 2262, ../itemshop.sass */
+a.createicon div {
+  position: relative;
+  top: 2px;
+}
+/* line 2265, ../itemshop.sass */
+a.createicon:link {
+  background-color: #fff;
+  border: 1px solid #284855;
+  color: #404041 !important;
+  padding: 5px 12px 5px 12px;
+  font-family: arial;
+  font-size: 8pt;
+  text-decoration: none;
+  margin-left: 60px;
+}
+/* line 2274, ../itemshop.sass */
+a.createicon:visited {
+  font-family: arial;
+  font-size: 8pt;
+  text-decoration: none;
+  margin-left: 60px;
+}
+/* line 2279, ../itemshop.sass */
+a.createicon:hover {
+  color: #fff;
+  font-family: arial;
+  font-size: 8pt;
+  text-decoration: none;
+  color: #404041;
+  margin-left: 60px;
+}
+/* line 2287, ../itemshop.sass */
+a.pagetitle:link {
+  text-decoration: none;
+  color: #13175e;
+  font-size: 10pt;
+  font-family: Verdana, arial;
+  font-weight: bold;
+}
+/* line 2293, ../itemshop.sass */
+a.pagetitle:visited {
+  text-decoration: none;
+  font-family: Verdana, arial;
+  font-size: 10pt;
+  font-weight: bold;
+}
+/* line 2298, ../itemshop.sass */
+a.pagetitle:hover {
+  text-decoration: underline;
+  color: #13175e;
+  font-family: Verdana, arial;
+  font-size: 10pt;
+  font-weight: bold;
+}
+/* line 2304, ../itemshop.sass */
+a.rightmenu {
+  text-decoration: none;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 2308, ../itemshop.sass */
+a.rightmenu:link, a.rightmenu:visited {
+  text-decoration: none;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 2312, ../itemshop.sass */
+a.rightmenu:hover {
+  text-decoration: underline;
+  font-family: arial;
+  font-size: 8pt;
+}
+
+/* line 2318, ../itemshop.sass */
+#main-content a.rightmenu {
+  text-decoration: none;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 2322, ../itemshop.sass */
+#main-content a.rightmenu:link, #main-content a.rightmenu:visited {
+  text-decoration: none;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 2326, ../itemshop.sass */
+#main-content a.rightmenu:hover {
+  text-decoration: underline;
+  font-family: arial;
+  font-size: 8pt;
+}
+/* line 2330, ../itemshop.sass */
+#main-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 2334, ../itemshop.sass */
+a.clean {
+  text-decoration: none;
+}
+/* line 2336, ../itemshop.sass */
+a.clean:visited {
+  text-decoration: none;
+}
+/* line 2338, ../itemshop.sass */
+a.clean:hover {
+  text-decoration: underline;
+}
+
+/* line 2341, ../itemshop.sass */
+#tabs {
+  position: relative;
+  width: 100%;
+  height: 3em;
+  margin: 0;
+  margin-left: 18px;
+  padding: 0;
+  width: 550px;
+}
+/* line 2349, ../itemshop.sass */
+#tabs ul#primary {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: -1px;
+  width: 45em;
+}
+/* line 2355, ../itemshop.sass */
+#tabs ul#primary li {
+  display: inline;
+  list-style: none;
+}
+/* line 2358, ../itemshop.sass */
+#tabs ul#primary a, #tabs ul#primary span, #tabs ul#primary a.current {
+  width: 8em;
+  display: block;
+  float: left;
+  padding: 4px 0;
+  margin: 1px 5px 0 0;
+  text-align: center;
+  font-family: tahoma, verdana, sans-serif;
+  font-size: 85%;
+  text-decoration: none;
+  color: #333;
+}
+/* line 2369, ../itemshop.sass */
+#tabs ul#primary span {
+  border-bottom: 0;
+  background: #b3bfd1;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+/* line 2374, ../itemshop.sass */
+#tabs ul#primary a {
+  background: #eee;
+  border-bottom: 0;
+}
+/* line 2375, ../itemshop.sass */
+#tabs ul#primary a.current {
+  border-bottom: 0;
+  background: #b3bfd1;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+/* line 2380, ../itemshop.sass */
+#tabs ul#primary a.current:hover {
+  border-bottom: 0;
+  background: #b3bfd1;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+/* line 2387, ../itemshop.sass */
+#tabs ul#primary a:hover {
+  margin-top: 0;
+  border-color: #000;
+  background: #b3bfd1;
+  padding-bottom: 5px;
+}
+
+/* line 2393, ../itemshop.sass */
+.roundcont {
+  width: 735px;
+  margin-left: 5px;
+  background-color: #b3bfd1;
+  color: #000;
+}
+/* line 2398, ../itemshop.sass */
+.roundcont p {
+  color: #232f41;
+  margin: 0 10px;
+}
+/* line 2401, ../itemshop.sass */
+.roundcont * a {
+  color: #232f41;
+}
+/* line 2403, ../itemshop.sass */
+.roundcont * a:visited {
+  color: #232f41;
+}
+
+/* line 2406, ../itemshop.sass */
+.roundtop {
+  background: url(/tlpd/images/tr.gif) no-repeat top right;
+}
+
+/* line 2409, ../itemshop.sass */
+.roundbottom {
+  background: url(/tlpd/images/br.gif) no-repeat top right;
+}
+
+/* line 2412, ../itemshop.sass */
+img.corner {
+  width: 15px;
+  height: 15px;
+  border: 0;
+  display: block !important;
+}
+
+/* line 2418, ../itemshop.sass */
+#tabulator_div, .tblt_div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 2422, ../itemshop.sass */
+.srch_hd {
+  background-color: #467a95;
+  font: bold 10pt Arial;
+  color: #fff;
+  padding: 6px;
+}
+
+/* line 2428, ../itemshop.sass */
+.srch_hd_box {
+  width: 100%;
+  border: 1px solid #cbc9c7;
+}
+
+/* line 2432, ../itemshop.sass */
+.res1, .srch_res1 {
+  font: 8pt Arial;
+  background-color: #eceaeb;
+}
+
+/* line 2436, ../itemshop.sass */
+.res2, .srch_res2 {
+  font: 8pt Arial;
+  background-color: #e0e0df;
+}
+
+/* line 2440, ../itemshop.sass */
+.srch_frmname {
+  padding-left: 10px;
+  background-color: #ebeff2;
+  font: bold 10pt Arial;
+}
+
+/* line 2446, ../itemshop.sass */
+A.sl {
+  font: 9pt Arial;
+  color: #404041;
+}
+/* line 2449, ../itemshop.sass */
+A.sls {
+  font: 8pt Arial;
+  color: #404041;
+}
+
+/* line 2453, ../itemshop.sass */
+.greenbox {
+  border: 1px solid black;
+  background-color: #9d9;
+  padding: 2px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 2461, ../itemshop.sass */
+#loginform {
+  margin: 0;
+  padding: 0;
+  background: url(/mirror/layout/formbg.png) top left repeat-x;
+  height: 25px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 367px;
+}
+/* line 2462, ../itemshop.sass */
+#loginform span {
+  font-size: 11px;
+  text-align: left;
+}
+
+/* line 2474, ../itemshop.sass */
+#username_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 2478, ../itemshop.sass */
+#username_container label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #bdcfe7;
+  font-size: 11px;
+}
+/* line 2484, ../itemshop.sass */
+#username_container input {
+  position: absolute;
+  top: 2px;
+  left: 60px;
+}
+
+/* line 2489, ../itemshop.sass */
+#password_container {
+  position: absolute;
+  top: 0;
+  left: 180px;
+}
+/* line 2493, ../itemshop.sass */
+#password_container label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #bdcfe7;
+  font-size: 11px;
+}
+/* line 2499, ../itemshop.sass */
+#password_container input {
+  position: absolute;
+  top: 2px;
+  left: 60px;
+}
+
+/* line 2504, ../itemshop.sass */
+#loginform input.text {
+  width: 112px;
+  padding: 0;
+  background: #fff;
+  border: solid 1px #bdcfe7;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+/* line 2513, ../itemshop.sass */
+#loginSubmit {
+  display: block;
+  position: absolute;
+  width: 75px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: url(/mirror/layout/loginbutton.png) top left no-repeat;
+  left: 367px;
+  top: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* line 2528, ../itemshop.sass */
+#login_extras {
+  position: absolute;
+  top: 0;
+  left: 442px;
+  width: 136px;
+  background: url(/mirror/layout/extrabg.png) top left repeat-x;
+  height: 16px;
+}
+/* line 2535, ../itemshop.sass */
+#login_extras label {
+  font-size: 11px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  height: 16px;
+  color: #bdcfe7;
+}
+/* line 2543, ../itemshop.sass */
+#login_extras input {
+  position: absolute;
+  margin: 0;
+  top: 1px;
+  padding: 0;
+  left: 1px;
+}
+/* line 2549, ../itemshop.sass */
+#login_extras span {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  background: url(/mirror/layout/extraright.png) top right no-repeat;
+  height: 16px;
+  padding-right: 23px;
+}
+/* line 2556, ../itemshop.sass */
+#login_extras span a {
+  color: #fff;
+  text-decoration: underline;
+}
+/* line 2559, ../itemshop.sass */
+#login_extras span a:visited, #login_extras span a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* line 2564, ../itemshop.sass */
+div.tlpdrank_left {
+  overflow: hidden;
+  font-size: 8pt;
+  width: 95px;
+  float: left;
+  white-space: nowrap;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+/* line 2572, ../itemshop.sass */
+div.tlpdrank_right {
+  overflow: hidden;
+  font-size: 8pt;
+  width: 95px;
+  float: left;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+/* line 2580, ../itemshop.sass */
+#timebar {
+  color: #bac8d2;
+  text-shadow: 0 0 3px #404041;
+}
+
+/* line 2584, ../itemshop.sass */
+#more_streams {
+  display: none;
+  padding-left: 7px;
+}
+
+/* line 2588, ../itemshop.sass */
+.spr2 {
+  background-image: url(/mirror/layout/SpecialSprite5.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 219px;
+  height: 25px;
+}
+
+/* line 2595, ../itemshop.sass */
+#nav_tlpd {
+  background-position: -657px 0;
+}
+
+/* line 2598, ../itemshop.sass */
+#nav_wiki {
+  background-position: -438px 0;
+}
+
+/* line 2601, ../itemshop.sass */
+#nav_streams {
+  background-position: -219px 0;
+}
+
+/* line 2604, ../itemshop.sass */
+#nav_calendar {
+  background-position: 0 0;
+}
+
+/* line 2608, ../itemshop.sass */
+.block-games .subheading79, .block-games .subheading80 {
+  padding-left: 6px;
+}
+
+/* line 2611, ../itemshop.sass */
+.sb-forum-toggle {
+  width: 7px;
+  height: 6px;
+  float: right;
+  padding: 4px;
+  margin-right: -6px;
+  border: 1px solid transparent;
+}
+/* line 2618, ../itemshop.sass */
+.sb-forum-toggle:hover {
+  background-color: #eceaeb;
+  border: 1px solid #cbc9c7;
+}
+
+/* line 2623, ../itemshop.sass */
+.sidebar_block a {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 2628, ../itemshop.sass */
+.sidebar_block .sbtitle a {
+  display: inline;
+}
+/* line 2630, ../itemshop.sass */
+.sidebar_block .block-news_left_mid a {
+  width: 86%;
+}
+/* line 2632, ../itemshop.sass */
+.sidebar_block .block-news_left_mid a.comments {
+  float: right;
+  clear: both;
+  font-size: 10px;
+  width: auto;
+  display: inline;
+  color: #7c7a6f;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.35);
+}
+
+/* line 2641, ../itemshop.sass */
+a.block_header {
+  display: block;
+  height: 23px;
+  background-color: #284855;
+  padding-top: 2px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Open Sans", "Arial";
+}
+
+/* line 2652, ../itemshop.sass */
+#streams_content {
+  padding: 8px 0 10px 10px;
+  cursor: default;
+}
+
+/* line 2656, ../itemshop.sass */
+span.viewers {
+  float: right;
+  clear: both;
+  font-size: 10px;
+  width: auto;
+  display: inline;
+  color: #7c7a6f;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.35);
+  padding-right: 8px;
+}
+
+/* line 2666, ../itemshop.sass */
+#sb_sponsored a {
+  width: 190px;
+}
+
+/* line 2669, ../itemshop.sass */
+.lpspr {
+  background-image: url(/images/forum/wiki_sprite.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0;
+}
+
+/* line 2676, ../itemshop.sass */
+.lpcoin-bronze1 {
+  background-position: 0 0;
+  width: 18px;
+  height: 19px;
+}
+
+/* line 2681, ../itemshop.sass */
+.lpcoin-bronze2 {
+  background-position: 0 -24px;
+  width: 31px;
+  height: 19px;
+}
+
+/* line 2686, ../itemshop.sass */
+.lpcoin-bronze3 {
+  background-position: 0 -48px;
+  width: 31px;
+  height: 19px;
+}
+
+/* line 2691, ../itemshop.sass */
+.lpcoin-bronze4 {
+  background-position: 0 -72px;
+  width: 31px;
+  height: 21px;
+}
+
+/* line 2696, ../itemshop.sass */
+.lpcoin-gold1 {
+  background-position: 0 -98px;
+  width: 18px;
+  height: 19px;
+}
+
+/* line 2701, ../itemshop.sass */
+.lpcoin-gold2 {
+  background-position: 0 -122px;
+  width: 29px;
+  height: 21px;
+}
+
+/* line 2706, ../itemshop.sass */
+.lpcoin-gold3 {
+  background-position: 0 -148px;
+  width: 29px;
+  height: 21px;
+}
+
+/* line 2711, ../itemshop.sass */
+.lpcoin-gold4 {
+  background-position: 0 -174px;
+  width: 29px;
+  height: 21px;
+}
+
+/* line 2716, ../itemshop.sass */
+.lpcoin-silver1 {
+  background-position: 0 -200px;
+  width: 18px;
+  height: 19px;
+}
+
+/* line 2721, ../itemshop.sass */
+.lpcoin-silver2 {
+  background-position: 0 -224px;
+  width: 31px;
+  height: 19px;
+}
+
+/* line 2726, ../itemshop.sass */
+.lpcoin-silver3 {
+  background-position: 0 -248px;
+  width: 31px;
+  height: 19px;
+}
+
+/* line 2731, ../itemshop.sass */
+.lpcoin-silver4 {
+  background-position: 0 -272px;
+  width: 31px;
+  height: 21px;
+}
+
+/* line 2736, ../itemshop.sass */
+.countdown_rtl {
+  direction: rtl;
+}
+
+/* line 2739, ../itemshop.sass */
+.conutdown_row {
+  clear: both;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 2745, ../itemshop.sass */
+.countdown_show1 .countdown_section {
+  width: 98%;
+}
+
+/* line 2748, ../itemshop.sass */
+.countdown_show2 .countdown_section {
+  width: 48%;
+}
+
+/* line 2751, ../itemshop.sass */
+.countdown_show3 .countdown_section {
+  width: 32.5%;
+}
+
+/* line 2754, ../itemshop.sass */
+.countdown_show4 .countdown_section {
+  width: 24%;
+}
+
+/* line 2757, ../itemshop.sass */
+.countdown_show5 .countdown_section {
+  width: 19.5%;
+}
+
+/* line 2760, ../itemshop.sass */
+.countdown_show6 .countdown_section {
+  width: 16.25%;
+}
+
+/* line 2763, ../itemshop.sass */
+.countdown_show7 .countdown_section {
+  width: 14%;
+}
+
+/* line 2766, ../itemshop.sass */
+.countdown_section {
+  display: block;
+  float: left;
+  font-size: 6pt;
+  text-align: center;
+}
+
+/* line 2772, ../itemshop.sass */
+.countdown_amount {
+  font-size: 9pt;
+}
+
+/* line 2775, ../itemshop.sass */
+.countdown_descr {
+  display: block;
+  width: 100%;
+}
+
+/* line 2779, ../itemshop.sass */
+#sidebar_dimmer {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100 !important;
+  background-color: black;
+  filter: alpha(opacity=75);
+  -khtml-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+
+/* line 2793, ../itemshop.sass */
+#sidebar_options {
+  display: none;
+  z-index: 101;
+  position: fixed;
+  top: 12.5%;
+  left: 50%;
+  margin-left: -336px;
+  width: 600px;
+  overflow-y: auto;
+  background-color: #EEE;
+  color: #333;
+  border: 1px solid black;
+  padding: 36px;
+  text-align: left;
+}
+
+/* line 2808, ../itemshop.sass */
+#calendar_refresh_icon {
+  cursor: pointer;
+  display: none;
+  top: 28px;
+  right: 1px;
+  margin-right: 5px;
+  opacity: 0.5;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+}
+
+/* line 2819, ../itemshop.sass */
+#streams_refresh_icon {
+  cursor: pointer;
+  display: none;
+  float: right;
+  margin-right: 5px;
+  opacity: 0.5;
+  width: 11px;
+  height: 11px;
+}
+
+/* line 2828, ../itemshop.sass */
+.ev_wikilink {
+  float: left;
+  margin-left: -8px;
+  margin-right: 4px;
+  margin-top: 2px;
+}
+
+/* line 2834, ../itemshop.sass */
+.ev_nolink {
+  float: left;
+  margin-left: -8px;
+  margin-right: 4px;
+  margin-top: -1px;
+  width: 12px;
+}
+
+/* line 2841, ../itemshop.sass */
+.upcoming_time {
+  font-weight: bold;
+  font-size: 8pt;
+  width: 45px;
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* line 2848, ../itemshop.sass */
+.upcoming_text {
+  white-space: nowrap;
+}
+
+/* line 2851, ../itemshop.sass */
+table.upcoming {
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 2854, ../itemshop.sass */
+table.upcoming td {
+  font-size: 8pt;
+  text-indent: 8px;
+}
+
+/* line 2858, ../itemshop.sass */
+#loginbox {
+  color: #fff;
+  font-size: 8pt;
+  z-index: 101;
+}
+/* line 2862, ../itemshop.sass */
+#loginbox form > button {
+  float: left;
+  margin-right: 10px;
+}
+/* line 2865, ../itemshop.sass */
+#loginbox div:nth-child(3) {
+  margin-top: 4px;
+}
+/* line 2867, ../itemshop.sass */
+#loginbox a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 2870, ../itemshop.sass */
+#loginbox a:hover {
+  color: #fff;
+}
+/* line 2872, ../itemshop.sass */
+#loginbox input {
+  background: rgba(0, 0, 0, 0.25);
+  margin: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2px;
+  color: #bac8d2;
+}
+/* line 2878, ../itemshop.sass */
+#loginbox input.text {
+  width: 140px;
+}
+/* line 2880, ../itemshop.sass */
+#loginbox td {
+  font-size: 11px;
+  color: #bac8d2;
+}
+
+/* line 2884, ../itemshop.sass */
+#makeAcookie {
+  margin: 0 0 0 2px !important;
+  padding: 0 !important;
+  vertical-align: middle;
+}
+
+/* line 2889, ../itemshop.sass */
+#cornerright {
+  position: absolute;
+  top: -1px;
+  right: -12px;
+  height: 12px;
+  width: 12px;
+  display: block;
+  background: url(/mirror/layout/login_corners.png) 12px 0;
+}
+
+/* line 2898, ../itemshop.sass */
+#cornerleft {
+  position: absolute;
+  top: -1px;
+  left: -12px;
+  height: 12px;
+  width: 12px;
+  display: block;
+  background: url(/mirror/layout/login_corners.png) 0 0;
+}
+
+/* line 2907, ../itemshop.sass */
+#loginlink {
+  float: left;
+  font-size: 11px;
+  margin-top: 2px;
+  margin-right: 16px;
+}
+
+/* line 2913, ../itemshop.sass */
+#loginlinktext {
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 2919, ../itemshop.sass */
+#loginbox_dimmer {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100 !important;
+  background-color: transparent;
+}
+
+/* line 2929, ../itemshop.sass */
+#loginname, #loginpasswd {
+  width: 145px;
+}
+
+/* line 2932, ../itemshop.sass */
+#loginsubmit {
+  white-space: nowrap;
+}
+
+/* line 2935, ../itemshop.sass */
+a.spoiler {
+  opacity: 0.5;
+}
+
+/* line 2938, ../itemshop.sass */
+img.rateblog {
+  cursor: pointer;
+}
+
+/* line 2941, ../itemshop.sass */
+#sitesettings {
+  margin-top: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  padding-right: 0;
+}
+
+/* line 2947, ../itemshop.sass */
+body > footer {
+  text-align: center;
+  padding-top: 8px;
+}
+
+/* line 2951, ../itemshop.sass */
+footer span a {
+  font-weight: 700;
+}
+
+/* line 2954, ../itemshop.sass */
+.spinner {
+  transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -webkit-transition: all 5s ease;
+  -ms-transition: all 5s ease;
+  -o-transition: all 5s ease;
+}
+/* line 2960, ../itemshop.sass */
+.spinner:hover {
+  transform: rotate(1800deg);
+  -webkit-transform: rotate(1800deg);
+  -moz-transform: rotate(1800deg);
+  -ms-transform: rotate(1800deg);
+  -o-transform: rotate(1800deg);
+}
+
+/* line 2967, ../itemshop.sass */
+#countdown {
+  position: absolute;
+  right: 12px;
+  width: 273px;
+}
+
+/* line 2972, ../itemshop.sass */
+.tb-sprite {
+  background-image: url(/images/layout/topbannersprite.png);
+}
+
+/* line 2975, ../itemshop.sass */
+#dropdown-lock {
+  background-image: url(/images/layout/PinInactive.png);
+  width: 11px;
+  height: 10px;
+  display: block;
+}
+/* line 2980, ../itemshop.sass */
+#dropdown-lock.pinned {
+  background-image: url(/images/layout/PinActive.png);
+}
+
+/* line 2983, ../itemshop.sass */
+#navwrapper {
+  color: #404041;
+  font-family: arial;
+  font-size: 10pt;
+  min-width: 1214px;
+  margin: auto;
+  position: relative;
+  display: table;
+}
+
+/* line 2992, ../itemshop.sass */
+.clear {
+  clear: both;
+}
+
+/* line 2995, ../itemshop.sass */
+.left {
+  float: left;
+}
+
+/* line 2998, ../itemshop.sass */
+.right {
+  float: right;
+}
+
+/* line 3001, ../itemshop.sass */
+.topmenubar {
+  top: 0;
+  height: 18px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+/* line 3008, ../itemshop.sass */
+.top_menu span {
+  color: #818da0;
+  float: left;
+  padding-right: 20px;
+  line-height: 20px;
+}
+/* line 3013, ../itemshop.sass */
+.top_menu > div {
+  height: 18px;
+  float: left;
+}
+/* line 3016, ../itemshop.sass */
+.top_menu a {
+  color: #bac8d2;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 3021, ../itemshop.sass */
+.top_menu img {
+  margin-top: 1px;
+}
+
+/* line 3024, ../itemshop.sass */
+#userpanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+/* line 3029, ../itemshop.sass */
+#userpanel li > a {
+  color: #bac8d2;
+  text-decoration: none;
+}
+/* line 3032, ../itemshop.sass */
+#userpanel ul {
+  float: left;
+  height: 20px;
+  margin: 0;
+  border: 0;
+  padding: 0 0 0 6px;
+  list-style-type: none;
+  color: #FFF;
+  line-height: 20px;
+  font-size: 8pt;
+}
+/* line 3042, ../itemshop.sass */
+#userpanel a.toggle_link, #userpanel .guestlink {
+  font-weight: 700;
+}
+/* line 3044, ../itemshop.sass */
+#userpanel li {
+  position: relative;
+  float: right;
+  margin-left: 4px;
+  cursor: default;
+}
+/* line 3049, ../itemshop.sass */
+#userpanel li.guestlink {
+  float: left;
+  margin-left: 8px;
+  margin-right: 10px;
+}
+/* line 3053, ../itemshop.sass */
+#userpanel li:first-child {
+  margin-right: 10px;
+  float: left;
+}
+/* line 3056, ../itemshop.sass */
+#userpanel .upicons {
+  display: block;
+  height: 21px;
+  width: 21px;
+  background-repeat: no-repeat;
+}
+/* line 3061, ../itemshop.sass */
+#userpanel #up_pms {
+  background-image: url(/images/layout/topbannersprite.png);
+  background-position: 0 -213px;
+}
+/* line 3064, ../itemshop.sass */
+#userpanel #up_pms:hover {
+  background-position: -21px -213px;
+}
+/* line 3066, ../itemshop.sass */
+#userpanel #up_threads {
+  background-image: url(/images/layout/topbannersprite.png);
+  background-position: 0 -435px;
+}
+/* line 3069, ../itemshop.sass */
+#userpanel #up_threads:hover {
+  background-position: -21px -435px;
+}
+/* line 3071, ../itemshop.sass */
+#userpanel #up_stream {
+  background-image: url(/images/layout/topbannersprite.png);
+  background-position: 0 -404px;
+}
+/* line 3074, ../itemshop.sass */
+#userpanel #up_stream:hover {
+  background-position: -21px -404px;
+}
+/* line 3076, ../itemshop.sass */
+#userpanel #up_drop {
+  background-image: url(/images/layout/topbannersprite.png);
+  background-position: 0 0;
+}
+/* line 3079, ../itemshop.sass */
+#userpanel #up_drop:hover {
+  background-position: -21px 0;
+}
+/* line 3081, ../itemshop.sass */
+#userpanel #up_drop.open_liquibets {
+  background-position: -16px -30px;
+}
+/* line 3083, ../itemshop.sass */
+#userpanel #up_drop.open_liquibets:hover {
+  background-position: -21px 0;
+}
+/* line 3085, ../itemshop.sass */
+#userpanel .up_notif {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  padding: 0 6px;
+  height: 14px;
+  border-radius: 2px;
+  line-height: 15px;
+  color: #fff;
+  margin-top: -2px;
+}
+/* line 3095, ../itemshop.sass */
+#userpanel .up_notif.admin {
+  background: #931212;
+}
+/* line 3097, ../itemshop.sass */
+#userpanel .up_notif.standard {
+  background: #467a95;
+  margin: -2px 0 0 6px;
+}
+/* line 3100, ../itemshop.sass */
+#userpanel .up_notif.admin:hover {
+  background: #c01818;
+}
+/* line 3102, ../itemshop.sass */
+#userpanel .up_notif.standard:hover {
+  background: #7cbdd6;
+}
+
+/* line 3105, ../itemshop.sass */
+#userpanelend {
+  width: 12px;
+  height: 28px;
+  float: left;
+}
+
+/* line 3110, ../itemshop.sass */
+.up_pmsactive {
+  background-position: -21px -213px !important;
+  font-size: 7.5px;
+  font-weight: bold;
+  text-decoration: none !important;
+  text-align: right;
+  padding-right: 2px;
+  width: 19px !important;
+}
+/* line 3118, ../itemshop.sass */
+.up_pmsactive span {
+  background: #c01818;
+  border-radius: 6px;
+  width: 6px;
+  padding: 0 2px;
+  margin-right: -3px;
+}
+
+/* line 3125, ../itemshop.sass */
+.up_streamactive {
+  background: url(/images/layout/stream_on.gif) !important;
+}
+
+/* line 3128, ../itemshop.sass */
+#up_dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* line 3134, ../itemshop.sass */
+#up_dropdown a {
+  color: #fff;
+}
+
+/* line 3137, ../itemshop.sass */
+#up_dropdown_content {
+  float: left;
+  min-width: 210px;
+  padding: 30px 0 10px 15px;
+  color: #fff;
+  font-size: 9pt;
+}
+
+/* line 3144, ../itemshop.sass */
+#up_dropdown_end {
+  position: absolute;
+  right: -12px;
+  width: 12px;
+  height: 100%;
+}
+
+/* line 3150, ../itemshop.sass */
+.filtersettings img {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  margin-left: -4px;
+  margin-bottom: 2px;
+}
+
+/* line 3157, ../itemshop.sass */
+#banner {
+  background: url(/images/vary/LiquidDotaBanner.image) no-repeat center #5a291b;
+  height: 128px;
+}
+
+/* line 3161, ../itemshop.sass */
+#tlverytopbanner {
+  height: 134px;
+}
+
+/* line 3164, ../itemshop.sass */
+#homelink {
+  position: relative;
+  width: 428px;
+  height: 79px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -70px;
+  top: 31px;
+  left: -66px;
+}
+
+/* line 3175, ../itemshop.sass */
+#stats {
+  color: #FFF;
+  text-align: right;
+  font-size: 8pt;
+  padding: 4px 12px 0 0;
+}
+/* line 3180, ../itemshop.sass */
+#stats a {
+  color: #FFF;
+}
+
+/* line 3183, ../itemshop.sass */
+#siteheader {
+  background: url(/images/vary/LiquidDotaBanner.image) no-repeat #21353d;
+  background-position: center -5px;
+}
+
+/* line 3187, ../itemshop.sass */
+.navbar {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+/* line 3191, ../itemshop.sass */
+#navwrap {
+  margin-top: -6px;
+}
+
+/* line 3195, ../itemshop.sass */
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  height: 31px;
+}
+/* line 3201, ../itemshop.sass */
+.navbar li {
+  float: left;
+}
+/* line 3203, ../itemshop.sass */
+.navbar a {
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 8pt;
+  font-weight: bold;
+}
+/* line 3208, ../itemshop.sass */
+.navbar a:hover .sn_dropdown {
+  background-position: -27px -5px;
+}
+/* line 3210, ../itemshop.sass */
+.navbar.submenu {
+  height: 24px;
+  line-height: 24px;
+  z-index: 10;
+  background: #152126;
+  margin-top: -1px;
+  border: none !important;
+}
+
+/* line 3218, ../itemshop.sass */
+#filters {
+  float: right;
+}
+
+/* line 3221, ../itemshop.sass */
+.smallnav {
+  float: left;
+}
+/* line 3223, ../itemshop.sass */
+.smallnav a {
+  padding: 8px 10px 10px 10px;
+  color: #bac8d2;
+  display: block;
+}
+/* line 3228, ../itemshop.sass */
+.smallnav.subnav a {
+  padding: 0 8px;
+  color: #d2d4d6;
+  display: block;
+}
+/* line 3232, ../itemshop.sass */
+.smallnav.subnav a:hover {
+  background: #3f4746;
+  color: #fff;
+}
+/* line 3235, ../itemshop.sass */
+.smallnav.subnav li {
+  height: 20px;
+}
+
+/* line 3238, ../itemshop.sass */
+.smallnav_spacer {
+  width: 135px;
+}
+
+/* line 3241, ../itemshop.sass */
+.smallnav .sn_dropdown {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: 2px;
+  background: url(/images/layout/topbannersprite.png) -6px -5px no-repeat;
+  height: 10px;
+  width: 10px;
+}
+/* line 3249, ../itemshop.sass */
+.smallnav .sn_dropdown:hover, .smallnav .sn_dropdown.hovered {
+  background-position: -27px -5px;
+}
+
+/* line 3252, ../itemshop.sass */
+#rightnav {
+  float: right;
+}
+/* line 3254, ../itemshop.sass */
+#rightnav li.store {
+  height: 28px;
+}
+/* line 3256, ../itemshop.sass */
+#rightnav li.store a {
+  color: #c4d1dd;
+  padding: 14px 0 10px 27px;
+  display: block;
+}
+/* line 3260, ../itemshop.sass */
+#rightnav li.store a:hover {
+  color: #fff;
+}
+
+/* line 3263, ../itemshop.sass */
+#searchbox {
+  position: relative;
+}
+/* line 3265, ../itemshop.sass */
+#searchbox input {
+  border: 0;
+  height: 22px;
+  width: 190px;
+  margin: 4px 4px 0 0;
+}
+/* line 3270, ../itemshop.sass */
+#searchbox > div > a {
+  background-position: -7px -239px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 22px;
+  width: 22px;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 3281, ../itemshop.sass */
+#searchicon {
+  background: #fff;
+  box-shadow: inset 0 6px 4px -5px #202020;
+  padding-right: 20px;
+  padding-left: 4px;
+  border: 1px solid #555;
+}
+
+/* line 3288, ../itemshop.sass */
+.tb-dropdown_icon {
+  background-position: 0 0;
+}
+
+/* line 3291, ../itemshop.sass */
+.tb-filter_spacer {
+  background-position: 0 -165px;
+}
+
+/* line 3294, ../itemshop.sass */
+.tb-pm_icon {
+  background-position: 0 -213px;
+}
+
+/* line 3297, ../itemshop.sass */
+.tb-search_icon {
+  background-position: 0 -244px;
+}
+
+/* line 3300, ../itemshop.sass */
+.tb-smallnav_end {
+  background-position: 0 -266px;
+}
+
+/* line 3303, ../itemshop.sass */
+.tb-smallnav_spacer {
+  background-position: 0 -314px;
+}
+
+/* line 3306, ../itemshop.sass */
+.tb-smallnav_start {
+  background-position: 0 -356px;
+}
+
+/* line 3309, ../itemshop.sass */
+.tb-stream_icon {
+  background-position: 0 -404px;
+}
+
+/* line 3312, ../itemshop.sass */
+.tb-threads_icon {
+  background-position: 0 -435px;
+}
+
+/* line 3315, ../itemshop.sass */
+.tb-up_corner {
+  background-position: 0 -492px;
+}
+
+/* line 3318, ../itemshop.sass */
+.tb-userpanelend {
+  background-position: 0 -596px;
+}
+
+/* line 3321, ../itemshop.sass */
+.topmenuicons {
+  background-image: url(/images/layout/topbannersprite.png);
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+/* line 3327, ../itemshop.sass */
+.topmenufont {
+  font-family: "Open Sans", "Arial";
+  font-weight: 600;
+  font-size: 9pt;
+}
+
+/* line 3332, ../itemshop.sass */
+#tb-twitter {
+  background-position: 0 -466px;
+}
+
+/* line 3335, ../itemshop.sass */
+#tb-facebook {
+  background-position: 0 -31px;
+}
+
+/* line 3338, ../itemshop.sass */
+#tb-youtube {
+  background-position: 0 -634px;
+}
+
+/* line 3341, ../itemshop.sass */
+.filtericons {
+  background-image: url(/images/layout/topbannersprite.png);
+  display: inline-block;
+}
+
+/* line 3345, ../itemshop.sass */
+#tb-filter {
+  background-position: 0 -57px;
+  width: 34px;
+  height: 17px;
+}
+
+/* line 3350, ../itemshop.sass */
+#tb-filter-bw {
+  background-position: 0 -84px;
+  width: 40px;
+  height: 17px;
+}
+
+/* line 3355, ../itemshop.sass */
+#tb-filter-dota2 {
+  background-position: 0 -111px;
+  width: 58px;
+  height: 17px;
+}
+
+/* line 3360, ../itemshop.sass */
+#tb-filter-sc2 {
+  background-position: 0 -138px;
+  width: 44px;
+  height: 17px;
+}
+
+/* line 3365, ../itemshop.sass */
+#tb-filter-other {
+  background-position: -16px -166px;
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 17px;
+}
+
+/* line 3371, ../itemshop.sass */
+#tb-filter-bw-off {
+  background-position: 0 -498px;
+  width: 40px;
+  height: 17px;
+}
+
+/* line 3376, ../itemshop.sass */
+#tb-filter-dota2-off {
+  background-position: 0 -525px;
+  width: 58px;
+  height: 17px;
+}
+
+/* line 3381, ../itemshop.sass */
+#tb-filter-sc2-off {
+  background-position: 0 -552px;
+  width: 44px;
+  height: 17px;
+}
+
+/* line 3386, ../itemshop.sass */
+#tb-filter-other-off {
+  background-position: -16px -579px;
+  width: 31px;
+  height: 17px;
+}
+
+/* line 3391, ../itemshop.sass */
+#topstreamlink {
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* line 3395, ../itemshop.sass */
+hr {
+  border-top: 1px solid #cdc9be;
+  color: #fff9f3;
+  border-left: none;
+}
+
+/* line 3401, ../itemshop.sass */
+#streamTable th {
+  background-color: #467a95;
+  color: #fff;
+  padding: 4px;
+}
+/* line 3405, ../itemshop.sass */
+#streamTable td {
+  padding: 4px;
+}
+
+/* line 3408, ../itemshop.sass */
+#sortable1, #sortable2 {
+  background-color: #eceaeb;
+}
+
+/* line 3411, ../itemshop.sass */
+#streamTable {
+  border: 1px solid #cbc9c7;
+}
+/* line 3413, ../itemshop.sass */
+#streamTable .header {
+  background-color: #467a95;
+  color: #ebeff2;
+}
+
+/* line 3418, ../itemshop.sass */
+tr.even {
+  background-color: #e0e0df;
+}
+/* line 3420, ../itemshop.sass */
+tr.odd {
+  background-color: #eceaeb;
+}
+
+/* line 3423, ../itemshop.sass */
+div.calendar-head {
+  background: #467a95;
+  color: #fff;
+  font-size: 13pt;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 3431, ../itemshop.sass */
+.lb-border {
+  border-top: 0 solid #bcb8af;
+}
+
+/* line 3434, ../itemshop.sass */
+.gen-boxcard {
+  border: 1px solid #00005d;
+}
+
+/* line 3437, ../itemshop.sass */
+.profile-usertabs {
+  border: 1px solid #cbc9c7;
+}
+
+/* line 3440, ../itemshop.sass */
+.userpanel-tabs {
+  width: 80%;
+  background-color: #eceaeb;
+  border: 1px solid #cbc9c7;
+}
+/* line 3444, ../itemshop.sass */
+.userpanel-tabs font {
+  font-weight: 700;
+  cursor: default;
+}
+/* line 3447, ../itemshop.sass */
+.userpanel-tabs a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font: 9pt Arial;
+  color: 284855;
+  line-height: 26px;
+  text-decoration: none;
+}
+/* line 3455, ../itemshop.sass */
+.userpanel-tabs a:hover {
+  text-decoration: none;
+  background-color: #fff;
+}
+/* line 3458, ../itemshop.sass */
+.userpanel-tabs td {
+  text-align: center;
+  padding: 0;
+}
+
+/* line 3462, ../itemshop.sass */
+#edit_profile table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 3466, ../itemshop.sass */
+.p_heading {
+  background-color: #467a95;
+  border-bottom: 1px solid #3e728d;
+  color: #fff;
+}
+
+/* line 3471, ../itemshop.sass */
+.p_data, .p_links {
+  background-color: #eceaeb;
+  border-bottom: 1px solid #cbc9c7;
+}
+
+/* line 3475, ../itemshop.sass */
+.boxbdr {
+  width: 90%;
+  border: 1px solid #cbc9c7;
+}
+
+/* line 3479, ../itemshop.sass */
+.boxtop {
+  background-color: #467a95;
+  color: #fff;
+}
+/* line 3482, ../itemshop.sass */
+.boxtop td {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* line 3486, ../itemshop.sass */
+.boxhead, .boxmain {
+  background-color: #eceaeb;
+}
+
+/* line 3489, ../itemshop.sass */
+.boxhead th {
+  border: 0;
+  cursor: default;
+}
+
+/* line 3493, ../itemshop.sass */
+.boxtop td, .boxhead th {
+  padding: 6px;
+}
+
+/* line 3496, ../itemshop.sass */
+.pm_row td {
+  padding: 4px;
+}
+
+/* line 3499, ../itemshop.sass */
+.boxmain a, .pm-border a {
+  text-decoration: underline;
+}
+
+/* line 3502, ../itemshop.sass */
+.boxmain td small a, .boxtop td small a {
+  color: #eceaeb;
+  text-decoration: underline;
+}
+
+/* line 3507, ../itemshop.sass */
+.boxmain td hr {
+  border-top: 1px solid #cdc9be;
+  color: #fff9f3;
+  border-left: none;
+}
+/* line 3511, ../itemshop.sass */
+.boxmain #myquote {
+  width: 80%;
+}
+/* line 3513, ../itemshop.sass */
+.boxmain textarea {
+  width: 98%;
+}
+
+/* line 3516, ../itemshop.sass */
+.inbox-bg {
+  border: 1px solid #cbc9c7;
+  background-color: #eceaeb;
+  margin-right: 6px;
+}
+
+/* line 3522, ../itemshop.sass */
+.inbox-btn td {
+  cursor: pointer;
+}
+/* line 3524, ../itemshop.sass */
+.inbox-btn td:hover {
+  background-color: #fff;
+}
+/* line 3526, ../itemshop.sass */
+.inbox-btn a:hover {
+  text-decoration: none;
+}
+
+/* line 3529, ../itemshop.sass */
+.pm-border {
+  background-color: #eceaeb;
+  border: 1px solid #cbc9c7;
+}
+/* line 3533, ../itemshop.sass */
+.pm-border > tbody > tr:first-child, .pm-border > tbody > tr:last-child {
+  background-color: #467a95;
+  color: #fff;
+}
+
+/* line 3537, ../itemshop.sass */
+.pm-head, .pm-foot {
+  background-color: #467a95;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 3542, ../itemshop.sass */
+.pm-body {
+  width: 100%;
+  background-color: #eceaeb;
+}
+/* line 3545, ../itemshop.sass */
+.pm-body textarea {
+  width: 99%;
+}
+
+/* line 3548, ../itemshop.sass */
+.pm_inbox {
+  border: 1px solid #cbc9c7;
+  background-color: #eceaeb;
+}
+
+/* line 3552, ../itemshop.sass */
+.pm_row {
+  background-color: #e0e0df;
+}
+
+/* line 3555, ../itemshop.sass */
+.pm_row_even, .forum-index {
+  background-color: #eceaeb;
+}
+
+/* line 3558, ../itemshop.sass */
+.forumPost pre, #fpreview pre, td.lichtb > table pre {
+  overflow-x: auto;
+  font-size: 10pt;
+  font-family: monospace !important;
+  margin: 0 5px 0 9px;
+  padding: 4px 6px;
+  background-color: #e5e5e5;
+  color: #58585b;
+  padding: 8px;
+  box-shadow: -6px 0 #467a95;
+  border-top: 1px solid #d6d6d5;
+  border-right: 1px solid #d6d6d5;
+  border-bottom: 1px solid #d6d6d5;
+}
+
+/* line 3572, ../itemshop.sass */
+.spoiler {
+  display: none;
+  background-color: #f6f7f7;
+  border: 1px solid #dedad9;
+  padding: 5px;
+}
+
+/* line 3578, ../itemshop.sass */
+.btn_down {
+  padding: 8px;
+  border: 1px solid #b3b2b2;
+  background-color: #c4c3c3;
+  font: bold 9pt Arial;
+  cursor: default;
+}
+
+/* line 3585, ../itemshop.sass */
+.btn_up {
+  padding: 8px;
+  border: 1px solid #cbc9c7;
+  background-color: #eceaeb;
+  cursor: default;
+}
+/* line 3590, ../itemshop.sass */
+.btn_up:hover {
+  background-color: #fff;
+}
+
+/* line 3593, ../itemshop.sass */
+.rssnews {
+  font-weight: 700;
+  text-align: right;
+}
+
+/* line 3597, ../itemshop.sass */
+#reply_area {
+  min-width: 97%;
+  max-width: 97%;
+  width: 98%;
+  margin-left: 1%;
+}
+
+/* line 3603, ../itemshop.sass */
+.fadd-topic #reply_area {
+  margin-left: 0;
+}
+
+/* line 3606, ../itemshop.sass */
+.rep-controls {
+  margin: 0 auto;
+  width: 98%;
+  vertical-align: top;
+  text-align: left;
+  padding: 2px 0 4px 0;
+}
+/* line 3612, ../itemshop.sass */
+.rep-controls input, .rep-controls button {
+  vertical-align: middle;
+  height: 28px;
+  line-height: 24px;
+  padding: 0 32px;
+  color: #404041;
+  background: #eceaeb;
+  border: 1px solid #cbc9c7;
+  margin-bottom: 4px;
+}
+/* line 3621, ../itemshop.sass */
+.rep-controls input:hover, .rep-controls button:hover {
+  background: #f6f7f7;
+}
+
+/* line 3625, ../itemshop.sass */
+.solid .rep-controls input, .solid .rep-controls button {
+  color: #404041;
+  background: #f6f7f7;
+  border: 1px solid #cbc9c7;
+}
+/* line 3629, ../itemshop.sass */
+.solid .rep-controls input:hover, .solid .rep-controls button:hover {
+  background: #fff;
+}
+
+/* line 3632, ../itemshop.sass */
+#fp_postbtn {
+  background: #467a95;
+  border: 1px solid #467a95;
+  color: #fff;
+  min-width: 140px;
+}
+/* line 3637, ../itemshop.sass */
+#fp_postbtn:hover {
+  background: #4f89a3;
+}
+
+/* line 3640, ../itemshop.sass */
+.eventlisting tr > td {
+  width: 30%;
+}
+/* line 3641, ../itemshop.sass */
+.eventlisting tr > td:first-child {
+  width: 70%;
+}
+
+/* line 3645, ../itemshop.sass */
+.navmenu {
+  display: none;
+}
+/* line 3647, ../itemshop.sass */
+.navmenu .sn_dropdown {
+  display: inline-block;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+}
+
+/* line 3651, ../itemshop.sass */
+.top_menu, .social {
+  display: inline-block;
+  line-height: 26px;
+}
+
+/* line 3655, ../itemshop.sass */
+.top_menu {
+  z-index: 10;
+}
+
+/* line 3658, ../itemshop.sass */
+.topmenubar .navmenu {
+  height: 20px;
+  text-align: left;
+  color: #bac8d2;
+  width: 62px;
+  vertical-align: top;
+  line-height: 20px;
+  font-size: 8pt;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* line 3668, ../itemshop.sass */
+.topmenubar .navmenu:hover {
+  color: #eceaeb;
+}
+/* line 3670, ../itemshop.sass */
+.topmenubar .navmenu .sn_dropdown {
+  background-position: -1px -1px;
+  width: 20px;
+  height: 20px;
+  text-align: left;
+  color: #bac8d2;
+  vertical-align: top;
+  line-height: 20px;
+}
+/* line 3678, ../itemshop.sass */
+.topmenubar .navmenu:hover .sn_dropdown {
+  background-position: -22px -1px;
+}
+
+/* line 3681, ../itemshop.sass */
+#navwrap .navmenu {
+  position: relative;
+  left: 6px;
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  cursor: pointer;
+  background-position: 4px -314px;
+  width: 31px;
+  height: 31px;
+}
+/* line 3689, ../itemshop.sass */
+#navwrap .navmenu:hover {
+  background-position: 4px -344px;
+}
+
+/* line 3692, ../itemshop.sass */
+.social > a {
+  vertical-align: top;
+}
+
+/* line 3695, ../itemshop.sass */
+.video-cont {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+/* line 3700, ../itemshop.sass */
+.video-cont iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* line 3708, ../itemshop.sass */
+.postop1, .postop2, .postop3, .postop4, .postop5, .postop6, .postop7, .postop8, .postop9, .postop10 {
+  display: block;
+  background: url(/images/layout/fpostoptions.png) no-repeat center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid transparent;
+}
+
+/* line 3715, ../itemshop.sass */
+.postop1:hover, .postop2:hover, .postop3:hover, .postop4:hover, .postop5:hover, .postop6:hover, .postop7:hover, .postop8:hover, .postop9:hover, .postop10:hover {
+  background-color: #f6f7f7;
+  border: 1px solid #cbc9c7;
+}
+
+/* line 3719, ../itemshop.sass */
+.postop1 {
+  background-position: 8px 0;
+}
+
+/* line 3722, ../itemshop.sass */
+.postop2 {
+  background-position: -14px 0;
+}
+
+/* line 3725, ../itemshop.sass */
+.postop3 {
+  background-position: -40px 0;
+}
+
+/* line 3728, ../itemshop.sass */
+.postop5 {
+  background-position: -67px 0;
+}
+
+/* line 3731, ../itemshop.sass */
+.postop7 {
+  background-position: -95px -1px;
+}
+
+/* line 3734, ../itemshop.sass */
+.postop6 {
+  background-position: -121px -1px;
+}
+
+/* line 3737, ../itemshop.sass */
+.postop4 {
+  background-position: -152px -1px;
+}
+
+/* line 3740, ../itemshop.sass */
+.postop8 {
+  background-position: -182px -1px;
+}
+
+/* line 3743, ../itemshop.sass */
+.postop9 {
+  background-position: 0px 210px;
+}
+
+/* line 3746, ../itemshop.sass */
+.postop10 {
+  background-position: -235px 0;
+}
+
+/* line 3749, ../itemshop.sass */
+#fpreview {
+  background-color: #eceaeb;
+  border: 1px solid #cbc9c7;
+  padding: 8px 8px 14px 8px;
+}
+
+/* line 3754, ../itemshop.sass */
+.fp_poll {
+  display: block;
+  text-align: left;
+}
+/* line 3757, ../itemshop.sass */
+.fp_poll > div {
+  margin: 0 16px;
+}
+
+/* line 3760, ../itemshop.sass */
+#sr_block_inner {
+  width: 90%;
+}
+
+/* line 3763, ../itemshop.sass */
+#reply tr > td > span {
+  padding: 5px 0 0 8px;
+}
+
+/* line 3766, ../itemshop.sass */
+.imgdiv {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* line 3772, ../itemshop.sass */
+#inbox_block {
+  margin: 0 auto;
+  width: 99%;
+  margin-top: 4px;
+}
+
+/* line 3777, ../itemshop.sass */
+.pminbox_srch {
+  margin-left: 15%;
+}
+/* line 3779, ../itemshop.sass */
+.pminbox_srch label {
+  display: inline-block;
+  width: 20%;
+}
+/* line 3782, ../itemshop.sass */
+.pminbox_srch input.text {
+  width: 50%;
+}
+
+/* line 3785, ../itemshop.sass */
+#timezoneselect {
+  width: 100%;
+}
+
+/* line 3789, ../itemshop.sass */
+#solid .lichtb > table {
+  width: 100%;
+}
+/* line 3791, ../itemshop.sass */
+#solid .lichtb a {
+  color: #467a95;
+  text-decoration: none;
+}
+/* line 3794, ../itemshop.sass */
+#solid .lichtb a:hover {
+  text-decoration: underline;
+}
+
+/* line 3797, ../itemshop.sass */
+#userstreams > div {
+  text-align: center;
+}
+
+/* line 3800, ../itemshop.sass */
+.breadcrumb {
+  padding-bottom: 8px;
+}
+
+/* line 3803, ../itemshop.sass */
+.mod_links {
+  display: block;
+  vertical-align: middle;
+  margin: 16px 0;
+}
+/* line 3807, ../itemshop.sass */
+.mod_links a {
+  margin: 0 4px;
+}
+
+/* line 3810, ../itemshop.sass */
+.mytlreg tr > td {
+  width: 70%;
+  text-align: left;
+}
+/* line 3811, ../itemshop.sass */
+.mytlreg tr > td:first-child {
+  width: 28%;
+  text-align: right;
+}
+
+/* line 3817, ../itemshop.sass */
+#message {
+  width: 90%;
+}
+
+/* line 3820, ../itemshop.sass */
+#subscribe_link {
+  vertical-align: middle;
+  outline: 0;
+}
+
+/* line 3824, ../itemshop.sass */
+.admin_featureset {
+  column-count: 2;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+}
+
+/* line 3829, ../itemshop.sass */
+.admin_userinfo {
+  margin: 0 auto;
+  width: 98%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+/* line 3834, ../itemshop.sass */
+.admin_userinfo .type, .admin_userinfo .data {
+  padding: 6px;
+}
+/* line 3836, ../itemshop.sass */
+.admin_userinfo .type {
+  width: 30%;
+  background-color: #467a95;
+  border-bottom: 1px solid #3e728d;
+  color: #fff;
+}
+/* line 3841, ../itemshop.sass */
+.admin_userinfo .data {
+  width: 70%;
+  background-color: #eceaeb;
+  border-bottom: 1px solid #cbc9c7;
+}
+/* line 3845, ../itemshop.sass */
+.admin_userinfo .data img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 3849, ../itemshop.sass */
+.admin_cta {
+  background: #53302d !important;
+  border: 1px solid #53302d !important;
+  background: -moz-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(26%, #772d2b), color-stop(100%, #53302d)) !important;
+  background: -webkit-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important;
+  background: -o-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important;
+  background: -ms-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important;
+  background: radial-gradient(ellipse at center, #772d2b 26%, #53302d 100%) !important;
+  /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#772d2b', endColorstr='#53302d', GradientType=1)!important */
+}
+/* line 3859, ../itemshop.sass */
+.admin_cta:active {
+  background: #53302d !important;
+  border: 1px solid #53302d !important;
+  background: -moz-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(26%, #772d2b), color-stop(100%, #53302d)) !important;
+  background: -webkit-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important;
+  background: -o-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important;
+  background: -ms-radial-gradient(center, ellipse cover, #772d2b 26%, #53302d 100%) !important;
+  background: radial-gradient(ellipse at center, #772d2b 26%, #53302d 100%) !important;
+  /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#772d2b', endColorstr='#53302d', GradientType=1)!important */
+}
+/* line 3869, ../itemshop.sass */
+.admin_cta:hover {
+  background: #772d2b !important;
+  border: 1px solid #772d2b !important;
+}
+
+/* line 3873, ../itemshop.sass */
+.warnpost {
+  padding: 3px;
+  border: 1px solid navy;
+  background-color: #ebeff2;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 3880, ../itemshop.sass */
+.fileupload_panel a {
+  text-decoration: underline;
+}
+
+/* line 3883, ../itemshop.sass */
+.fp_rvod_controls {
+  width: 90%;
+}
+/* line 3885, ../itemshop.sass */
+.fp_rvod_controls tbody > tr {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+}
+/* line 3886, ../itemshop.sass */
+.fp_rvod_controls tbody > tr:first-child {
+  width: 18%;
+  margin-right: 2%;
+}
+/* line 3893, ../itemshop.sass */
+.fp_rvod_controls tbody > tr > th, .fp_rvod_controls tbody > tr > td {
+  display: block;
+  line-height: 22px;
+}
+/* line 3896, ../itemshop.sass */
+.fp_rvod_controls tbody > tr > th {
+  text-align: right;
+}
+/* line 3898, ../itemshop.sass */
+.fp_rvod_controls tbody > tr > td {
+  text-align: left;
+}
+/* line 3900, ../itemshop.sass */
+.fp_rvod_controls tbody > tr > td input {
+  width: 90%;
+}
+
+/* line 3903, ../itemshop.sass */
+.notif_global {
+  position: fixed;
+  right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fff;
+  color: #404041;
+  line-height: 16px;
+  z-index: 10;
+  cursor: default;
+  box-shadow: 0 1px 5px -1px #303031;
+  animation: 7s mytlprompt;
+  -webkit-animation: 7s mytlprompt;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+/* line 3918, ../itemshop.sass */
+.notif_global .notice, .notif_global .noticemsg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes mytlprompt {
+  0% {
+    bottom: -300px;
+  }
+  10% {
+    bottom: 10px;
+  }
+  80% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -300px;
+  }
+}
+@-webkit-keyframes mytlprompt {
+  0% {
+    bottom: -300px;
+  }
+  10% {
+    bottom: 10px;
+  }
+  80% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -300px;
+  }
+}
+/* line 3950, ../itemshop.sass */
+.notice {
+  height: auto;
+  width: 48px;
+  text-indent: 20px;
+  font-family: "open sans";
+  font-size: 28px;
+  color: #FFF;
+  line-height: 9px;
+  font-family: "open sans";
+  font-size: 28px;
+  color: white;
+}
+
+/* line 3962, ../itemshop.sass */
+.noticemsg {
+  padding: 6px 8px;
+  font-weight: 400;
+}
+
+/* line 3968, ../itemshop.sass */
+.notif_global.admin .notif-block {
+  box-shadow: inset 48px 0 0 0 #931212;
+}
+/* line 3970, ../itemshop.sass */
+.notif_global.admin a {
+  color: #931212;
+}
+/* line 3973, ../itemshop.sass */
+.notif_global.standard .notif-block {
+  box-shadow: inset 48px 0 0 0 #467a95;
+}
+/* line 3975, ../itemshop.sass */
+.notif_global.standard a {
+  color: #467a95;
+}
+/* line 3977, ../itemshop.sass */
+.notif_global span {
+  white-space: normal;
+}
+/* line 3979, ../itemshop.sass */
+.notif_global h1 {
+  margin: 0 0 2px 0;
+  font-family: "open sans";
+  font-size: 14px;
+}
+/* line 3983, ../itemshop.sass */
+.notif_global a {
+  text-decoration: none;
+  font-weight: 700;
+}
+/* line 3986, ../itemshop.sass */
+.notif_global a:hover {
+  text-decoration: underline;
+}
+
+/* line 3989, ../itemshop.sass */
+.notif_userpanel {
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 300px;
+  padding: 0;
+  background: #fff;
+  border-radius: 1px;
+  z-index: 1;
+  line-height: 14px;
+  box-shadow: 0 2px 5px -1px #303031;
+}
+/* line 4000, ../itemshop.sass */
+.notif_userpanel .notif-block {
+  color: #404041;
+  margin-bottom: 0;
+  min-height: 40px;
+}
+/* line 4004, ../itemshop.sass */
+.notif_userpanel .notif-block .notice, .notif_userpanel .notif-block .noticemsg {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 4007, ../itemshop.sass */
+.notif_userpanel .notice {
+  width: 6px;
+}
+/* line 4009, ../itemshop.sass */
+.notif_userpanel.standard .noticemsg {
+  padding: 6px 8px;
+}
+/* line 4011, ../itemshop.sass */
+.notif_userpanel.admin .notif-block:hover {
+  box-shadow: inset 6px 0 0 0 #c01818;
+}
+/* line 4013, ../itemshop.sass */
+.notif_userpanel.standard .notif-block:hover {
+  box-shadow: inset 6px 0 0 0 #bac8d2;
+}
+
+/* line 4016, ../itemshop.sass */
+.notif-block a {
+  text-decoration: none;
+}
+
+/* line 4020, ../itemshop.sass */
+.notif_userpanel .notif-block .noticemsg span {
+  display: block;
+}
+/* line 4022, ../itemshop.sass */
+.notif_userpanel.admin {
+  z-index: 10;
+}
+/* line 4024, ../itemshop.sass */
+.notif_userpanel.admin .notif-block {
+  box-shadow: inset 6px 0 0 0 #931212;
+}
+/* line 4026, ../itemshop.sass */
+.notif_userpanel.admin .notif-block a {
+  color: #931212;
+}
+/* line 4028, ../itemshop.sass */
+.notif_userpanel.admin .notif-block a:hover {
+  text-decoration: underline;
+}
+/* line 4030, ../itemshop.sass */
+.notif_userpanel.standard .notif-block {
+  box-shadow: inset 6px 0 0 0 #467a95;
+}
+/* line 4032, ../itemshop.sass */
+.notif_userpanel.standard .notif-block a {
+  color: #467a95;
+}
+/* line 4034, ../itemshop.sass */
+.notif_userpanel.standard .notif-block a:hover {
+  text-decoration: underline;
+}
+
+/* line 4037, ../itemshop.sass */
+#calendar_mdiv {
+  background-color: #dbdad8;
+  position: relative;
+}
+
+/* line 4041, ../itemshop.sass */
+#showmore_link {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 4045, ../itemshop.sass */
+.teamsprite {
+  background: url(/images/vary/dota-teams.sprite.01.image) no-repeat top left;
+  width: 128px;
+  height: 42px;
+}
+/* line 4049, ../itemshop.sass */
+.teamsprite.t1 {
+  background-position: 0 0;
+}
+/* line 4051, ../itemshop.sass */
+.teamsprite.t2 {
+  background-position: 0 -52px;
+}
+/* line 4053, ../itemshop.sass */
+.teamsprite.t3 {
+  background-position: 0 -104px;
+}
+/* line 4055, ../itemshop.sass */
+.teamsprite.t4 {
+  background-position: 0 -156px;
+}
+/* line 4057, ../itemshop.sass */
+.teamsprite.t5 {
+  background-position: 0 -208px;
+}
+/* line 4059, ../itemshop.sass */
+.teamsprite.t6 {
+  background-position: 0 -260px;
+}
+/* line 4061, ../itemshop.sass */
+.teamsprite.t7 {
+  background-position: 0 -312px;
+}
+/* line 4063, ../itemshop.sass */
+.teamsprite.t8 {
+  background-position: 0 -364px;
+}
+/* line 4065, ../itemshop.sass */
+.teamsprite.t9 {
+  background-position: 0 -416px;
+}
+/* line 4067, ../itemshop.sass */
+.teamsprite.t10 {
+  background-position: 0 -468px;
+}
+/* line 4069, ../itemshop.sass */
+.teamsprite.t11 {
+  background-position: 0 -520px;
+}
+/* line 4071, ../itemshop.sass */
+.teamsprite.t18 {
+  background-position: 0 -572px;
+}
+/* line 4073, ../itemshop.sass */
+.teamsprite.t22 {
+  background-position: 0 -624px;
+}
+/* line 4075, ../itemshop.sass */
+.teamsprite.t24 {
+  background-position: 0 -676px;
+}
+/* line 4077, ../itemshop.sass */
+.teamsprite.t25 {
+  background-position: 0 -728px;
+}
+/* line 4079, ../itemshop.sass */
+.teamsprite.t29 {
+  background-position: 0 -780px;
+}
+/* line 4081, ../itemshop.sass */
+.teamsprite.t31 {
+  background-position: 0 -832px;
+}
+/* line 4083, ../itemshop.sass */
+.teamsprite.t32 {
+  background-position: 0 -884px;
+}
+/* line 4085, ../itemshop.sass */
+.teamsprite.t33 {
+  background-position: 0 -936px;
+}
+/* line 4087, ../itemshop.sass */
+.teamsprite.t36 {
+  background-position: 0 -988px;
+}
+/* line 4089, ../itemshop.sass */
+.teamsprite.t37 {
+  background-position: 0 -1040px;
+}
+/* line 4091, ../itemshop.sass */
+.teamsprite.t41 {
+  background-position: 0 -1092px;
+}
+/* line 4093, ../itemshop.sass */
+.teamsprite.t44 {
+  background-position: 0 -1144px;
+}
+/* line 4095, ../itemshop.sass */
+.teamsprite.t46 {
+  background-position: 0 -1196px;
+}
+
+/* line 4098, ../itemshop.sass */
+.league-sprite-big {
+  background: url(/images/vary/dota-leagues-big-sprite.04.image) no-repeat 0 0;
+  width: 64px;
+  height: 64px;
+}
+/* line 4102, ../itemshop.sass */
+.league-sprite-big.l0 {
+  background-position: 0 0;
+  width: 64px;
+  height: 64px;
+}
+/* line 4106, ../itemshop.sass */
+.league-sprite-big.l1 {
+  background-position: 0 -74px;
+  width: 45px;
+  height: 64px;
+}
+/* line 4110, ../itemshop.sass */
+.league-sprite-big.l2 {
+  background-position: 0 -148px;
+  width: 65px;
+  height: 36px;
+}
+/* line 4114, ../itemshop.sass */
+.league-sprite-big.l3 {
+  background-position: 0 -194px;
+  width: 64px;
+  height: 42px;
+}
+/* line 4118, ../itemshop.sass */
+.league-sprite-big.l5 {
+  background-position: 0 -246px;
+  width: 64px;
+  height: 33px;
+}
+/* line 4122, ../itemshop.sass */
+.league-sprite-big.l6 {
+  background-position: 0 -289px;
+  width: 64px;
+  height: 46px;
+}
+/* line 4126, ../itemshop.sass */
+.league-sprite-big.l7 {
+  background-position: 0 -345px;
+  width: 63px;
+  height: 45px;
+}
+/* line 4130, ../itemshop.sass */
+.league-sprite-big.l8 {
+  background-position: 0 -400px;
+  width: 54px;
+  height: 63px;
+}
+/* line 4134, ../itemshop.sass */
+.league-sprite-big.l9 {
+  background-position: 0 -473px;
+  width: 64px;
+  height: 63px;
+}
+/* line 4138, ../itemshop.sass */
+.league-sprite-big.l10 {
+  background-position: 0 -546px;
+  width: 57px;
+  height: 64px;
+}
+/* line 4142, ../itemshop.sass */
+.league-sprite-big.l12 {
+  background-position: 0 -620px;
+  width: 53px;
+  height: 64px;
+}
+/* line 4146, ../itemshop.sass */
+.league-sprite-big.l13 {
+  background-position: 0 -694px;
+  width: 64px;
+  height: 32px;
+}
+/* line 4150, ../itemshop.sass */
+.league-sprite-big.l14 {
+  background-position: 0 -736px;
+  width: 64px;
+  height: 62px;
+}
+/* line 4154, ../itemshop.sass */
+.league-sprite-big.l15 {
+  background-position: 0 -808px;
+  width: 64px;
+  height: 57px;
+}
+/* line 4158, ../itemshop.sass */
+.league-sprite-big.l16 {
+  background-position: 0 -875px;
+  width: 64px;
+  height: 64px;
+}
+/* line 4162, ../itemshop.sass */
+.league-sprite-big.l17 {
+  background-position: 0 -949px;
+  width: 63px;
+  height: 62px;
+}
+/* line 4166, ../itemshop.sass */
+.league-sprite-big.l18 {
+  background-position: 0 -1021px;
+  width: 64px;
+  height: 60px;
+}
+/* line 4170, ../itemshop.sass */
+.league-sprite-big.l19 {
+  background-position: 0 -1091px;
+  width: 64px;
+  height: 44px;
+}
+/* line 4174, ../itemshop.sass */
+.league-sprite-big.l20 {
+  background-position: 0 -1145px;
+  width: 60px;
+  height: 64px;
+}
+/* line 4178, ../itemshop.sass */
+.league-sprite-big.l21 {
+  background-position: 0 -1219px;
+  width: 64px;
+  height: 64px;
+}
+/* line 4182, ../itemshop.sass */
+.league-sprite-big.l39 {
+  background-position: 0 -1293px;
+  width: 64px;
+  height: 64px;
+}
+/* line 4186, ../itemshop.sass */
+.league-sprite-big.l41 {
+  background-position: 0 -1367px;
+  width: 64px;
+  height: 64px;
+}
+/* line 4190, ../itemshop.sass */
+.league-sprite-big.l42 {
+  background-position: 0 -1441px;
+  width: 65px;
+  height: 50px;
+}
+/* line 4194, ../itemshop.sass */
+.league-sprite-big.l43 {
+  background-position: 0 -1501px;
+  width: 46px;
+  height: 57px;
+}
+/* line 4198, ../itemshop.sass */
+.league-sprite-big.l46 {
+  background-position: 0 -1568px;
+  width: 65px;
+  height: 40px;
+}
+/* line 4202, ../itemshop.sass */
+.league-sprite-big.l49 {
+  background-position: 0 -1618px;
+  width: 65px;
+  height: 60px;
+}
+/* line 4206, ../itemshop.sass */
+.league-sprite-big.l55 {
+  background-position: 0 -1688px;
+  width: 62px;
+  height: 62px;
+}
+/* line 4210, ../itemshop.sass */
+.league-sprite-big.l56 {
+  background-position: 0 -1760px;
+  width: 53px;
+  height: 63px;
+}
+
+/* line 4215, ../itemshop.sass */
+.league-sprite-small {
+  background: url(/images/vary/dota-leagues-small-sprite.04.image) no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+/* line 4220, ../itemshop.sass */
+.league-sprite-small.l0 {
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+/* line 4224, ../itemshop.sass */
+.league-sprite-small.l1 {
+  background-position: 0 -26px;
+  width: 11px;
+  height: 16px;
+}
+/* line 4228, ../itemshop.sass */
+.league-sprite-small.l2 {
+  background-position: 0 -52px;
+  width: 29px;
+  height: 16px;
+}
+/* line 4232, ../itemshop.sass */
+.league-sprite-small.l3 {
+  background-position: 0 -78px;
+  width: 16px;
+  height: 16px;
+}
+/* line 4236, ../itemshop.sass */
+.league-sprite-small.l5 {
+  background-position: 0 -104px;
+  width: 26px;
+  height: 16px;
+}
+/* line 4240, ../itemshop.sass */
+.league-sprite-small.l6 {
+  background-position: 0 -130px;
+  width: 18px;
+  height: 16px;
+}
+/* line 4244, ../itemshop.sass */
+.league-sprite-small.l7 {
+  background-position: 0 -156px;
+  width: 23px;
+  height: 16px;
+}
+/* line 4248, ../itemshop.sass */
+.league-sprite-small.l8 {
+  background-position: 0 -182px;
+  width: 14px;
+  height: 16px;
+}
+/* line 4252, ../itemshop.sass */
+.league-sprite-small.l9 {
+  background-position: 0 -208px;
+  width: 16px;
+  height: 16px;
+}
+/* line 4256, ../itemshop.sass */
+.league-sprite-small.l10 {
+  background-position: 0 -234px;
+  width: 15px;
+  height: 16px;
+}
+/* line 4260, ../itemshop.sass */
+.league-sprite-small.l12 {
+  background-position: 0 -260px;
+  width: 14px;
+  height: 16px;
+}
+/* line 4264, ../itemshop.sass */
+.league-sprite-small.l13 {
+  background-position: 0 -286px;
+  width: 26px;
+  height: 16px;
+}
+/* line 4268, ../itemshop.sass */
+.league-sprite-small.l14 {
+  background-position: 0 -312px;
+  width: 18px;
+  height: 16px;
+}
+/* line 4272, ../itemshop.sass */
+.league-sprite-small.l15 {
+  background-position: 0 -338px;
+  width: 16px;
+  height: 16px;
+}
+/* line 4276, ../itemshop.sass */
+.league-sprite-small.l16 {
+  background-position: 0 -364px;
+  width: 16px;
+  height: 16px;
+}
+/* line 4280, ../itemshop.sass */
+.league-sprite-small.l17 {
+  background-position: 0 -390px;
+  width: 16px;
+  height: 16px;
+}
+/* line 4284, ../itemshop.sass */
+.league-sprite-small.l18 {
+  background-position: 0 -416px;
+  width: 17px;
+  height: 16px;
+}
+/* line 4288, ../itemshop.sass */
+.league-sprite-small.l19 {
+  background-position: 0 -442px;
+  width: 20px;
+  height: 16px;
+}
+/* line 4292, ../itemshop.sass */
+.league-sprite-small.l20 {
+  background-position: 0 -468px;
+  width: 15px;
+  height: 16px;
+}
+/* line 4296, ../itemshop.sass */
+.league-sprite-small.l21 {
+  background-position: 0 -494px;
+  width: 16px;
+  height: 16px;
+}
+/* line 4300, ../itemshop.sass */
+.league-sprite-small.l39 {
+  background-position: 0 -520px;
+  width: 20px;
+  height: 16px;
+}
+/* line 4304, ../itemshop.sass */
+.league-sprite-small.l41 {
+  background-position: 0 -546px;
+  width: 16px;
+  height: 16px;
+}
+/* line 4308, ../itemshop.sass */
+.league-sprite-small.l42 {
+  background-position: 0 -572px;
+  width: 17px;
+  height: 14px;
+}
+/* line 4312, ../itemshop.sass */
+.league-sprite-small.l43 {
+  background-position: 0 -596px;
+  width: 13px;
+  height: 16px;
+}
+/* line 4316, ../itemshop.sass */
+.league-sprite-small.l46 {
+  background-position: 0 -622px;
+  width: 25px;
+  height: 17px;
+}
+/* line 4320, ../itemshop.sass */
+.league-sprite-small.l49 {
+  background-position: 0 -649px;
+  width: 18px;
+  height: 16px;
+}
+/* line 4324, ../itemshop.sass */
+.league-sprite-small.l55 {
+  background-position: 0 -675px;
+  width: 16px;
+  height: 16px;
+}
+/* line 4328, ../itemshop.sass */
+.league-sprite-small.l56 {
+  background-position: 0 -701px;
+  width: 14px;
+  height: 16px;
+}
+
+/* line 4333, ../itemshop.sass */
+.heroes {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  vertical-align: middle;
+  background: url(/images/vary/dota-heroes-sprite.03.image) no-repeat top left;
+  width: 39px;
+  height: 22px;
+}
+/* line 4341, ../itemshop.sass */
+.heroes.h1 {
+  background-position: 0 0;
+}
+/* line 4343, ../itemshop.sass */
+.heroes.h2 {
+  background-position: 0 -32px;
+}
+/* line 4345, ../itemshop.sass */
+.heroes.h3 {
+  background-position: 0 -64px;
+}
+/* line 4347, ../itemshop.sass */
+.heroes.h4 {
+  background-position: 0 -96px;
+}
+/* line 4349, ../itemshop.sass */
+.heroes.h5 {
+  background-position: 0 -128px;
+}
+/* line 4351, ../itemshop.sass */
+.heroes.h6 {
+  background-position: 0 -160px;
+}
+/* line 4353, ../itemshop.sass */
+.heroes.h7 {
+  background-position: 0 -192px;
+}
+/* line 4355, ../itemshop.sass */
+.heroes.h8 {
+  background-position: 0 -224px;
+}
+/* line 4357, ../itemshop.sass */
+.heroes.h9 {
+  background-position: 0 -256px;
+}
+/* line 4359, ../itemshop.sass */
+.heroes.h10 {
+  background-position: 0 -288px;
+}
+/* line 4361, ../itemshop.sass */
+.heroes.h11 {
+  background-position: 0 -320px;
+}
+/* line 4363, ../itemshop.sass */
+.heroes.h12 {
+  background-position: 0 -352px;
+}
+/* line 4365, ../itemshop.sass */
+.heroes.h13 {
+  background-position: 0 -384px;
+}
+/* line 4367, ../itemshop.sass */
+.heroes.h14 {
+  background-position: 0 -416px;
+}
+/* line 4369, ../itemshop.sass */
+.heroes.h15 {
+  background-position: 0 -448px;
+}
+/* line 4371, ../itemshop.sass */
+.heroes.h16 {
+  background-position: 0 -480px;
+}
+/* line 4373, ../itemshop.sass */
+.heroes.h17 {
+  background-position: 0 -512px;
+}
+/* line 4375, ../itemshop.sass */
+.heroes.h18 {
+  background-position: 0 -544px;
+}
+/* line 4377, ../itemshop.sass */
+.heroes.h19 {
+  background-position: 0 -576px;
+}
+/* line 4379, ../itemshop.sass */
+.heroes.h20 {
+  background-position: 0 -608px;
+}
+/* line 4381, ../itemshop.sass */
+.heroes.h21 {
+  background-position: 0 -640px;
+}
+/* line 4383, ../itemshop.sass */
+.heroes.h22 {
+  background-position: 0 -672px;
+}
+/* line 4385, ../itemshop.sass */
+.heroes.h23 {
+  background-position: 0 -704px;
+}
+/* line 4387, ../itemshop.sass */
+.heroes.h24 {
+  background-position: 0 -736px;
+}
+/* line 4389, ../itemshop.sass */
+.heroes.h25 {
+  background-position: 0 -768px;
+}
+/* line 4391, ../itemshop.sass */
+.heroes.h26 {
+  background-position: 0 -800px;
+}
+/* line 4393, ../itemshop.sass */
+.heroes.h27 {
+  background-position: 0 -832px;
+}
+/* line 4395, ../itemshop.sass */
+.heroes.h28 {
+  background-position: 0 -864px;
+}
+/* line 4397, ../itemshop.sass */
+.heroes.h29 {
+  background-position: 0 -896px;
+}
+/* line 4399, ../itemshop.sass */
+.heroes.h30 {
+  background-position: 0 -928px;
+}
+/* line 4401, ../itemshop.sass */
+.heroes.h31 {
+  background-position: 0 -960px;
+}
+/* line 4403, ../itemshop.sass */
+.heroes.h32 {
+  background-position: 0 -992px;
+}
+/* line 4405, ../itemshop.sass */
+.heroes.h33 {
+  background-position: 0 -1024px;
+}
+/* line 4407, ../itemshop.sass */
+.heroes.h34 {
+  background-position: 0 -1056px;
+}
+/* line 4409, ../itemshop.sass */
+.heroes.h35 {
+  background-position: 0 -1088px;
+}
+/* line 4411, ../itemshop.sass */
+.heroes.h36 {
+  background-position: 0 -1120px;
+}
+/* line 4413, ../itemshop.sass */
+.heroes.h37 {
+  background-position: 0 -1152px;
+}
+/* line 4415, ../itemshop.sass */
+.heroes.h38 {
+  background-position: 0 -1184px;
+}
+/* line 4417, ../itemshop.sass */
+.heroes.h39 {
+  background-position: 0 -1216px;
+}
+/* line 4419, ../itemshop.sass */
+.heroes.h40 {
+  background-position: 0 -1248px;
+}
+/* line 4421, ../itemshop.sass */
+.heroes.h41 {
+  background-position: 0 -1280px;
+}
+/* line 4423, ../itemshop.sass */
+.heroes.h42 {
+  background-position: 0 -1312px;
+}
+/* line 4425, ../itemshop.sass */
+.heroes.h43 {
+  background-position: 0 -1344px;
+}
+/* line 4427, ../itemshop.sass */
+.heroes.h44 {
+  background-position: 0 -1376px;
+}
+/* line 4429, ../itemshop.sass */
+.heroes.h45 {
+  background-position: 0 -1408px;
+}
+/* line 4431, ../itemshop.sass */
+.heroes.h46 {
+  background-position: 0 -1440px;
+}
+/* line 4433, ../itemshop.sass */
+.heroes.h47 {
+  background-position: 0 -1472px;
+}
+/* line 4435, ../itemshop.sass */
+.heroes.h48 {
+  background-position: 0 -1504px;
+}
+/* line 4437, ../itemshop.sass */
+.heroes.h49 {
+  background-position: 0 -1536px;
+}
+/* line 4439, ../itemshop.sass */
+.heroes.h50 {
+  background-position: 0 -1568px;
+}
+/* line 4441, ../itemshop.sass */
+.heroes.h51 {
+  background-position: 0 -1600px;
+}
+/* line 4443, ../itemshop.sass */
+.heroes.h52 {
+  background-position: 0 -1632px;
+}
+/* line 4445, ../itemshop.sass */
+.heroes.h53 {
+  background-position: 0 -1664px;
+}
+/* line 4447, ../itemshop.sass */
+.heroes.h54 {
+  background-position: 0 -1696px;
+}
+/* line 4449, ../itemshop.sass */
+.heroes.h55 {
+  background-position: 0 -1728px;
+}
+/* line 4451, ../itemshop.sass */
+.heroes.h56 {
+  background-position: 0 -1760px;
+}
+/* line 4453, ../itemshop.sass */
+.heroes.h57 {
+  background-position: 0 -1792px;
+}
+/* line 4455, ../itemshop.sass */
+.heroes.h58 {
+  background-position: 0 -1824px;
+}
+/* line 4457, ../itemshop.sass */
+.heroes.h59 {
+  background-position: 0 -1856px;
+}
+/* line 4459, ../itemshop.sass */
+.heroes.h60 {
+  background-position: 0 -1888px;
+}
+/* line 4461, ../itemshop.sass */
+.heroes.h61 {
+  background-position: 0 -1920px;
+}
+/* line 4463, ../itemshop.sass */
+.heroes.h62 {
+  background-position: 0 -1952px;
+}
+/* line 4465, ../itemshop.sass */
+.heroes.h63 {
+  background-position: 0 -1984px;
+}
+/* line 4467, ../itemshop.sass */
+.heroes.h64 {
+  background-position: 0 -2016px;
+}
+/* line 4469, ../itemshop.sass */
+.heroes.h65 {
+  background-position: 0 -2048px;
+}
+/* line 4471, ../itemshop.sass */
+.heroes.h66 {
+  background-position: 0 -2080px;
+}
+/* line 4473, ../itemshop.sass */
+.heroes.h67 {
+  background-position: 0 -2112px;
+}
+/* line 4475, ../itemshop.sass */
+.heroes.h68 {
+  background-position: 0 -2144px;
+}
+/* line 4477, ../itemshop.sass */
+.heroes.h69 {
+  background-position: 0 -2176px;
+}
+/* line 4479, ../itemshop.sass */
+.heroes.h70 {
+  background-position: 0 -2208px;
+}
+/* line 4481, ../itemshop.sass */
+.heroes.h71 {
+  background-position: 0 -2240px;
+}
+/* line 4483, ../itemshop.sass */
+.heroes.h72 {
+  background-position: 0 -2272px;
+}
+/* line 4485, ../itemshop.sass */
+.heroes.h73 {
+  background-position: 0 -2304px;
+}
+/* line 4487, ../itemshop.sass */
+.heroes.h74 {
+  background-position: 0 -2336px;
+}
+/* line 4489, ../itemshop.sass */
+.heroes.h75 {
+  background-position: 0 -2368px;
+}
+/* line 4491, ../itemshop.sass */
+.heroes.h76 {
+  background-position: 0 -2400px;
+}
+/* line 4493, ../itemshop.sass */
+.heroes.h77 {
+  background-position: 0 -2432px;
+}
+/* line 4495, ../itemshop.sass */
+.heroes.h78 {
+  background-position: 0 -2464px;
+}
+/* line 4497, ../itemshop.sass */
+.heroes.h79 {
+  background-position: 0 -2496px;
+}
+/* line 4499, ../itemshop.sass */
+.heroes.h80 {
+  background-position: 0 -2528px;
+}
+/* line 4501, ../itemshop.sass */
+.heroes.h81 {
+  background-position: 0 -2560px;
+}
+/* line 4503, ../itemshop.sass */
+.heroes.h82 {
+  background-position: 0 -2592px;
+}
+/* line 4505, ../itemshop.sass */
+.heroes.h83 {
+  background-position: 0 -2624px;
+}
+/* line 4507, ../itemshop.sass */
+.heroes.h84 {
+  background-position: 0 -2656px;
+}
+/* line 4509, ../itemshop.sass */
+.heroes.h85 {
+  background-position: 0 -2688px;
+}
+/* line 4511, ../itemshop.sass */
+.heroes.h86 {
+  background-position: 0 -2720px;
+}
+/* line 4513, ../itemshop.sass */
+.heroes.h87 {
+  background-position: 0 -2752px;
+}
+/* line 4515, ../itemshop.sass */
+.heroes.h88 {
+  background-position: 0 -2784px;
+}
+/* line 4517, ../itemshop.sass */
+.heroes.h89 {
+  background-position: 0 -2816px;
+}
+/* line 4519, ../itemshop.sass */
+.heroes.h90 {
+  background-position: 0 -2848px;
+}
+/* line 4521, ../itemshop.sass */
+.heroes.h91 {
+  background-position: 0 -2880px;
+}
+/* line 4523, ../itemshop.sass */
+.heroes.h92 {
+  background-position: 0 -2912px;
+}
+/* line 4525, ../itemshop.sass */
+.heroes.h93 {
+  background-position: 0 -2944px;
+}
+/* line 4527, ../itemshop.sass */
+.heroes.h94 {
+  background-position: 0 -2976px;
+}
+/* line 4529, ../itemshop.sass */
+.heroes.h95 {
+  background-position: 0 -3008px;
+}
+/* line 4531, ../itemshop.sass */
+.heroes.h96 {
+  background-position: 0 -3040px;
+}
+/* line 4533, ../itemshop.sass */
+.heroes.h97 {
+  background-position: 0 -3072px;
+}
+/* line 4535, ../itemshop.sass */
+.heroes.h98 {
+  background-position: 0 -3104px;
+}
+/* line 4537, ../itemshop.sass */
+.heroes.h99 {
+  background-position: 0 -3136px;
+}
+/* line 4539, ../itemshop.sass */
+.heroes.h100 {
+  background-position: 0 -3168px;
+}
+/* line 4541, ../itemshop.sass */
+.heroes.h101 {
+  background-position: 0 -3200px;
+}
+/* line 4543, ../itemshop.sass */
+.heroes.h102 {
+  background-position: 0 -3232px;
+}
+/* line 4545, ../itemshop.sass */
+.heroes.h103 {
+  background-position: 0 -3264px;
+}
+/* line 4547, ../itemshop.sass */
+.heroes.h104 {
+  background-position: 0 -3296px;
+}
+/* line 4549, ../itemshop.sass */
+.heroes.h105 {
+  background-position: 0 -3328px;
+}
+/* line 4551, ../itemshop.sass */
+.heroes.h106 {
+  background-position: 0 -3360px;
+}
+/* line 4553, ../itemshop.sass */
+.heroes.h107 {
+  background-position: 0 -3392px;
+}
+/* line 4555, ../itemshop.sass */
+.heroes.h108 {
+  background-position: 0 -3456px;
+}
+/* line 4557, ../itemshop.sass */
+.heroes.h109 {
+  background-position: 0 -3424px;
+}
+/* line 4559, ../itemshop.sass */
+.heroes.h110 {
+  background-position: 0 -3488px;
+}
+
+/* line 4562, ../itemshop.sass */
+.ficon {
+  background: url(/images/layout/topbannersprite.png) no-repeat;
+  width: 14px;
+  height: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 4569, ../itemshop.sass */
+.forumindex > .ficon {
+  margin: 0 6px;
+}
+
+/* line 4573, ../itemshop.sass */
+.ficon.icon_blue {
+  background-position: 0 -130px;
+}
+/* line 4575, ../itemshop.sass */
+.ficon.icon_grey {
+  background-position: 0 -148px;
+}
+/* line 4577, ../itemshop.sass */
+.ficon.icon_black {
+  background-position: 0 -166px;
+}
+/* line 4579, ../itemshop.sass */
+.ficon.lock_blue {
+  background-position: -22px -130px;
+}
+/* line 4581, ../itemshop.sass */
+.ficon.lock_grey {
+  background-position: -22px -150px;
+}
+
+/* line 4584, ../itemshop.sass */
+.createicon:hover .ficon.icon_black {
+  background-position: 0 -130px;
+}
+
+/* line 4587, ../itemshop.sass */
+.staff_title {
+  display: inline-block;
+  margin-right: 16px;
+  font-weight: bold;
+  color: #467a95;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+@media screen and (min-width: 480px) {
+  /* line 4606, ../itemshop.sass */
+  .fpost-lastedit:hover .tooltip {
+    right: 16px;
+    top: -4px;
+    animation: lastedit 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation: lastedit 0.5s;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @keyframes lastedit {
+    0% {
+      right: 0;
+      opacity: 0;
+    }
+    100% {
+      right: 16px;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes lastedit {
+    0% {
+      right: 0;
+      opacity: 0;
+    }
+    100% {
+      right: 16px;
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 371px) {
+  /* line 4632, ../itemshop.sass */
+  .titelbalk .fpost-username:hover .tooltip, .titelhigh .fpost-username:hover .tooltip {
+    top: 0;
+    left: 100%;
+  }
+
+  /* line 4635, ../itemshop.sass */
+  .titelbalk .fpost-username:hover .tooltip, .titelhigh .fpost-username:hover .tooltip {
+    animation: 0.5s tooltip;
+    -webkit-animation: 0.5s tooltip;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    left: 100%;
+    top: 0;
+  }
+
+  @keyframes tooltip {
+    0% {
+      left: 60%;
+      opacity: 0;
+    }
+    60% {
+      left: 60%;
+      opacity: 0;
+    }
+    100% {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes tooltip {
+    0% {
+      left: 60%;
+      opacity: 0;
+    }
+    60% {
+      left: 60%;
+      opacity: 0;
+    }
+    100% {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 1230px) {
+  /* line 4669, ../itemshop.sass */
+  #navwrapper {
+    min-width: 1214px;
+  }
+
+  /* line 4671, ../itemshop.sass */
+  #main-content {
+    width: 752px;
+  }
+
+  /* line 4673, ../itemshop.sass */
+  #main-content-wide {
+    width: 1202px;
+  }
+
+  /* line 4675, ../itemshop.sass */
+  #main-left-sidebar {
+    width: 219px;
+    margin-right: 6px;
+  }
+
+  /* line 4678, ../itemshop.sass */
+  #main-right-sidebar {
+    width: 219px;
+    margin-left: 6px;
+  }
+
+  /* line 4681, ../itemshop.sass */
+  .is-head .sf-cost {
+    width: 73%;
+  }
+
+  /* line 4683, ../itemshop.sass */
+  #storefront .sf-cost {
+    width: 75.8%;
+  }
+
+  /* line 4685, ../itemshop.sass */
+  .ev-ctrl {
+    max-width: 83%;
+  }
+
+  /* line 4687, ../itemshop.sass */
+  td.sidemenu .ev-feed {
+    max-width: 217px;
+  }
+
+  /* line 4690, ../itemshop.sass */
+  .ev-btn.wikibtn {
+    width: 44.25%;
+  }
+  /* line 4692, ../itemshop.sass */
+  .ev-btn.wikibtn:last-child {
+    width: 96%;
+  }
+  /* line 4694, ../itemshop.sass */
+  .ev-btn.lrbtn {
+    width: 96%;
+  }
+  /* line 4696, ../itemshop.sass */
+  .ev-btn.wikibtn + .ev-btn.lrbtn {
+    width: 44.25%;
+  }
+
+  /* line 4698, ../itemshop.sass */
+  #evcal .ev-timer {
+    width: 22%;
+  }
+}
+@media screen and (min-width: 641px) {
+  /* line 4704, ../itemshop.sass */
+  .thread_dock.top .thread_cta {
+    width: 37%;
+  }
+  /* line 4706, ../itemshop.sass */
+  .thread_dock.top .pagination {
+    width: 63%;
+  }
+  /* line 4709, ../itemshop.sass */
+  .thread_dock.bot .thread_cta {
+    width: 30%;
+  }
+  /* line 4711, ../itemshop.sass */
+  .thread_dock.bot .pagination {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1229px) {
+  /* line 4715, ../itemshop.sass */
+  #navwrapper {
+    min-width: 1005px;
+  }
+
+  /* line 4717, ../itemshop.sass */
+  #main-content {
+    width: 641px;
+  }
+
+  /* line 4719, ../itemshop.sass */
+  #main-content-wide {
+    width: 994px;
+  }
+
+  /* line 4721, ../itemshop.sass */
+  #main-left-sidebar {
+    width: 170px;
+    margin-right: 6px;
+  }
+
+  /* line 4724, ../itemshop.sass */
+  #main-right-sidebar {
+    width: 170px;
+    margin-left: 6px;
+  }
+
+  /* line 4727, ../itemshop.sass */
+  #searchicon {
+    background-position: -105px 0;
+  }
+
+  /* line 4729, ../itemshop.sass */
+  .is-head .sf-cost {
+    width: 69.3%;
+  }
+
+  /* line 4731, ../itemshop.sass */
+  #storefront .sf-cost {
+    width: 72.5%;
+  }
+
+  /* line 4733, ../itemshop.sass */
+  .sf-filter input {
+    width: 73%;
+  }
+
+  /* line 4735, ../itemshop.sass */
+  .ev-ctrl {
+    max-width: 79%;
+  }
+
+  /* line 4737, ../itemshop.sass */
+  td.sidemenu .ev-feed {
+    max-width: 167px;
+  }
+
+  /* line 4740, ../itemshop.sass */
+  .ev-btn span {
+    display: none;
+  }
+  /* line 4742, ../itemshop.sass */
+  .ev-btn.wikibtn {
+    width: 40.25%;
+  }
+  /* line 4744, ../itemshop.sass */
+  .ev-btn.wikibtn:last-child {
+    width: 96%;
+  }
+  /* line 4746, ../itemshop.sass */
+  .ev-btn.lrbtn {
+    width: 96%;
+  }
+  /* line 4748, ../itemshop.sass */
+  .ev-btn.wikibtn + .ev-btn.lrbtn {
+    width: 40.25%;
+  }
+
+  /* line 4750, ../itemshop.sass */
+  #evcal .ev-timer {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 4754, ../itemshop.sass */
+  #navwrapper {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  /* line 4757, ../itemshop.sass */
+  #main-content {
+    width: 100%;
+    margin: -2px;
+    padding: 0;
+  }
+
+  /* line 4761, ../itemshop.sass */
+  #main-content-wide {
+    width: 98.5%;
+  }
+  /* line 4763, ../itemshop.sass */
+  #main-content-wide h1.title {
+    margin: -1px -6px 0;
+  }
+
+  /* line 4765, ../itemshop.sass */
+  h1.title {
+    margin: -1px -1px 0;
+  }
+
+  /* line 4767, ../itemshop.sass */
+  #searchicon {
+    background-position: 214px 0;
+  }
+
+  /* line 4769, ../itemshop.sass */
+  #lsb-toggle, #rsb-toggle {
+    display: inline-block;
+  }
+
+  /* line 4771, ../itemshop.sass */
+  #lsb-toggle {
+    width: 59%;
+    margin: 4px 2% 8px 0;
+  }
+
+  /* line 4774, ../itemshop.sass */
+  #rsb-toggle {
+    width: 39%;
+  }
+
+  /* line 4776, ../itemshop.sass */
+  #main-left-sidebar, #main-right-sidebar {
+    z-index: 1000;
+    box-shadow: 0 0 5px #404041;
+  }
+
+  /* line 4779, ../itemshop.sass */
+  #main-left-sidebar {
+    position: absolute;
+    left: -9000px;
+    top: 229px;
+    width: 59%;
+  }
+
+  /* line 4784, ../itemshop.sass */
+  #main-right-sidebar {
+    position: absolute;
+    right: 9000px;
+    top: 229px;
+    width: 39%;
+  }
+
+  /* line 4789, ../itemshop.sass */
+  a.block_header {
+    background-color: #467a95;
+  }
+
+  /* line 4791, ../itemshop.sass */
+  .sidebar-after {
+    background: #dbdad8;
+    border: 1px solid #cbc9c7;
+  }
+
+  /* line 4795, ../itemshop.sass */
+  .sidebar_block .block-news_left_mid a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* line 4799, ../itemshop.sass */
+  .sidebar_block .sbcontents a:link {
+    width: 90%;
+  }
+
+  /* line 4801, ../itemshop.sass */
+  a.comments {
+    width: 16px !important;
+    text-align: center;
+  }
+
+  /* line 4804, ../itemshop.sass */
+  .sidebar_block a {
+    white-space: normal;
+  }
+
+  /* line 4806, ../itemshop.sass */
+  .is-head .sf-cost {
+    width: 71%;
+  }
+
+  /* line 4808, ../itemshop.sass */
+  #storefront .sf-cost {
+    width: 73.8%;
+  }
+
+  /* line 4810, ../itemshop.sass */
+  .sf-filter input {
+    width: 75%;
+  }
+
+  /* line 4812, ../itemshop.sass */
+  .ev-ctrl {
+    max-width: 82%;
+  }
+
+  /* line 4815, ../itemshop.sass */
+  .ev-btn.wikibtn {
+    width: 44.25%;
+  }
+  /* line 4817, ../itemshop.sass */
+  .ev-btn.wikibtn:last-child {
+    width: 96%;
+  }
+  /* line 4819, ../itemshop.sass */
+  .ev-btn.lrbtn {
+    width: 96%;
+  }
+  /* line 4821, ../itemshop.sass */
+  .ev-btn.wikibtn + .ev-btn.lrbtn {
+    width: 44.25%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 4825, ../itemshop.sass */
+  #siteheader {
+    background-position: 47.7% -5px;
+  }
+
+  /* line 4827, ../itemshop.sass */
+  #navwrapper {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  /* line 4830, ../itemshop.sass */
+  #main-content {
+    width: 100%;
+    margin: -2px;
+    padding: 0;
+  }
+
+  /* line 4834, ../itemshop.sass */
+  #main-content-wide {
+    width: 98.2%;
+  }
+
+  /* line 4836, ../itemshop.sass */
+  h1.title {
+    margin: -1px -1px 0;
+  }
+
+  /* line 4838, ../itemshop.sass */
+  #main-content-wide h1.title {
+    margin: -1px -6px 0;
+  }
+
+  /* line 4840, ../itemshop.sass */
+  #lsb-toggle, #rsb-toggle {
+    display: inline-block;
+  }
+
+  /* line 4842, ../itemshop.sass */
+  #lsb-toggle {
+    width: 49%;
+    margin: 4px 2% 8px 0;
+  }
+
+  /* line 4845, ../itemshop.sass */
+  #rsb-toggle {
+    width: 49%;
+  }
+
+  /* line 4847, ../itemshop.sass */
+  #main-left-sidebar, #main-right-sidebar {
+    z-index: 1000;
+    box-shadow: 0 0 5px #404041;
+  }
+
+  /* line 4850, ../itemshop.sass */
+  #main-left-sidebar {
+    position: absolute;
+    left: -9000px;
+    top: 231px;
+    width: 100%;
+    background: #dbdad8;
+  }
+
+  /* line 4856, ../itemshop.sass */
+  #main-right-sidebar {
+    position: absolute;
+    right: 9000px;
+    top: 231px;
+    width: 100%;
+    background: #dbdad8;
+  }
+
+  /* line 4862, ../itemshop.sass */
+  a.block_header {
+    background-color: #467a95;
+  }
+
+  /* line 4864, ../itemshop.sass */
+  .sidebar-after {
+    z-index: 2;
+    background: #dbdad8;
+  }
+
+  /* line 4867, ../itemshop.sass */
+  .sidebar_end {
+    height: 0;
+  }
+
+  /* line 4869, ../itemshop.sass */
+  #homelink {
+    position: relative;
+    width: auto;
+    z-index: -1;
+  }
+
+  /* line 4873, ../itemshop.sass */
+  .newspost > div {
+    width: 100% !important;
+  }
+  /* line 4874, ../itemshop.sass */
+  .newspost > div:first-child {
+    width: 100% !important;
+  }
+
+  /* line 4877, ../itemshop.sass */
+  .titelhigh > div:first-child, .titelbalk > div:first-child, .titelhigh > div, .titelbalk > div {
+    width: 50%;
+  }
+
+  /* line 4879, ../itemshop.sass */
+  footer, .solid footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* line 4882, ../itemshop.sass */
+  .navmenu {
+    display: inline-block;
+  }
+
+  /* line 4884, ../itemshop.sass */
+  #navwrap > .smallnav {
+    background: #21353d;
+  }
+
+  /* line 4886, ../itemshop.sass */
+  .smallnav {
+    display: none;
+    position: absolute;
+    height: auto !important;
+    z-index: 4;
+  }
+  /* line 4891, ../itemshop.sass */
+  .smallnav li {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 4894, ../itemshop.sass */
+  #dropdown-menu-liquipedia {
+    width: 180px;
+    height: 156px;
+  }
+
+  /* line 4897, ../itemshop.sass */
+  .smallnav.subnav li {
+    height: 26px;
+    line-height: 26px;
+  }
+
+  /* line 4900, ../itemshop.sass */
+  .top_menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 100px;
+    padding: 4px 8px;
+    background: #21353d;
+  }
+
+  /* line 4908, ../itemshop.sass */
+  .quote {
+    margin-left: 6px;
+  }
+  /* line 4910, ../itemshop.sass */
+  .quote > .quote {
+    margin-left: 2px;
+  }
+
+  /* line 4912, ../itemshop.sass */
+  .sqr > .quote, .quote > .quote:hover, .sqr > .quote:hover {
+    margin-left: 2px;
+  }
+
+  /* line 4914, ../itemshop.sass */
+  .postop-cont > tbody > tr > td {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 4917, ../itemshop.sass */
+  .fadd-ubb > tbody > tr > td > table {
+    padding-bottom: 16px;
+  }
+
+  /* line 4919, ../itemshop.sass */
+  a.createicon {
+    display: block;
+    position: relative;
+    top: -9px;
+  }
+  /* line 4923, ../itemshop.sass */
+  a.createicon div {
+    display: none;
+  }
+
+  /* line 4925, ../itemshop.sass */
+  #forumindex, .forumindex {
+    font-size: 8pt;
+  }
+
+  /* line 4927, ../itemshop.sass */
+  .userpanel-tabs {
+    width: 100%;
+  }
+
+  /* line 4929, ../itemshop.sass */
+  #blog_title {
+    width: 98%;
+  }
+
+  /* line 4931, ../itemshop.sass */
+  .inbox-bg {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* line 4934, ../itemshop.sass */
+  #inbox_block > tbody > tr > td, .fadd-ubb > tbody > tr > td {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 4938, ../itemshop.sass */
+  .pm_inbox tr > td:first-child, .pm_inbox tr > th:first-child {
+    padding-left: 8px;
+  }
+
+  /* line 4940, ../itemshop.sass */
+  .pminbox_srch {
+    margin-left: 0;
+  }
+  /* line 4942, ../itemshop.sass */
+  .pminbox_srch label {
+    display: inline-block;
+    width: 30%;
+  }
+  /* line 4945, ../itemshop.sass */
+  .pminbox_srch input.text {
+    width: 50%;
+  }
+
+  /* line 4947, ../itemshop.sass */
+  .pm-body textarea {
+    width: 98%;
+  }
+
+  /* line 4949, ../itemshop.sass */
+  .boxbdr {
+    width: 99%;
+  }
+
+  /* line 4952, ../itemshop.sass */
+  .lightborder.forum tr > th:first-child {
+    display: none;
+  }
+  /* line 4955, ../itemshop.sass */
+  .lightborder.forum tr > td:first-child, .lightborder.forum tr > td:nth-last-child(1), .lightborder.forum tr > td:nth-last-child(2) {
+    display: none;
+  }
+
+  /* line 4958, ../itemshop.sass */
+  .findex_newsblock tr > td:first-child, .findex_newsblock tr > th:nth-last-child(2) {
+    display: none;
+  }
+  /* line 4961, ../itemshop.sass */
+  .findex_newsblock tr > td:nth-last-child(2), .findex_newsblock tr > td:nth-child(3) {
+    display: none;
+  }
+
+  /* line 4964, ../itemshop.sass */
+  .findex_block tr > th:nth-last-child(1), .findex_block tr > td:nth-last-child(1) {
+    display: none;
+  }
+
+  /* line 4968, ../itemshop.sass */
+  .subtable.s tr > td:nth-last-child(2), .subtable.s tr > td:nth-last-child(4), .subtable.s tr > td:first-child {
+    display: none;
+  }
+  /* line 4971, ../itemshop.sass */
+  .subtable.q tr > td:nth-child(1), .subtable.q tr > td:nth-child(3) {
+    display: none;
+  }
+
+  /* line 4974, ../itemshop.sass */
+  .srch_hd_box tr > td:nth-last-child(1), .srch_hd_box tr > td:nth-last-child(2), .srch_hd_box tr > td:nth-last-child(3), .srch_hd_box tr > td:first-child {
+    display: none;
+  }
+
+  /* line 4976, ../itemshop.sass */
+  .subtable.s tr > td:last-child {
+    width: 30px;
+  }
+
+  /* line 4979, ../itemshop.sass */
+  .lightborder.forum tr > th:nth-child(2), .lightborder.forum tr > td:nth-child(2) {
+    padding-left: 8px;
+  }
+
+  /* line 4982, ../itemshop.sass */
+  .findex_newsblock tr > th:nth-child(2), .findex_newsblock tr > td:nth-child(2) {
+    padding-left: 8px;
+  }
+
+  /* line 4984, ../itemshop.sass */
+  .subtable.s tr > td:nth-child(2), .srch_hd_box tr > td:nth-child(2) {
+    width: 55%;
+    padding-left: 8px;
+  }
+
+  /* line 4988, ../itemshop.sass */
+  td.kopfb > span {
+    position: relative;
+  }
+  /* line 4990, ../itemshop.sass */
+  td.kopfb .createicon {
+    position: absolute;
+    top: -19px;
+    left: 8px;
+    margin-left: 0;
+    white-space: nowrap;
+  }
+
+  /* line 4997, ../itemshop.sass */
+  .forumindex.lichtb, .forumindex.donkerb {
+    height: 34px;
+  }
+
+  /* line 4999, ../itemshop.sass */
+  #sr_block_inner .boxmain td {
+    display: block;
+  }
+
+  /* line 5001, ../itemshop.sass */
+  .calhead > div {
+    width: 100%;
+  }
+  /* line 5002, ../itemshop.sass */
+  .calhead > div:first-child {
+    width: 100%;
+  }
+
+  /* line 5005, ../itemshop.sass */
+  .calfilter, .calhead > div {
+    display: block;
+    text-align: left;
+  }
+
+  /* line 5008, ../itemshop.sass */
+  #evcal tr > td:nth-last-child(n+5) .ev-ctrl:focus aside {
+    top: 0;
+    right: -405% !important;
+  }
+
+  /* line 5011, ../itemshop.sass */
+  .ev-ctrl {
+    max-width: 90%;
+  }
+  /* line 5012, ../itemshop.sass */
+  .ev-ctrl aside {
+    top: 0;
+    right: 0;
+    width: 90%;
+  }
+
+  /* line 5017, ../itemshop.sass */
+  .evce-req > div > span:first-child, .evce-rec > div > span:first-child, #playersbox > div > div > span:first-child {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* line 5021, ../itemshop.sass */
+  .evc-edit input[type="text"] {
+    width: 100%;
+  }
+
+  /* line 5023, ../itemshop.sass */
+  .pbmu select {
+    width: 35%;
+  }
+
+  /* line 5025, ../itemshop.sass */
+  .evc-commit > div {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 5028, ../itemshop.sass */
+  .evc-block > div {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+  /* line 5029, ../itemshop.sass */
+  .evc-block > div:first-child {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  /* line 5038, ../itemshop.sass */
+  .evc-undo {
+    text-align: left;
+  }
+
+  /* line 5040, ../itemshop.sass */
+  .evc-link > div > div {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* line 5044, ../itemshop.sass */
+  .evc-head > div:first-child {
+    display: none;
+  }
+
+  /* line 5046, ../itemshop.sass */
+  .sf-block {
+    width: 96%;
+  }
+
+  /* line 5048, ../itemshop.sass */
+  .is-head .sf-cost {
+    width: 76%;
+  }
+
+  /* line 5050, ../itemshop.sass */
+  #storefront .sf-cost {
+    width: 78%;
+  }
+
+  /* line 5052, ../itemshop.sass */
+  .sf-filter input {
+    width: 99%;
+    margin-bottom: 8px;
+  }
+
+  /* line 5055, ../itemshop.sass */
+  #it-store .sf-block:hover button {
+    width: 112%;
+    right: -10%;
+  }
+
+  /* line 5058, ../itemshop.sass */
+  .admin_dock > tbody > tr > td > table > tbody > tr > td {
+    display: inline-block;
+    text-align: left;
+  }
+
+  /* line 5061, ../itemshop.sass */
+  .admin_featureset {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+  }
+
+  /* line 5065, ../itemshop.sass */
+  #tb_msgnote {
+    margin: -1px -1px 2px;
+  }
+
+  /* line 5068, ../itemshop.sass */
+  .ev-btn.wikibtn {
+    width: 44.25%;
+  }
+  /* line 5070, ../itemshop.sass */
+  .ev-btn.wikibtn:last-child {
+    width: 96%;
+  }
+  /* line 5072, ../itemshop.sass */
+  .ev-btn.lrbtn {
+    width: 96%;
+  }
+  /* line 5074, ../itemshop.sass */
+  .ev-btn.wikibtn + .ev-btn.lrbtn {
+    width: 44.25%;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 5078, ../itemshop.sass */
+  .thread_cta {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 5081, ../itemshop.sass */
+  .pagination {
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    padding-top: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 5088, ../itemshop.sass */
+  #main-content-wide {
+    width: 97.2%;
+  }
+
+  /* line 5090, ../itemshop.sass */
+  .calhead > div {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  /* line 5094, ../itemshop.sass */
+  .calhead > div:first-child {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* line 5098, ../itemshop.sass */
+  .calfilter {
+    width: 100%;
+  }
+
+  /* line 5100, ../itemshop.sass */
+  .calsubmit {
+    margin-left: 0;
+  }
+
+  /* line 5102, ../itemshop.sass */
+  .titelhigh .fpost-lastedit .tooltip {
+    background: #467a95;
+  }
+
+  /* line 5104, ../itemshop.sass */
+  .titelbalk .fpost-lastedit .tooltip {
+    background: #eceaeb;
+  }
+
+  /* line 5106, ../itemshop.sass */
+  .fpost-lastedit:hover .tooltip {
+    right: -80px;
+    top: 24px;
+    animation: lastedit 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation: lastedit 0.5s;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @keyframes lastedit {
+    0% {
+      right: -150px;
+      opacity: 0;
+    }
+    100% {
+      right: -80px;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes lastedit {
+    0% {
+      right: -150px;
+      opacity: 0;
+    }
+    100% {
+      right: -80px;
+      opacity: 1;
+    }
+  }
+  /* line 5131, ../itemshop.sass */
+  .mytlreg tr > td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  /* line 5132, ../itemshop.sass */
+  .mytlreg tr > td:first-child {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* line 5139, ../itemshop.sass */
+  .sf-block {
+    width: 96%;
+  }
+
+  /* line 5141, ../itemshop.sass */
+  .is-head .sf-cost {
+    width: 76%;
+  }
+
+  /* line 5143, ../itemshop.sass */
+  #storefront .sf-cost {
+    width: 78%;
+  }
+
+  /* line 5145, ../itemshop.sass */
+  .sf-filter input {
+    width: 99%;
+    margin-bottom: 8px;
+  }
+
+  /* line 5148, ../itemshop.sass */
+  #it-store .sf-block:hover button {
+    width: 105%;
+    right: -5%;
+  }
+}
+@media screen and (max-width: 370px) {
+  /* line 5153, ../itemshop.sass */
+  .titelbalk .fpost-username:hover .tooltip, .titelhigh .fpost-username:hover .tooltip {
+    top: 28px !important;
+    left: -53px !important;
+  }
+
+  /* line 5156, ../itemshop.sass */
+  .titelbalk .fpost-username:hover .tooltip, .titelhigh .fpost-username:hover .tooltip {
+    animation: 0.5s tooltip;
+    -webkit-animation: 0.5s tooltip;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    left: -53px;
+    top: 28px;
+  }
+
+  @keyframes tooltip {
+    0% {
+      left: -53px;
+      opacity: 0;
+    }
+    60% {
+      left: -53px;
+      opacity: 0;
+    }
+    100% {
+      left: -53px;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes tooltip {
+    0% {
+      left: 53px;
+      opacity: 0;
+    }
+    60% {
+      left: -53px;
+      opacity: 0;
+    }
+    100% {
+      left: -53px;
+      opacity: 1;
+    }
+  }
+  /* line 5189, ../itemshop.sass */
+  .sf-block {
+    width: 96%;
+  }
+
+  /* line 5191, ../itemshop.sass */
+  .is-head .sf-cost {
+    width: 72%;
+  }
+
+  /* line 5193, ../itemshop.sass */
+  #storefront .sf-cost {
+    width: 75%;
+  }
+
+  /* line 5195, ../itemshop.sass */
+  .sf-filter input {
+    width: 99%;
+  }
+
+  /* line 5197, ../itemshop.sass */
+  #it-store .sf-block:hover button {
+    width: 108%;
+  }
+
+  /* line 5199, ../itemshop.sass */
+  #sft1, #sft2, #sft3 {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 5203, ../itemshop.sass */
+  #evcal.viewwk tbody td > div {
+    min-height: 486px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 5208, ../itemshop.sass */
+  #evcal.viewwk td {
+    height: auto;
+  }
+  /* line 5210, ../itemshop.sass */
+  #evcal.viewwk tbody td > div {
+    min-height: 486px !important;
+  }
+  /* line 5212, ../itemshop.sass */
+  #evcal.viewwk .ev-block {
+    width: 90%;
+    padding: 7% 4% 6% 3%;
+    margin-bottom: 4px;
+    overflow: hidden;
+  }
+  /* line 5217, ../itemshop.sass */
+  #evcal.viewwk .ev-block:hover {
+    background: #f6f7f7;
+  }
+  /* line 5220, ../itemshop.sass */
+  #evcal.viewwk .ev-match > div > span {
+    width: 20%;
+  }
+  /* line 5221, ../itemshop.sass */
+  #evcal.viewwk .ev-match > div > span:first-child {
+    width: 75%;
+    margin-left: 5%;
+  }
+  /* line 5225, ../itemshop.sass */
+  #evcal.viewwk .ev-match .ev {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* line 5230, ../itemshop.sass */
+  #evcal.viewwk thead th {
+    display: none;
+  }
+  /* line 5232, ../itemshop.sass */
+  #evcal.viewwk tbody tr {
+    border-top: 1px solid #cbc9c7;
+  }
+  /* line 5234, ../itemshop.sass */
+  #evcal.viewwk td {
+    display: block;
+    width: 100% !important;
+    min-height: 80px;
+    overflow: visible;
+    border-top: 0;
+  }
+  /* line 5240, ../itemshop.sass */
+  #evcal.viewwk tbody td > div > div:first-child {
+    padding: 0.5% 0;
+  }
+  /* line 5242, ../itemshop.sass */
+  #evcal.viewwk tbody td > div > div:first-child > span {
+    display: inline;
+    margin-right: 8px;
+  }
+  /* line 5245, ../itemshop.sass */
+  #evcal.viewwk .ev-block {
+    width: 95%;
+    padding: 1%;
+  }
+  /* line 5248, ../itemshop.sass */
+  #evcal.viewwk .ev-block:hover {
+    background: #f6f7f7;
+  }
+  /* line 5251, ../itemshop.sass */
+  #evcal.viewwk .ev-match > div > span {
+    width: 20%;
+  }
+  /* line 5252, ../itemshop.sass */
+  #evcal.viewwk .ev-match > div > span:first-child {
+    width: 78%;
+    margin-left: 2%;
+  }
+  /* line 5256, ../itemshop.sass */
+  #evcal.viewwk .ev-match .ev {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 5260, ../itemshop.sass */
+  #evcal.viewmo tbody td > div {
+    min-height: 120px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 5265, ../itemshop.sass */
+  #evcal.viewmo tbody td {
+    height: auto;
+  }
+  /* line 5267, ../itemshop.sass */
+  #evcal.viewmo tbody td > div {
+    min-height: 100px;
+  }
+  /* line 5269, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-feed {
+    margin-bottom: 16px;
+  }
+  /* line 5271, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-stage, #evcal.viewmo tbody .ev-body {
+    position: absolute;
+    left: -12000px;
+  }
+  /* line 5274, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-block {
+    width: 90%;
+    padding: 0 4% 0 3%;
+    margin-bottom: 0;
+    line-height: 21px;
+  }
+  /* line 5279, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-block:hover {
+    background: #f6f7f7;
+  }
+  /* line 5281, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-match {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* line 5287, ../itemshop.sass */
+  #evcal.viewmo tbody td > div {
+    min-height: 85px;
+  }
+  /* line 5289, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-feed {
+    margin-bottom: 16px;
+  }
+  /* line 5291, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-head > div {
+    width: 100%;
+  }
+  /* line 5293, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-stage, #evcal.viewmo tbody .ev-body, #evcal.viewmo tbody .ev-timer {
+    position: absolute;
+    left: -12000px;
+  }
+  /* line 5296, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-block {
+    width: 90%;
+    padding: 0 4% 0 3%;
+    margin-bottom: 0;
+    line-height: 21px;
+  }
+  /* line 5301, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-match {
+    margin-bottom: 0;
+  }
+  /* line 5303, ../itemshop.sass */
+  #evcal.viewmo .ev-ctrl > span, #evcal.viewmo tfoot .ev-match {
+    color: #404041;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 5308, ../itemshop.sass */
+  #evcal.viewmo thead th {
+    font-size: 8pt;
+    overflow: hidden;
+  }
+  /* line 5313, ../itemshop.sass */
+  #evcal.viewmo tbody td:hover {
+    background: #f6f7f7;
+  }
+  /* line 5315, ../itemshop.sass */
+  #evcal.viewmo tbody td > div {
+    min-height: 60px;
+  }
+  /* line 5317, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-feed {
+    width: 90%;
+  }
+  /* line 5319, ../itemshop.sass */
+  #evcal.viewmo tbody .ev {
+    position: absolute;
+    left: -12000px;
+  }
+  /* line 5322, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-block {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    line-height: 12px;
+    text-indent: 10px;
+    border-radius: 3px;
+    background: green;
+  }
+  /* line 5331, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-head {
+    position: absolute;
+    line-height: 12px;
+  }
+  /* line 5334, ../itemshop.sass */
+  #evcal.viewmo tfoot {
+    display: table-footer-group;
+  }
+  /* line 5336, ../itemshop.sass */
+  #evcal.viewmo tfoot tr:first-child > td {
+    height: 0;
+    background: #cbc9c7;
+  }
+  /* line 5339, ../itemshop.sass */
+  #evcal.viewmo tfoot td {
+    font-size: 8pt;
+  }
+  /* line 5341, ../itemshop.sass */
+  #evcal.viewmo tfoot td > div > div:first-child {
+    padding: 0.5% 0;
+    margin-left: 2%;
+  }
+  /* line 5344, ../itemshop.sass */
+  #evcal.viewmo tfoot tr {
+    border-top: 1px solid #cbc9c7;
+  }
+  /* line 5346, ../itemshop.sass */
+  #evcal.viewmo tfoot td {
+    min-height: 80px;
+    overflow: visible;
+    border-top: 0;
+  }
+  /* line 5350, ../itemshop.sass */
+  #evcal.viewmo tfoot td > div > div:first-child {
+    padding: 0.5% 0;
+  }
+  /* line 5352, ../itemshop.sass */
+  #evcal.viewmo tfoot td > div > div:first-child > span {
+    display: inline;
+    margin-right: 8px;
+  }
+  /* line 5355, ../itemshop.sass */
+  #evcal.viewmo tfoot .ev-head {
+    width: 75% !important;
+  }
+  /* line 5357, ../itemshop.sass */
+  #evcal.viewmo tfoot .ev-block {
+    width: 95%;
+    padding: 1% 1% 0 1%;
+  }
+  /* line 5360, ../itemshop.sass */
+  #evcal.viewmo tfoot .ev-block:hover {
+    background: #f6f7f7;
+  }
+  /* line 5363, ../itemshop.sass */
+  #evcal.viewmo tfoot .ev-match > div > span {
+    width: 20%;
+  }
+  /* line 5364, ../itemshop.sass */
+  #evcal.viewmo tfoot .ev-match > div > span:first-child {
+    width: 78%;
+    margin-left: 2%;
+  }
+  /* line 5368, ../itemshop.sass */
+  #evcal.viewmo tfoot .ev-match .ev {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 5373, ../itemshop.sass */
+  #evcal.viewmo thead th {
+    font-size: 7pt;
+  }
+  /* line 5376, ../itemshop.sass */
+  #evcal.viewmo tbody td > div {
+    min-height: 45px;
+  }
+  /* line 5378, ../itemshop.sass */
+  #evcal.viewmo tbody .ev-feed {
+    min-height: 0;
+  }
+}

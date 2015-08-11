@@ -1,0 +1,191 @@
+{% extends 'snippet/layout.html' %}
+{% block main %}
+    <div class="topics container-box">
+        <div class="ui-header">
+            <div class="plane">
+                {% for plane in planes %}
+                <a class="" href="/node/{{ plane.name }}">
+                    {{ plane.describe }}
+                </a>
+                {% endfor %}
+            </div>
+            <div class="node">
+                {% for node in allnodes %}
+                    <a class="btn btn-sm" href="/node/{{ node.slug }}">
+                        {{ node.name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="ui-content">
+        {% for topic in topics.list %}
+            <div class="topic-item">
+                <div  class="avatar">
+                    <a href="/u/{{ topic.author_username }}">
+                        <img src="/static/images/avatar/{{ topic.author_avatar }}_sb.png" 
+                            alt="{{ topic.author_username }}"/>
+                    </a>
+                </div>
+                <div class="main">
+                    <h3 class="title">
+                        <a href="/t/{{ topic.id }}#reply{{ topic.reply_count or 0 }}">{{ topic.title }}</a>
+                    </h3>
+                    <div class="meta">
+                        <span class="node"><a href="/node/{{ topic.node_slug }}">{{ topic.node_name }}</a></span> • 
+                        <span class="username">
+                            <a href="/u/{{ topic.author_username or topic.author_uid }}">{{ topic.author_username }}</a>
+                        </span> • 
+                        {% if topic.last_replied_time %}
+                            <span class="last-touched">{{ topic.last_touched|pretty_date }}</span> • 
+                            <span class="last-reply-username">最后回复来自
+                                <a href="/u/{{ topic.last_replied_username or topic.last_replied_uid }}">
+                                    <strong>{{ topic.last_replied_username }}</strong>
+                                </a>
+                            </span>
+                        {% else %}
+                            <span class="last-touched">{{ topic.last_touched|pretty_date }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if topic.reply_count %}
+                    <div class="count">
+                        <a href="/t/{{ topic.id }}#reply{{ topic.reply_count or 0 }}">{{ topic.reply_count or 0 }}</a>
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+        </div>
+        {% if topics.page.pages > 1 %}
+        <div class="pagination">
+            {{ topics.page|pagination(request.uri) }}
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}
+{% block sidebar %}
+    {% if current_user %}
+        <div class="usercard container-box">
+            <div class="ui-header">
+                <a href="/u/{{ user_info.username }}">
+                    <img src="/static/images/avatar/{{ current_user.avatar}}_sb.png?t={{ gen_random() }}" alt="{{ user_info.username }}" class="avatar" />
+                </a>
+                <div class="username">{{ user_info.username }}</div>
+                <div class="website">
+                    <a href="http://dotamax.com/player/detail/{{ user_info.steamid or '' }}">{{ user_info.steamid or '' }}
+                    </a>
+                </div>
+            </div>
+            <div class="ui-content">
+                <div class="status status-topic">
+                    <strong><a href="/u/{{ user_info.username }}/topics">{{ user_info.counter.topics }}</a></strong> 主题
+                </div>
+                <div class="status status-reply">
+                    <strong><a href="/u/{{ user_info.username }}/replies">{{ user_info.counter.replies }}</a></strong> 回复
+                </div>
+                <div class="status status-favorite">
+                    <strong><a href="/u/{{ user_info.username }}/favorites">{{ user_info.counter.favorites }}</a></strong> 收藏
+                </div>
+                <div class="status status-reputation">
+                    <strong>{{ user_info.reputation or 0 }}</strong> 威望
+                </div>
+            </div>
+        </div>
+        {#
+        {% if user_info.counter.notifications %}
+            <div class="alert mt10 mb10">
+                <span>
+                    <a href="/notifications">{{ user_info.nickname or user_info.username }}，你有{{ user_info.counter.notifications }}条未读提醒，去看看吧</a>
+                </span>
+            </div>
+        {% endif %}
+        #}
+    {% else %}
+        <div class="login-box container-box">
+            <div class="ui-content tc">
+                <a class="btn btn-small" type="button" href="/login">登录</a>
+                <a class="btn btn-small" type="button" href="/register">注册</a>
+            </div>
+        </div>
+    {% endif %}
+    <div class="sidebox container-box hot-nodes">
+        <div class="ui-header">
+            <span class="title">最热节点</span>
+            <div class="dropdown btn-group btn-block">
+                <a class="btn btn-inverse btn-block" type="button" href="###" data-toggle="dropdown">创建新主题</a>
+                <ul class="dropdown-menu pull-right" role="menu">
+                    {% for node in allnodes %}
+                    <li role="presentation">
+                        <a role="menuitem" href="/t/create/{{ node.slug }}">{{node.name}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="ui-content">
+            {% for node in hot_nodes %}
+                <a class="btn btn-xs" href="/node/{{ node.slug }}">{{ node.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="sidebox container-box nodes-cloud">
+        <div class="ui-header">
+            <span class="title">常见节点导航</span>
+        </div>
+        <div class="ui-content">
+            <ul>
+                {% for plane in planes %}
+                    <li>
+                        <span class="panels">{{ plane.describe }}</span>
+                        <span class="nodes">
+                            {% for node in plane.nodes %}
+                                <a class="btn btn-xs" href="/node/{{ node.slug }}">{{ node.name }}</a>
+                            {% endfor %}
+                        </span>
+                    </li>
+                {% endfor %}
+            </ul>            
+        </div>
+    </div>
+    <div class="sidebox container-box friends">
+        <div class="ui-header">
+            <span class="title">友情社区</span>
+        </div>
+        <div class="ui-content">
+            <p><a href="javascript:void(0);"></a></p>
+            <p><a href="javascript:void(0);"></a></p>
+            <p><a href="javascript:void(0);"></a></p>
+            <p><a href="javascript:void(0);"></a></p>
+        </div>
+    </div>
+    <div class="sidebox container-box friends">
+        <div class="ui-header">
+            <span class="title">我们的标志</span>
+        </div>
+        <div class="ui-content">
+            <p><a href="http://D2Ark.com"><img src="/static/images/sign.jpg" alt="D2Ark.com" /></a></p>
+        </div>
+    </div>
+    <div class="sidebox container-box community-status">
+        <div class="ui-header">
+            <span class="title">运行状态</span>
+        </div>
+        <div class="ui-content">
+            <dl>
+                <dt>注册成员</dt>
+                <dd>{{ status_counter.users }}</dd>
+            </dl>
+            <dl>
+                <dt>节点</dt>
+                <dd>{{ status_counter.nodes }}</dd>
+            </dl>
+            <dl>
+                <dt>主题</dt>
+                <dd>{{ status_counter.topics }}</dd>
+            </dl>
+            <dl>
+                <dt>回复</dt>
+                <dd>{{ status_counter.replies }}</dd>
+            </dl>
+        </div>
+    </div>
+{% endblock %}

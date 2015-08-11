@@ -1,0 +1,81 @@
+/* 
+* @Author: d2ark
+* @Date:   2015-07-17 20:54:21
+* @Last Modified by:   d2ark
+* @Last Modified time: 2015-07-17 20:54:21
+*/
+
+@charset "UTF-8";
+
+body {
+	color: #979797;
+	font-family: "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-color: #080D11;
+}
+#navigation {
+	position: fixed;
+	margin-bottom: 0px;
+	background-color: #222;
+	height: 24px;
+	#navContainer {
+		width: 938px;
+		padding-left: 0px;
+		padding-right: 0px;
+		#navHeader {
+			.brand {
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				font-size: 12px;
+				color: #908d8b;
+				img {
+					margin-top: 8px;
+					top: 0;
+					opacity: .8;
+				}
+			}
+		}
+		#navMenu {
+			margin-left: 5px;
+		}
+		#navAccount {
+			.btn-small {
+				margin: 2px 0 0 10px;
+				padding: 2px 8px;
+			}
+			li {
+				margin-left: 2px;
+				.avatar {
+					padding-top: 10px;
+				}
+				a {
+					font-size: 14px;
+					padding-bottom: 0px !important;
+				}
+				#navNotification {
+					//unused
+				}
+			}
+		}
+	}
+}
+#bodyContainer {
+	width:1200px;
+	position: relative;
+	margin: 0px auto;
+}
+#calloutHeader {
+	width: 100%;
+	height: 384px;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	background-image: url('/static/images/layout/bg_thebetaisover.jpg');
+	#calloutHeaderLink {
+		background-image: url('/static/images/layout/trans.gif');
+		height: 377px;
+		border: 0;
+		margin: 0 auto;
+	}
+}
