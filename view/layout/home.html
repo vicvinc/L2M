@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="d2ark dota2ark" content="dota2 玩家社区" />
+	<title>{% block title %}D2Ark - Dota2玩家社区{% endblock %}</title>
+	<link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="/static/css/stylesheets/home.css" />
+	<script type="text/javascript" src="/static/js/base/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/static/js/base/bootstrap.min.js"></script>
+	{% block stylesheet %}{% endblock %}
+	{% block javascript %}{% endblock %}
+</head>
+<body>
+	<nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" >
+		<div id="navContainer" class="container-fluid">
+			<div id="navHeader" class="navbar-header">
+				<a class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="/">
+					<img border="0" class="DotaLogo" src="/static/images/layout/logo.png">
+				</a>
+			</div>
+			<div id="navMenu" class="collapse navbar-collapse navbar-left">
+			
+				{% set navigation_bar = [
+					('/', 'home', '首页'),
+					('/node', 'node', '社区'),
+					('http://www.dota2.com.cn/', 'hots', '热门'),
+				] -%}
+			
+				{% set active_page = active_page|default('home') -%}
+				
+				<ul class="nav navbar-nav">
+					{% for href, id, caption in navigation_bar %}
+						<li{% if id == active_page %} class="active"{% endif %}>
+							<a href="{{ href|e }}">{{ caption|e }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+				<form class="navbar-form navbar-left J_search" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="{#Search#}" x-webkit-speech>
+					</div>
+				</form>
+			</div>
+			<div id="navAccount" class="collapse navbar-collapse navbar-right account-menu">
+				<ul class="nav navbar-nav">
+					{% if current_user %}
+						<li>
+							<a href="/u/{{ current_user.username or current_user.uid }}" class="avatar">
+								<img src="/static/images/avatar/{{ current_user.avatar}}_sb.png?t={{ gen_random() }}">
+							</a>
+						</li>
+						<li>
+							<a href="/u/{{ current_user.username or current_user.uid }}">
+								{{ current_user.username }}
+							</a>
+						</li>
+						<li>
+							{% if current_user %}
+								{% if notifications_count %}
+									<a href="/notifications" class="notification-indicator tooltipped downwards contextually-unread" title="{{ current_user.nickname or current_user.username }}，你有{{ notifications_count }}条未读提醒，去看看吧">
+										<span class="octicon octicon-comment"></span>
+									</a>
+								{% else %}
+									<a href="/notifications" class="notification-indicator tooltipped downwards" title="暂时没有未读提醒">
+										<span class="octicon octicon-comment"></span>
+									</a>
+								{% endif %}
+							{% endif %}
+						</li>
+						<li>
+							<a href="/setting">
+								<span class="octicon octicon-tools"></span>
+							</a>
+						</li>
+						<li>
+							<a href="/logout">
+								<span class="octicon octicon-log-out"></span>
+							</a>
+						</li>
+					{% else %}
+						<li>
+							<a href="/login">
+								<span class="octicon octicon-log-in"></span>
+							</a>
+						</li>
+						<li><a href="/register" class="btn btn-sm">注册</a></li>
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="calloutHeader">
+		<div id="calloutHeaderLink">
+	    </div>
+	</div>
+	<div id="bodyContainer" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8 pull-left">
+				{% block main %}{% endblock %}
+			</div>
+			<div class="col-sm-3 pull-right">
+				{% block sidebar %}{% endblock %}
+			</div>
+		</div>
+	</div>
+	{% include "snippet/footer.html" %}
+</body>
+</html>

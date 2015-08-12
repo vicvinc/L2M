@@ -3,7 +3,7 @@
 # @Author: Administrator
 # @Date:   2015-08-11 17:44:47
 # @Last Modified by:   Administrator
-# @Last Modified time: 2015-08-11 21:05:43
+# @Last Modified time: 2015-08-12 10:12:12
 import os
 
 from handler import home
@@ -24,8 +24,10 @@ appConf = {
 	# 'test_path': { 'path': test_path },#for test
 }
 setting = {
-	'blog_title': u'Dota2Ark Community',
+	'autoreload': True,
+	'debug': True,
 	'xsrf_cookies': True,
+	'static_hash_cache': False,
 	'cookie_secret': 'cookie_secret_code',
 	'autoescape': None,
 }
@@ -39,6 +41,6 @@ dbConf = {
 routes = [
 	(r'/', home.HomeHandler),
 	# static handler
-	(r'/(favicon\.ico)', StaticFileHandler, pub),
-	(r'/pub/(.*)', StaticFileHandler, pub),
+	(r'/(favicon\.ico)', StaticFileHandler, { 'path': pub }),
+	(r'/pub/(.*)', StaticFileHandler, { 'path': pub }),
 ]

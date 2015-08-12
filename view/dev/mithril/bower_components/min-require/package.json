@@ -1,0 +1,24 @@
+{
+  "name": "min-require",
+  "version": "0.1.4",
+  "author": "Vu Nguyen <ng-vu@liti.ws>",
+  "description": "Minimal implementation of CommonJS require API",
+  "homepage": "http://github.com/ng-vu/min-require",
+  "license": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/ng-vu/min-require/blob/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ng-vu/min-require.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-contrib-jasmine": "^0.6.4",
+    "karma": "^0.12.16",
+    "karma-jasmine": "^0.2.2",
+    "karma-chrome-launcher": "^0.1.4"
+  }
+}
