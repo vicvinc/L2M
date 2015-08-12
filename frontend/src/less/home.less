@@ -1,0 +1,79 @@
+@import 'nav.less';
+
+.container-box {
+	margin: 0px auto;
+	.ui-header {
+		.tabs {
+			position: relative;
+			margin: 0 auto;
+			font-size: 12px;
+			z-index: 10;
+			white-space: nowrap;
+			overflow: hidden;
+			overflow-x: auto;
+			.btn-info {
+				border: 0px;
+			}
+			a {
+				display: table-cell;
+				width: 1%;
+				color: #dadada;
+				background-color: #3A3A3A;
+				height: 28px;
+				line-height: 31px;
+				padding: 0px 30px 0px 30px;
+				margin-right: 2px;
+				text-decoration: none;
+				text-align: center;
+				border-bottom: 1px solid #1b1b1d;
+				border-bottom-left-radius: 0px;
+				border-bottom-right-radius: 0px;
+			}
+			a:hover {
+				background: #57749e;
+			}
+			a.active {
+				background: #57749e;
+				border: 1px solid #1b1b1d;
+				border-bottom: 0px;
+			}
+		}
+	}
+	.ui-content {
+		.news-item {
+			height: 180px;
+			background-color: #0B0C10;
+			border: 1px solid #070506;
+			box-shadow: 2px 2px 1px #020202;
+			padding: 18px 15px;
+			.shortcut {
+				float: left;
+				padding-right: 20px;
+				width: 256px;
+				height: 128px;
+			}
+			.news-main {
+				padding-left: 30%;
+				.title {
+
+				}
+				.content {
+					padding: 15px 10px;
+				}
+				.status {
+					padding-top: 20px;
+					font-size: 12px;
+					.date {
+
+					}
+					.author {
+
+					}
+					.click {
+
+					}
+				}
+			}
+		}
+	}
+}
