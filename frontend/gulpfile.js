@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-08-12 19:33:21
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-08-12 20:25:47
+* @Last Modified time: 2015-08-13 21:10:16
 */
 
 'use strict';
@@ -14,18 +14,18 @@ var minfycss = require('gulp-minify-css')
 var less = require('gulp-less')
 
 gulp.task('js', function() {
-	gulp.src('src/*.js')
+	gulp.src('src/js/*.js')
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('less', function() {
-	gulp.src('less/*.less').pipe(less()).pipe(gulp.dest('dist/css'))
+	gulp.src('src/less/*.less').pipe(less()).pipe(gulp.dest('dist/css'))
 })
 
 gulp.task('dev', function () {
 	gulp.watch('js/*.js', ['js', 'less']);
 });
 
-gulp.task('default', ['js', 'dev']);
+gulp.task('default', ['js', 'less', 'dev']);
 

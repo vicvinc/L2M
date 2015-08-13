@@ -8,21 +8,19 @@
 @charset "UTF-8";
 
 body {
+	margin: 0px !important;
+	padding: 0px !important;
 	color: #979797;
 	font-family: "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
-	margin: 0px;
-	padding: 0px;
 	background-color: #080D11;
 }
 #navigation {
-	position: fixed;
-	margin-bottom: 0px;
+	top: 0px;
+	margin: 0 auto;
 	background-color: #222;
-	height: 24px;
 	#navContainer {
 		width: 938px;
-		padding-left: 0px;
-		padding-right: 0px;
+		margin: 0 auto;
 		#navHeader {
 			.brand {
 				text-transform: uppercase;
@@ -36,8 +34,27 @@ body {
 				}
 			}
 		}
-		#navMenu {
-			margin-left: 5px;
+		#navMenu{
+
+		}
+		a {
+			display: table-cell;
+			width: 1%;
+			color: #dadada;
+			background-color: #3A3A3A;
+			height: 28px;
+			line-height: 26px;
+			text-decoration: none;
+			text-align: center;
+			border: 1px solid #1b1b1d;
+		}
+		a:hover {
+			background: #57749e;
+		}
+		a.active {
+			background: #57749e;
+			border: 1px solid #1b1b1d;
+			border-bottom: 0px;
 		}
 		#navAccount {
 			.btn-small {
@@ -52,9 +69,6 @@ body {
 				a {
 					font-size: 14px;
 					padding-bottom: 0px !important;
-				}
-				#navNotification {
-					//unused
 				}
 			}
 		}
