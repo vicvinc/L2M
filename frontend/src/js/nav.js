@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-08-12 17:08:16
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-08-13 21:24:58
+* @Last Modified time: 2015-08-14 14:29:05
 */
 
 'use strict';
@@ -23,15 +23,14 @@ nav.item = [
 		'dis': '社区'
 	}
 ]
-nav.controller = function(){
+nav.renderNav = function(){
 	return nav.item.map(function(item){
 		return m('a#navMenu',{href: item.href}, item.dis);
 	});
 };
 nav.view = function (ctrl) {
     return m('nav#navigation',[
-    			m('div#navContainer',nav.controller())
+    			m('div#navContainer',nav.renderNav())
     	]);
 };
-
 m.module(document.body, nav);
