@@ -8,6 +8,8 @@
     "moment": "~2.8.4",
     "color-thief": "v2.0",
     "mithril": "lhorie/mithril.js#next",
-    "loader.js": "~3.2.1"
+    "loader.js": "~3.2.1",
+    "react": "~0.13.3",
+    "icono": ""
   }
 }
