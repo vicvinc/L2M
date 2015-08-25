@@ -2,10 +2,14 @@
 * @Author: Administrator
 * @Date:   2015-08-12 17:08:16
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-08-14 14:29:05
+* @Last Modified time: 2015-08-25 18:17:21
 */
 
 'use strict';
+
+require('../../dist/css/main.css');
+require('../../dist/css/nav.css');
+
 var nav = {}
 
 nav.item = [
@@ -23,14 +27,13 @@ nav.item = [
 		'dis': '社区'
 	}
 ]
-nav.renderNav = function(){
-	return nav.item.map(function(item){
-		return m('a#navMenu',{href: item.href}, item.dis);
-	});
-};
+
 nav.view = function (ctrl) {
-    return m('nav#navigation',[
-    			m('div#navContainer',nav.renderNav())
-    	]);
+	return m('nav#navigation',[
+				m('div#navContainer', nav.item.map(function(item){
+										return m('a#navMenu',{href: item.href}, item.dis);
+									}))
+		]);
 };
-m.module(document.body, nav);
+var navBar = document.getElementById('navx');
+m.module(navBar, nav);

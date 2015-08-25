@@ -1,0 +1,15 @@
+@import "color.less";
+@lib-path: "../lib";
+
+// @import "@{lib-path}/bootstrap.less";
+
+// We want to specify the @fa-font-path variable AFTER we import font awesome
+// so that it overrides the default definition.
+@import "@{lib-path}/font-awesome/font-awesome.less";
+
+body {
+	margin: 0px !important;
+	padding: 0px !important;
+	color: @base;
+	background-color: @black;
+}

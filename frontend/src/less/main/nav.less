@@ -1,0 +1,59 @@
+/* 
+* @Author: d2ark
+* @Date:   2015-07-17 20:54:21
+* @Last Modified by:   d2ark
+* @Last Modified time: 2015-07-17 20:54:21
+*/
+
+@charset "UTF-8";
+@import "color.less";
+@import "width.less";
+
+@img-path: "/cms/dota2ark/pub";
+#navigation {
+	top: 0px;
+	margin: 0 auto;
+	background-color: @base;
+	#navContainer {
+		width: @nav-container-w;
+		margin: 0 auto;
+		#navHeader {
+		}
+		a {
+			display: table-cell;
+			width: 1%;
+			color: @yellow;
+			background-color: @brown;
+			height: 28px;
+			line-height: 26px;
+			text-decoration: none;
+			text-align: center;
+		}
+		a:hover {
+			background: @black;
+		}
+		a.active {
+			background: @black;
+			border-bottom: 0px;
+		}
+	}
+}
+#bodyContainer {
+	width: @body-container-w;
+	position: relative;
+	margin: 0px auto;
+}
+#calloutHeader {
+	width: 100%;
+	height: 384px;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	background-image: url('@{img-path}/images/layout/bg_thebetaisover.jpg');
+	#calloutHeaderLink {
+		background-image: url('@{img-path}/images/layout/trans.gif');
+		height: 377px;
+		border: 0;
+		margin: 0 auto;
+	}
+}
