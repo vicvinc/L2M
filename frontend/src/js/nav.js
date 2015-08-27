@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-08-12 17:08:16
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-08-25 18:17:21
+* @Last Modified time: 2015-08-27 09:59:35
 */
 
 'use strict';
@@ -30,10 +30,11 @@ nav.item = [
 
 nav.view = function (ctrl) {
 	return m('nav#navigation',[
-				m('div#navContainer', nav.item.map(function(item){
-										return m('a#navMenu',{href: item.href}, item.dis);
-									}))
-		]);
+				m('div#navContainer', 
+					nav.item.map(function(item){
+						return m('a#navMenu',{href: item.href}, item.dis);
+					}))
+			]);
 };
 var navBar = document.getElementById('navx');
 m.module(navBar, nav);
