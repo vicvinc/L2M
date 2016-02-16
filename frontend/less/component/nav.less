@@ -1,46 +1,85 @@
-
 nav {
-	margin-bottom: 0;
-	padding-left: 0;
-	list-style: none;
-	background-color: #222;
-	height: 24px;
-	&:extend(.clearfix all);
-	.navheader {
-		float: left;
-		&:hover,
-		&:focus {
-			text-decoration: none;
-		}
-		> img {
-			display: block;
-		}
-	}
-	.navmenu {
+	background-color: @color-nav-bg;
+	height: @height-nav;
+	margin-bottom: 20px;
+	.content {
+		width: 1000px;
+		height: @height-nav;
 		margin: 0 auto;
-		ul {
-			li {
-				position: relative;
-  				display: block;
-				margin-left: 5px;
-				a {
-					position: relative;
-					display: block;
-					padding: 10px 15px;
+		color: @color-navmenu;
+		font-size: @font-size-navmenu;
+		.navheader {
+			float: left;
+			background-image: url('../../pub/logo/nav-logo.png');
+			width: @width-navheader;
+			height: @height-nav;
+			
+			&:hover,
+			&:focus {
+					text-decoration: none;
 				}
-				a:hover,
-				a:focus {
-					color: #ffffff;
-					background-color: #010101;
-					border: 1px solid #dddddd;
-					border-bottom-color: transparent;
-					cursor: default;
+			> img {
+				display: block;
+			}
+		}
+		.navmenu {
+			float: left;
+			margin-left: @margin-navmenu-left;
+			margin-right: @margin-navmenu-right;
+			text-align: center;
+			ul {
+				margin: 0;
+				padding: 0;
+				height: @height-nav;
+				li {
+					float: left;
+	  				display: table-cell;
+					list-style: none;
+					padding: @padding-nav-list;
+					inline-height: @font-size-navmenu;
+					height: @height-nav-list;
+					&:hover,
+					&:focus {
+						color: #ffffff;
+						background-color: #010101;
+						border-bottom-color: transparent;
+						cursor: default;
+					}
 				}
 			}
 		}
+		.search-input {
+		    width: 276px;
+		    height: 32px;
+		    background: #404040;
+		    display: inline-block;
+		    position: relative;
+		    padding: @padding-nav-list;
+	    	.input {
+				border: none;
+				width: 222px;
+				height: 26px;
+				margin-left: 30px;
+				background-color: transparent;
+				font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
+				font-size: 12px;
+				line-height: 16px;
+				outline: none;
+				float: left;
+		    }
+		}
+		.navuserbar {
+			float: right;
+			height: @height-nav-list;
+			padding: @padding-nav-list;
+			// margin-right: @margin-navmenu-right;
+			&:hover,
+			&:focus {
+				color: #ffffff;
+				background-color: #010101;
+				border-bottom-color: transparent;
+				cursor: default;
+			}
+		}
 	}
-	.navuserbar {
-
-	}
-
 }

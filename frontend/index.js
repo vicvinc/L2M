@@ -2,11 +2,12 @@
 * @Author: o
 * @Date:   2016-02-04 19:00:56
 * @Last Modified by:   o
-* @Last Modified time: 2016-02-04 22:34:35
+* @Last Modified time: 2016-02-05 12:31:35
 */
 
+// import 'babel-core/polyfill';
 import React from 'react';
-import { ReactDOM  } from 'react-dom';
-import App from 'app/App';
+import { render  } from 'react-dom';
+import App from './app/App';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app'));

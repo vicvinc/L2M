@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-08-25 17:25:01
 * @Last Modified by:   o
-* @Last Modified time: 2016-02-04 22:17:40
+* @Last Modified time: 2016-02-06 13:10:53
 */
 
 'use strict';
@@ -27,14 +27,16 @@ var config = {
     new webpack.NoErrorsPlugin()
   ],
   module: {
-
     loaders: [
     { 
       test: /\.js$/, 
       exclude: /node_modules/, 
       loader: "babel-loader",
-      query: {
-        presets: 'react'
+      query:{
+        presets:['es2015','react']
+      },
+      externals: {
+        'react': 'React'
       }
     }, {
       test: /\.json$/,
@@ -44,9 +46,12 @@ var config = {
       test: /\.less?$/,
       loaders: ["style", "css-loader?sourceMap", "less-loader"]
     }, {
-      test: /\.(png|jpg)$/,
+      test: /\.(png|jpg|svg)$/,
       loader: 'url?limit=25000'
     }]
   }
 };
+if (process.env.NODE_ENV === 'production') {
+  config.entry = ['./index'];
+}
 module.exports = config;

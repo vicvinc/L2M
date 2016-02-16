@@ -1,0 +1,18 @@
+[
+	{
+		"listname" : "新闻",
+		"uri" : "http://d2ark.com/news"
+	},{
+		"listname": "赛事",
+		"uri" : "http://d2ark.com/match"
+	},{
+		"listname": "更新",
+		"uri" : "http://d2ark.com/update"
+	},{
+		"listname": "战术",
+		"uri" : "http://d2ark.com/tactical"
+	},{
+		"listname": "饰品",
+		"uri" : "http://d2ark.com/accessory"
+	}
+]
